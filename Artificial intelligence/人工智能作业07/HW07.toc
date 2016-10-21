@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}概\ 述}{1}
+\contentsline {subsection}{\numberline {1.1}问题}{1}
+\contentsline {subsection}{\numberline {1.2}要求}{1}
+\contentsline {paragraph}{\ \ }{1}
+\contentsline {section}{\numberline {2}构\ 造}{2}
+\contentsline {subsection}{\numberline {2.1}故事背景}{2}
+\contentsline {paragraph}{\ \ }{2}
+\contentsline {subsection}{\numberline {2.2}商品种类}{2}
+\contentsline {paragraph}{\ \ }{2}
+\contentsline {subsection}{\numberline {2.3}购买记录}{2}
+\contentsline {paragraph}{\ \ }{2}
+\contentsline {subsection}{\numberline {2.4}给定阈值}{2}
+\contentsline {paragraph}{\ \ }{2}
+\contentsline {section}{\numberline {3}计\ 算}{2}
+\contentsline {subsection}{\numberline {3.1}画图}{2}
+\contentsline {subsection}{\numberline {3.2}frequent patterns}{3}
+\contentsline {subsection}{\numberline {3.3}dominant patterns}{3}
+\contentsline {subsection}{\numberline {3.4}maximal frequent patterns}{3}
+\contentsline {subsection}{\numberline {3.5}others}{3}
