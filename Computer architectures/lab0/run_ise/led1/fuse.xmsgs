@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 207: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">int_n_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">6</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 321: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_awready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 327: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_wready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 328: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_bid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 329: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_bresp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 330: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_bvalid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 341: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_arready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 342: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_rid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 344: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_rresp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 345: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_rlast</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 346: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_rvalid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 395: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_awready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 401: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_wready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 402: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_bid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 403: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_bresp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 404: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_bvalid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 415: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_arready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 416: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_rid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 418: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_rresp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 419: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_rlast</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 420: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_rvalid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 469: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_awready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 475: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_wready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 476: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_bid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 477: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_bresp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 478: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_bvalid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 489: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_arready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 490: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_rid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 492: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_rresp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 493: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_rlast</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 494: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_rvalid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+</messages>
+

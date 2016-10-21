@@ -1,0 +1,14 @@
+../../../rtl/TOP/archlab_sopc_top.v
+
+../../../rtl/CPU/ls132r_define.h
+../../../rtl/CPU/ls132r_decode_stage.v
+../../../rtl/CPU/ls132r_execute_stage.v
+../../../rtl/CPU/ls132r_fetch_stage.v
+../../../rtl/CPU/ls132r_interface.v
+../../../rtl/CPU/ls132r_tools.v
+../../../rtl/CPU/ls132r_top.v
+
+../../../rtl/AMBA/axi_mux.v
+
+../../../rtl/CONFREG/confreg.v
+../../../rtl/SPI/godson_sbridge_spi.v 

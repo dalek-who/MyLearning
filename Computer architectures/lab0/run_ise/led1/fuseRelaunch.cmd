@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/godson_system_isim_beh.exe" -prj "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/godson_system_beh.prj" "work.godson_system" "work.glbl" 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/archlab_sopc_top.ncd
+OUTFILE=/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/archlab_sopc_top.bit
+FAMILY=Spartan6
+PART=xc6slx150-3fgg676
+WORKINGDIR=/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1
+LICENSE=ISE
+USER_INFO=__0_0_0

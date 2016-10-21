@@ -1,0 +1,28 @@
+Command line:
+   archlab_sopc_top_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  36207
+
+Mon Oct 10 20:32:43 2016
+
+
+ Elaboration Time: 0.15 sec
+
+ Current Memory Usage: 221.266 Meg
+
+ Total Signals          : 2336
+ Total Nets             : 13052
+ Total Signal Drivers   : 2257
+ Total Blocks           : 70
+ Total Primitive Blocks : 55
+ Total Processes        : 2357
+ Total Traceable Variables  : 907
+ Total Scalar Nets and Variables : 1232412
+
+ Total Simulation Time: 0.31 sec
+
+ Current Memory Usage: 296.767 Meg
+
+Mon Oct 10 20:33:59 2016
+

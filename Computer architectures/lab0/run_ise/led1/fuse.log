@@ -1,0 +1,91 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/godson_system_isim_beh.exe -prj /home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/godson_system_beh.prj work.godson_system work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/CPU/ls132r_tools.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../simu/lib/BLK_MEM_GEN_V6_1.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/CPU/ls132r_interface.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/CPU/ls132r_fetch_stage.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/CPU/ls132r_execute_stage.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/CPU/ls132r_decode_stage.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/SPI/godson_sbridge_spi.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/ram_16k.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/CPU/ls132r_top.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/CONFREG/confreg.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/AMBA/axi_mux.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../simu/testbench/MX25L6405D.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" into library work
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../simu/testbench/godson_system.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 207: Size mismatch in connection of port <int_n_i>. Formal port size is 6-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 321: Size mismatch in connection of port <s0_awready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 327: Size mismatch in connection of port <s0_wready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 328: Size mismatch in connection of port <s0_bid>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 329: Size mismatch in connection of port <s0_bresp>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 330: Size mismatch in connection of port <s0_bvalid>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 341: Size mismatch in connection of port <s0_arready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 342: Size mismatch in connection of port <s0_rid>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 344: Size mismatch in connection of port <s0_rresp>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 345: Size mismatch in connection of port <s0_rlast>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 346: Size mismatch in connection of port <s0_rvalid>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 395: Size mismatch in connection of port <s2_awready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 401: Size mismatch in connection of port <s2_wready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 402: Size mismatch in connection of port <s2_bid>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 403: Size mismatch in connection of port <s2_bresp>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 404: Size mismatch in connection of port <s2_bvalid>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 415: Size mismatch in connection of port <s2_arready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 416: Size mismatch in connection of port <s2_rid>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 418: Size mismatch in connection of port <s2_rresp>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 419: Size mismatch in connection of port <s2_rlast>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 420: Size mismatch in connection of port <s2_rvalid>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 469: Size mismatch in connection of port <s4_awready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 475: Size mismatch in connection of port <s4_wready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 476: Size mismatch in connection of port <s4_bid>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 477: Size mismatch in connection of port <s4_bresp>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 478: Size mismatch in connection of port <s4_bvalid>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 489: Size mismatch in connection of port <s4_arready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 490: Size mismatch in connection of port <s4_rid>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 492: Size mismatch in connection of port <s4_rresp>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 493: Size mismatch in connection of port <s4_rlast>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/../../rtl_led/TOP/archlab_sopc_top.v" Line 494: Size mismatch in connection of port <s4_rvalid>. Formal port size is 1-bit while actual signal size is 32-bit.
+Completed static elaboration
+Fuse Memory Usage: 104832 KB
+Fuse CPU Usage: 1670 ms
+Compiling module ls132r_interface
+Compiling module ls132r_fetch_stage
+Compiling module ls132r_decoder_6_64
+Compiling module ls132r_decoder_5_32
+Compiling module gr_heap_2r1w_32x32
+Compiling module ls132r_decode_stage
+Compiling module adder0_res_cond
+Compiling module ls132r_first_one_8_3
+Compiling module ls132r_first_one_4_2
+Compiling module ls132r_first_one_32_5
+Compiling module divPin_gen
+Compiling module memvaddr_gen
+Compiling module fixres_gen
+Compiling module ls132r_execute_stage
+Compiling module ls132r_top
+Compiling module nb_sync_fifo_mux
+Compiling module axi_slave_mux
+Compiling module confreg
+Compiling module spi_fifo4
+Compiling module simple_spi_top
+Compiling module spi_flash_ctrl
+Compiling module BLK_MEM_GEN_V6_1_output_stage(C_...
+Compiling module BLK_MEM_GEN_V6_1_softecc_output_...
+Compiling module BLK_MEM_GEN_V6_1_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V6_1(C_FAMILY="spart...
+Compiling module ram_16k
+Compiling module archlab_sopc_top
+Compiling module MX25L6405D(Init_File="../flash.v...
+Compiling module godson_system
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 30 Verilog Units
+Built simulation executable /home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/godson_system_isim_beh.exe
+Fuse Memory Usage: 128984 KB
+Fuse CPU Usage: 2810 ms
+GCC CPU Usage: 26580 ms

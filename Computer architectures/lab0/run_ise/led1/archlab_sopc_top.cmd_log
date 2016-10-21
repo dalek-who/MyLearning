@@ -1,0 +1,86 @@
+xst -intstyle ise -ifn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.syr" 
+xst -intstyle ise -ifn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml archlab_sopc_top.twx archlab_sopc_top.ncd -o archlab_sopc_top.twr archlab_sopc_top.pcf 
+bitgen -intstyle ise -f archlab_sopc_top.ut archlab_sopc_top.ncd 
+xst -intstyle ise -ifn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+xst -intstyle ise -ifn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+bitgen -intstyle ise -f archlab_sopc_top.ut archlab_sopc_top.ncd 
+xst -intstyle ise -ifn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.syr" 
+xst -intstyle ise -ifn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml archlab_sopc_top.twx archlab_sopc_top.ncd -o archlab_sopc_top.twr archlab_sopc_top.pcf 
+bitgen -intstyle ise -f archlab_sopc_top.ut archlab_sopc_top.ncd 
+xst -intstyle ise -ifn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+xst -intstyle ise -ifn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml archlab_sopc_top.twx archlab_sopc_top.ncd -o archlab_sopc_top.twr archlab_sopc_top.pcf 
+bitgen -intstyle ise -f archlab_sopc_top.ut archlab_sopc_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml archlab_sopc_top.twx archlab_sopc_top.ncd -o archlab_sopc_top.twr archlab_sopc_top.pcf 
+bitgen -intstyle ise -f archlab_sopc_top.ut archlab_sopc_top.ncd 
+xst -intstyle ise -ifn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml archlab_sopc_top.twx archlab_sopc_top.ncd -o archlab_sopc_top.twr archlab_sopc_top.pcf 
+bitgen -intstyle ise -f archlab_sopc_top.ut archlab_sopc_top.ncd 
+xst -intstyle ise -ifn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml archlab_sopc_top.twx archlab_sopc_top.ncd -o archlab_sopc_top.twr archlab_sopc_top.pcf 
+bitgen -intstyle ise -f archlab_sopc_top.ut archlab_sopc_top.ncd 
+xst -intstyle ise -ifn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml archlab_sopc_top.twx archlab_sopc_top.ncd -o archlab_sopc_top.twr archlab_sopc_top.pcf 
+bitgen -intstyle ise -f archlab_sopc_top.ut archlab_sopc_top.ncd 
+xst -intstyle ise -ifn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/Documents/test/soft_led_clock/fpga_syn/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml archlab_sopc_top.twx archlab_sopc_top.ncd -o archlab_sopc_top.twr archlab_sopc_top.pcf 
+bitgen -intstyle ise -f archlab_sopc_top.ut archlab_sopc_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ../.. -sd ../../../rtl_led -nt timestamp -uc /home/ucas/Documents/test/soft_led_clock/fpga_syn/new_sopc.ucf -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml archlab_sopc_top.twx archlab_sopc_top.ncd -o archlab_sopc_top.twr archlab_sopc_top.pcf 
+bitgen -intstyle ise -f archlab_sopc_top.ut archlab_sopc_top.ncd 
+xst -intstyle ise -ifn "/home/innovril/lab_1/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/innovril/lab_1/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../rtl_led -nt timestamp -i -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml archlab_sopc_top.twx archlab_sopc_top.ncd -o archlab_sopc_top.twr archlab_sopc_top.pcf 
+bitgen -intstyle ise -f archlab_sopc_top.ut archlab_sopc_top.ncd 
+xst -intstyle ise -ifn "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/archlab_sopc_top.syr" 
+xst -intstyle ise -ifn "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/archlab_sopc_top.syr" 
+xst -intstyle ise -ifn "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../rtl_led -nt timestamp -i -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+xst -intstyle ise -ifn "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/archlab_sopc_top.xst" -ofn "/home/ucas/cpu_lab/lab_0_20161010/run_ise/led1/archlab_sopc_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../rtl_led -nt timestamp -i -p xc6slx150-fgg676-3 archlab_sopc_top.ngc archlab_sopc_top.ngd  
+map -intstyle ise -p xc6slx150-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o archlab_sopc_top_map.ncd archlab_sopc_top.ngd archlab_sopc_top.pcf 
+par -w -intstyle ise -ol high -mt off archlab_sopc_top_map.ncd archlab_sopc_top.ncd archlab_sopc_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml archlab_sopc_top.twx archlab_sopc_top.ncd -o archlab_sopc_top.twr archlab_sopc_top.pcf 
+bitgen -intstyle ise -f archlab_sopc_top.ut archlab_sopc_top.ncd 

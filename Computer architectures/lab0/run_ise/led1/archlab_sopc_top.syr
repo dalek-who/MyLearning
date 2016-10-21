@@ -1,0 +1,1680 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> 
+Reading design: archlab_sopc_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "archlab_sopc_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "archlab_sopc_top"
+Output Format                      : NGC
+Target Device                      : xc6slx150-3-fgg676
+
+---- Source Options
+Top Module Name                    : archlab_sopc_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../../rtl_led"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_tools.v" into library work
+Parsing verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_define.h" included at line 1.
+Parsing module <ls132r_decoder_5_32>.
+Parsing module <ls132r_decoder_6_64>.
+Parsing module <ls132r_first_one_32_5>.
+Parsing module <ls132r_first_one_8_3>.
+Parsing module <ls132r_first_one_4_2>.
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_interface.v" into library work
+Parsing verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_define.h" included at line 11.
+Parsing module <ls132r_interface>.
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_fetch_stage.v" into library work
+Parsing verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_define.h" included at line 8.
+Parsing module <ls132r_fetch_stage>.
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" into library work
+Parsing verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_define.h" included at line 1.
+Parsing module <ls132r_execute_stage>.
+Parsing module <adder0_res_cond>.
+Parsing module <memvaddr_gen>.
+Parsing module <fixres_gen>.
+Parsing module <divPin_gen>.
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" into library work
+Parsing verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_define.h" included at line 1.
+Parsing module <ls132r_decode_stage>.
+Parsing module <gr_heap_2r1w_32x32>.
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" into library work
+Parsing module <spi_flash_ctrl>.
+Parsing module <simple_spi_top>.
+Parsing module <spi_fifo4>.
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/ram_16k.v" into library work
+Parsing module <ram_16k>.
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_top.v" into library work
+Parsing verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_define.h" included at line 11.
+Parsing module <ls132r_top>.
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CONFREG/confreg.v" into library work
+Parsing verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/../TOP/config.h" included at line 7.
+Parsing module <confreg>.
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v" into library work
+Parsing verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/../TOP/config.h" included at line 20.
+Parsing module <axi_slave_mux>.
+Parsing module <nb_sync_fifo_mux>.
+Analyzing Verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" into library work
+Parsing verilog file "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/config.h" included at line 1.
+Parsing module <archlab_sopc_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <archlab_sopc_top>.
+
+Elaborating module <ls132r_top>.
+
+Elaborating module <ls132r_interface>.
+
+Elaborating module <ls132r_fetch_stage>.
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_fetch_stage.v" Line 264: Assignment to pc_kseg2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_fetch_stage.v" Line 280: Assignment to br_req ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_fetch_stage.v" Line 386: Assignment to ir_brlky_cancel ignored, since the identifier is never used
+
+Elaborating module <ls132r_decode_stage>.
+
+Elaborating module <ls132r_decoder_6_64>.
+
+Elaborating module <ls132r_decoder_5_32>.
+
+Elaborating module <gr_heap_2r1w_32x32>.
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" Line 1525: Assignment to decdest_ce ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" Line 223: Net <fr_rvalue0[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" Line 226: Net <fr_rvalue1[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" Line 229: Net <fr_wvalue0[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" Line 230: Net <fr_fwd0> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" Line 231: Net <fr_fwd1> does not have a driver.
+
+Elaborating module <ls132r_execute_stage>.
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 303: Assignment to compare_value ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 753: Assignment to rs_ex_ejtag ignored, since the identifier is never used
+
+Elaborating module <adder0_res_cond>.
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1194: Assignment to cmp0_b_eqz ignored, since the identifier is never used
+
+Elaborating module <ls132r_first_one_32_5>.
+
+Elaborating module <ls132r_first_one_8_3>.
+
+Elaborating module <ls132r_first_one_4_2>.
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1418: Assignment to div_a ignored, since the identifier is never used
+
+Elaborating module <divPin_gen>.
+
+Elaborating module <memvaddr_gen>.
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1534: Assignment to d_kseg2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1619: Assignment to ld_v_h_align ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1621: Assignment to ld_v_l_align_f ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1623: Assignment to ld_v_h_align_f ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1685: Assignment to count_cmp_eq ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1697: Assignment to cp0_ren ignored, since the identifier is never used
+
+Elaborating module <fixres_gen>.
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1994: Assignment to float_res_h ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 710: Net <sel_cc> does not have a driver.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 207: Size mismatch in connection of port <int_n_i>. Formal port size is 6-bit while actual signal size is 1-bit.
+
+Elaborating module <axi_slave_mux>.
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v" Line 1610: Assignment to rd_valid_group_0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v" Line 1611: Assignment to rd_valid_group_1 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v" Line 1723: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <nb_sync_fifo_mux>.
+WARNING:HDLCompiler:413 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v" Line 1838: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v" Line 1867: Assignment to rd_data_pre_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 321: Size mismatch in connection of port <s0_awready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 327: Size mismatch in connection of port <s0_wready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 328: Size mismatch in connection of port <s0_bid>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 329: Size mismatch in connection of port <s0_bresp>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 330: Size mismatch in connection of port <s0_bvalid>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 341: Size mismatch in connection of port <s0_arready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 342: Size mismatch in connection of port <s0_rid>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 344: Size mismatch in connection of port <s0_rresp>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 345: Size mismatch in connection of port <s0_rlast>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 346: Size mismatch in connection of port <s0_rvalid>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 395: Size mismatch in connection of port <s2_awready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 401: Size mismatch in connection of port <s2_wready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 402: Size mismatch in connection of port <s2_bid>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 403: Size mismatch in connection of port <s2_bresp>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 404: Size mismatch in connection of port <s2_bvalid>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 415: Size mismatch in connection of port <s2_arready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 416: Size mismatch in connection of port <s2_rid>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 418: Size mismatch in connection of port <s2_rresp>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 419: Size mismatch in connection of port <s2_rlast>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 420: Size mismatch in connection of port <s2_rvalid>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 469: Size mismatch in connection of port <s4_awready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 475: Size mismatch in connection of port <s4_wready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 476: Size mismatch in connection of port <s4_bid>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 477: Size mismatch in connection of port <s4_bresp>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 478: Size mismatch in connection of port <s4_bvalid>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 489: Size mismatch in connection of port <s4_arready>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 490: Size mismatch in connection of port <s4_rid>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 492: Size mismatch in connection of port <s4_rresp>. Formal port size is 2-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 493: Size mismatch in connection of port <s4_rlast>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 494: Size mismatch in connection of port <s4_rvalid>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+Elaborating module <confreg>.
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CONFREG/confreg.v" Line 134: Assignment to buf_len ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 549: Assignment to cr03 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 550: Assignment to cr04 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 551: Assignment to cr05 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 552: Assignment to cr06 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 553: Assignment to cr07 ignored, since the identifier is never used
+
+Elaborating module <spi_flash_ctrl>.
+WARNING:HDLCompiler:413 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 417: Result of 64-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 442: Assignment to sr_shift_inst ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 443: Assignment to sr_shift_two ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 453: Assignment to sr_shift_one ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 476: Assignment to power_down_ack ignored, since the identifier is never used
+
+Elaborating module <simple_spi_top>.
+
+Elaborating module <spi_fifo4(dw=8)>.
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 1105: Assignment to wp_p2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 533: Assignment to reg_ack ignored, since the identifier is never used
+
+Elaborating module <ram_16k>.
+WARNING:HDLCompiler:1499 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/ram_16k.v" Line 39: Empty module <ram_16k> remains a black box.
+WARNING:HDLCompiler:634 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 70: Net <m0_awid[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 80: Net <m0_wid[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 90: Net <m0_arid[7]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <archlab_sopc_top>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v".
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 206: Output port <sleeping_o> of the instance <ls132r> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_awid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_awaddr> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_awlen> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_awsize> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_awburst> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_awlock> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_awcache> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_awprot> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_wid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_wdata> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_wstrb> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_arid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_araddr> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_arlen> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_arsize> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_arburst> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_arlock> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_arcache> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_arprot> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_awid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_awaddr> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_awlen> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_awsize> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_awburst> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_awlock> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_awcache> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_awprot> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_wid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_wdata> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_wstrb> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_arid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_araddr> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_arlen> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_arsize> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_arburst> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_arlock> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_arcache> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_arprot> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_awid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_awaddr> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_awlen> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_awsize> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_awburst> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_awlock> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_awcache> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_awprot> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_wid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_wdata> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_wstrb> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_arid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_araddr> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_arlen> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_arsize> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_arburst> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_arlock> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_arcache> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_arprot> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_awvalid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_wlast> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_wvalid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_bready> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_arvalid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s0_rready> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_awvalid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_wlast> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_wvalid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_bready> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_arvalid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s2_rready> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_awvalid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_wlast> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_wvalid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_bready> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_arvalid> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 272: Output port <s4_rready> of the instance <AA_axi_slave_mux> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 506: Output port <cr03> of the instance <i_confreg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 506: Output port <cr04> of the instance <i_confreg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 506: Output port <cr05> of the instance <i_confreg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 506: Output port <cr06> of the instance <i_confreg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 506: Output port <cr07> of the instance <i_confreg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" line 573: Output port <inta_o> of the instance <AA_SPI0> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <m0_awid<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <m0_wid<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <m0_arid<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <aresetn>.
+    Found 1-bit tristate buffer for signal <SPI_MOSI> created at line 569
+    Found 1-bit tristate buffer for signal <SPI_MISO> created at line 570
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Tristate(s).
+Unit <archlab_sopc_top> synthesized.
+
+Synthesizing Unit <ls132r_top>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_top.v".
+        LS132R_SCANBUS_WIDTH = 2
+    Summary:
+	no macro.
+Unit <ls132r_top> synthesized.
+
+Synthesizing Unit <ls132r_interface>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_interface.v".
+        WR_IDLE = 3'b000
+        WR_ADDR_OK_DATA_NO = 3'b001
+        WR_ADDR_NO_DATA_OK = 3'b010
+        WR_ADDR_OK_DATA_OK = 3'b011
+        WR_WAIT_RESP = 3'b100
+WARNING:Xst:647 - Input <rresp> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bresp> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <inst_ifc_i<73:42>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <test_mode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <ifc_inst_o<34>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <pesudo_axi_raddr_r>.
+    Found 1-bit register for signal <pesudo_axi_rdata_r>.
+    Found 3-bit register for signal <axi_wtrans_r>.
+    Found 1-bit register for signal <inst_sel_isram_r>.
+    Found 1-bit register for signal <ifc_rd_flag_r<1>>.
+    Found 1-bit register for signal <ifc_rd_flag_r<0>>.
+    Found 1-bit register for signal <arvalid_reg>.
+    Found finite state machine <FSM_0> for signal <axi_wtrans_r>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 26                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 4                                              |
+    | Clock              | aclk (rising_edge)                             |
+    | Reset              | core_reset (positive)                          |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   6 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ls132r_interface> synthesized.
+
+Synthesizing Unit <ls132r_fetch_stage>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_fetch_stage.v".
+        EMPTY = 3'b000
+        FETCH = 3'b001
+        STALL = 3'b010
+        FULL = 3'b011
+        STALL_CANCEL = 3'b100
+WARNING:Xst:647 - Input <cpu_status_i<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cpu_status_i<17:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <exbus_i<45:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <brbus_i<2:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <exe_status_i<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dec_status_i<36:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ifc_inst_i<34:34>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <inst_ex_adel_r>.
+    Found 32-bit register for signal <inst_pc_r>.
+    Found 32-bit register for signal <inst_code_r>.
+    Found 1-bit register for signal <ir_valid_r>.
+    Found 32-bit register for signal <ir_pc_r>.
+    Found 32-bit register for signal <ir_inst_r>.
+    Found 1-bit register for signal <ir_ex_adel_r>.
+    Found 1-bit register for signal <ir_bd_r>.
+    Found 3-bit register for signal <inst_fsm_r>.
+    Found finite state machine <FSM_1> for signal <inst_fsm_r>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 24                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clock (rising_edge)                            |
+    | Reset              | _n0341 (positive)                              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <pc_adder_res> created at line 242.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 132 D-type flip-flop(s).
+	inferred  19 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ls132r_fetch_stage> synthesized.
+
+Synthesizing Unit <ls132r_decode_stage>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v".
+WARNING:Xst:647 - Input <cpu_status_i<5:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cpu_status_i<12:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cpu_status_i<25:14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <exbus_i<45:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <brbus_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wbbus_i<108:38>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <fr_rvalue0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <fr_rvalue1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <fr_wvalue0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <fr_fwd0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <fr_fwd1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <wait_sleep_r>.
+    Found 5-bit comparator equal for signal <gr_waddr0[4]_gr_raddr0[4]_equal_55_o> created at line 1380
+    Found 5-bit comparator equal for signal <gr_waddr0[4]_gr_raddr1[4]_equal_56_o> created at line 1381
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  23 Multiplexer(s).
+Unit <ls132r_decode_stage> synthesized.
+
+Synthesizing Unit <ls132r_decoder_6_64>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_tools.v".
+    Summary:
+	no macro.
+Unit <ls132r_decoder_6_64> synthesized.
+
+Synthesizing Unit <ls132r_decoder_5_32>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_tools.v".
+    Summary:
+	no macro.
+Unit <ls132r_decoder_5_32> synthesized.
+
+Synthesizing Unit <gr_heap_2r1w_32x32>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v".
+    Found 32-bit register for signal <heap_30>.
+    Found 32-bit register for signal <heap_29>.
+    Found 32-bit register for signal <heap_28>.
+    Found 32-bit register for signal <heap_27>.
+    Found 32-bit register for signal <heap_26>.
+    Found 32-bit register for signal <heap_25>.
+    Found 32-bit register for signal <heap_24>.
+    Found 32-bit register for signal <heap_23>.
+    Found 32-bit register for signal <heap_22>.
+    Found 32-bit register for signal <heap_21>.
+    Found 32-bit register for signal <heap_20>.
+    Found 32-bit register for signal <heap_19>.
+    Found 32-bit register for signal <heap_18>.
+    Found 32-bit register for signal <heap_17>.
+    Found 32-bit register for signal <heap_16>.
+    Found 32-bit register for signal <heap_15>.
+    Found 32-bit register for signal <heap_14>.
+    Found 32-bit register for signal <heap_13>.
+    Found 32-bit register for signal <heap_12>.
+    Found 32-bit register for signal <heap_11>.
+    Found 32-bit register for signal <heap_10>.
+    Found 32-bit register for signal <heap_09>.
+    Found 32-bit register for signal <heap_08>.
+    Found 32-bit register for signal <heap_07>.
+    Found 32-bit register for signal <heap_06>.
+    Found 32-bit register for signal <heap_05>.
+    Found 32-bit register for signal <heap_04>.
+    Found 32-bit register for signal <heap_03>.
+    Found 32-bit register for signal <heap_02>.
+    Found 32-bit register for signal <heap_01>.
+    Found 32-bit register for signal <heap_31>.
+    Summary:
+	inferred 992 D-type flip-flop(s).
+Unit <gr_heap_2r1w_32x32> synthesized.
+
+Synthesizing Unit <ls132r_execute_stage>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v".
+WARNING:Xst:647 - Input <issuebus_i<54:49>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <issuebus_i<259:161>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dec_status_i<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dec_status_i<36:36>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <sel_cc> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <rs_bd_r>.
+    Found 1-bit register for signal <rs_ex_r>.
+    Found 6-bit register for signal <rs_excode_r>.
+    Found 32-bit register for signal <rs_pc_r>.
+    Found 8-bit register for signal <rs_op_r>.
+    Found 8-bit register for signal <rs_dest_r>.
+    Found 32-bit register for signal <rs_v1_r>.
+    Found 32-bit register for signal <rs_v2_r>.
+    Found 32-bit register for signal <rs_v3_r>.
+    Found 1-bit register for signal <mac_complete_r>.
+    Found 6-bit register for signal <mul_div_cnt_r>.
+    Found 32-bit register for signal <reg_lo>.
+    Found 32-bit register for signal <reg_hi>.
+    Found 1-bit register for signal <fetching_data_r>.
+    Found 1-bit register for signal <cr_llbit>.
+    Found 1-bit register for signal <count_step>.
+    Found 32-bit register for signal <cr_badvaddr>.
+    Found 32-bit register for signal <cr_count>.
+    Found 32-bit register for signal <cr_compare>.
+    Found 1-bit register for signal <cr_status_CU0>.
+    Found 1-bit register for signal <cr_status_BEV>.
+    Found 1-bit register for signal <cr_status_IM7>.
+    Found 1-bit register for signal <cr_status_IM6>.
+    Found 1-bit register for signal <cr_status_IM5>.
+    Found 1-bit register for signal <cr_status_IM4>.
+    Found 1-bit register for signal <cr_status_IM3>.
+    Found 1-bit register for signal <cr_status_IM2>.
+    Found 1-bit register for signal <cr_status_IM1>.
+    Found 1-bit register for signal <cr_status_IM0>.
+    Found 2-bit register for signal <cr_status_KSU>.
+    Found 1-bit register for signal <cr_status_ERL>.
+    Found 1-bit register for signal <cr_status_EXL>.
+    Found 1-bit register for signal <cr_status_IE>.
+    Found 1-bit register for signal <cr_cause_BD>.
+    Found 1-bit register for signal <cr_cause_TI>.
+    Found 2-bit register for signal <cr_cause_CE>.
+    Found 1-bit register for signal <cr_cause_DC>.
+    Found 1-bit register for signal <cr_cause_IV>.
+    Found 1-bit register for signal <cr_cause_IP7>.
+    Found 1-bit register for signal <cr_cause_IP6>.
+    Found 1-bit register for signal <cr_cause_IP5>.
+    Found 1-bit register for signal <cr_cause_IP4>.
+    Found 1-bit register for signal <cr_cause_IP3>.
+    Found 1-bit register for signal <cr_cause_IP2>.
+    Found 1-bit register for signal <cr_cause_IP1>.
+    Found 1-bit register for signal <cr_cause_IP0>.
+    Found 5-bit register for signal <cr_cause_ExcCode>.
+    Found 32-bit register for signal <cr_epc>.
+    Found 32-bit register for signal <cr_errorepc>.
+    Found 1-bit register for signal <tbuf_r<96>>.
+    Found 1-bit register for signal <tbuf_r<95>>.
+    Found 1-bit register for signal <tbuf_r<94>>.
+    Found 1-bit register for signal <tbuf_r<93>>.
+    Found 1-bit register for signal <tbuf_r<92>>.
+    Found 1-bit register for signal <tbuf_r<91>>.
+    Found 1-bit register for signal <tbuf_r<90>>.
+    Found 1-bit register for signal <tbuf_r<89>>.
+    Found 1-bit register for signal <tbuf_r<88>>.
+    Found 1-bit register for signal <tbuf_r<87>>.
+    Found 1-bit register for signal <tbuf_r<86>>.
+    Found 1-bit register for signal <tbuf_r<85>>.
+    Found 1-bit register for signal <tbuf_r<84>>.
+    Found 1-bit register for signal <tbuf_r<83>>.
+    Found 1-bit register for signal <tbuf_r<82>>.
+    Found 1-bit register for signal <tbuf_r<81>>.
+    Found 1-bit register for signal <tbuf_r<80>>.
+    Found 1-bit register for signal <tbuf_r<79>>.
+    Found 1-bit register for signal <tbuf_r<78>>.
+    Found 1-bit register for signal <tbuf_r<77>>.
+    Found 1-bit register for signal <tbuf_r<76>>.
+    Found 1-bit register for signal <tbuf_r<75>>.
+    Found 1-bit register for signal <tbuf_r<74>>.
+    Found 1-bit register for signal <tbuf_r<73>>.
+    Found 1-bit register for signal <tbuf_r<72>>.
+    Found 1-bit register for signal <tbuf_r<71>>.
+    Found 1-bit register for signal <tbuf_r<70>>.
+    Found 1-bit register for signal <tbuf_r<69>>.
+    Found 1-bit register for signal <tbuf_r<68>>.
+    Found 1-bit register for signal <tbuf_r<67>>.
+    Found 1-bit register for signal <tbuf_r<66>>.
+    Found 1-bit register for signal <tbuf_r<65>>.
+    Found 1-bit register for signal <tbuf_r<64>>.
+    Found 1-bit register for signal <tbuf_r<63>>.
+    Found 1-bit register for signal <tbuf_r<62>>.
+    Found 1-bit register for signal <tbuf_r<61>>.
+    Found 1-bit register for signal <tbuf_r<60>>.
+    Found 1-bit register for signal <tbuf_r<59>>.
+    Found 1-bit register for signal <tbuf_r<58>>.
+    Found 1-bit register for signal <tbuf_r<57>>.
+    Found 1-bit register for signal <tbuf_r<56>>.
+    Found 1-bit register for signal <tbuf_r<55>>.
+    Found 1-bit register for signal <tbuf_r<54>>.
+    Found 1-bit register for signal <tbuf_r<53>>.
+    Found 1-bit register for signal <tbuf_r<52>>.
+    Found 1-bit register for signal <tbuf_r<51>>.
+    Found 1-bit register for signal <tbuf_r<50>>.
+    Found 1-bit register for signal <tbuf_r<49>>.
+    Found 1-bit register for signal <tbuf_r<48>>.
+    Found 1-bit register for signal <tbuf_r<47>>.
+    Found 1-bit register for signal <tbuf_r<46>>.
+    Found 1-bit register for signal <tbuf_r<45>>.
+    Found 1-bit register for signal <tbuf_r<44>>.
+    Found 1-bit register for signal <tbuf_r<43>>.
+    Found 1-bit register for signal <tbuf_r<42>>.
+    Found 1-bit register for signal <tbuf_r<41>>.
+    Found 1-bit register for signal <tbuf_r<40>>.
+    Found 1-bit register for signal <tbuf_r<39>>.
+    Found 1-bit register for signal <tbuf_r<38>>.
+    Found 1-bit register for signal <tbuf_r<37>>.
+    Found 1-bit register for signal <tbuf_r<36>>.
+    Found 1-bit register for signal <tbuf_r<35>>.
+    Found 1-bit register for signal <tbuf_r<34>>.
+    Found 1-bit register for signal <tbuf_r<33>>.
+    Found 1-bit register for signal <tbuf_r<32>>.
+    Found 1-bit register for signal <tbuf_r<31>>.
+    Found 1-bit register for signal <tbuf_r<30>>.
+    Found 1-bit register for signal <tbuf_r<29>>.
+    Found 1-bit register for signal <tbuf_r<28>>.
+    Found 1-bit register for signal <tbuf_r<27>>.
+    Found 1-bit register for signal <tbuf_r<26>>.
+    Found 1-bit register for signal <tbuf_r<25>>.
+    Found 1-bit register for signal <tbuf_r<24>>.
+    Found 1-bit register for signal <tbuf_r<23>>.
+    Found 1-bit register for signal <tbuf_r<22>>.
+    Found 1-bit register for signal <tbuf_r<21>>.
+    Found 1-bit register for signal <tbuf_r<20>>.
+    Found 1-bit register for signal <tbuf_r<19>>.
+    Found 1-bit register for signal <tbuf_r<18>>.
+    Found 1-bit register for signal <tbuf_r<17>>.
+    Found 1-bit register for signal <tbuf_r<16>>.
+    Found 1-bit register for signal <tbuf_r<15>>.
+    Found 1-bit register for signal <tbuf_r<14>>.
+    Found 1-bit register for signal <tbuf_r<13>>.
+    Found 1-bit register for signal <tbuf_r<12>>.
+    Found 1-bit register for signal <tbuf_r<11>>.
+    Found 1-bit register for signal <tbuf_r<10>>.
+    Found 1-bit register for signal <tbuf_r<9>>.
+    Found 1-bit register for signal <tbuf_r<8>>.
+    Found 1-bit register for signal <tbuf_r<7>>.
+    Found 1-bit register for signal <tbuf_r<6>>.
+    Found 1-bit register for signal <tbuf_r<5>>.
+    Found 1-bit register for signal <tbuf_r<4>>.
+    Found 1-bit register for signal <tbuf_r<3>>.
+    Found 1-bit register for signal <tbuf_r<2>>.
+    Found 1-bit register for signal <tbuf_r<1>>.
+    Found 1-bit register for signal <tbuf_r<0>>.
+    Found 1-bit register for signal <wb_ex_r>.
+    Found 6-bit register for signal <wb_excode_r>.
+    Found 1-bit register for signal <rs_valid_r>.
+    Found 33-bit adder for signal <n1837> created at line 1121.
+    Found 33-bit adder for signal <n1470> created at line 1121.
+    Found 33-bit adder for signal <n1843> created at line 1182.
+    Found 33-bit adder for signal <adder1_res> created at line 1182.
+    Found 6-bit adder for signal <mul_div_cnt_r[5]_GND_9_o_add_255_OUT> created at line 1464.
+    Found 33-bit adder for signal <n1849> created at line 1474.
+    Found 32-bit adder for signal <incr1_res> created at line 1478.
+    Found 32-bit adder for signal <cr_count[31]_GND_9_o_add_398_OUT> created at line 1754.
+    Found 32-bit adder for signal <rs_v1[31]_GND_9_o_add_435_OUT> created at line 1910.
+    Found 32-bit adder for signal <rs_v2[31]_GND_9_o_add_438_OUT> created at line 1911.
+    Found 32-bit shifter logical left for signal <shft0_l_res> created at line 571
+    Found 32-bit comparator equal for signal <cmp0_eq> created at line 1188
+    Found 32-bit comparator equal for signal <cr_count[31]_cr_compare[31]_equal_417_o> created at line 1846
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred 525 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred 241 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <ls132r_execute_stage> synthesized.
+
+Synthesizing Unit <adder0_res_cond>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v".
+    Summary:
+	no macro.
+Unit <adder0_res_cond> synthesized.
+
+Synthesizing Unit <ls132r_first_one_32_5>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_tools.v".
+    Summary:
+	no macro.
+Unit <ls132r_first_one_32_5> synthesized.
+
+Synthesizing Unit <ls132r_first_one_8_3>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_tools.v".
+    Summary:
+	no macro.
+Unit <ls132r_first_one_8_3> synthesized.
+
+Synthesizing Unit <ls132r_first_one_4_2>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_tools.v".
+    Summary:
+	no macro.
+Unit <ls132r_first_one_4_2> synthesized.
+
+Synthesizing Unit <divPin_gen>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <divPin_gen> synthesized.
+
+Synthesizing Unit <memvaddr_gen>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v".
+    Summary:
+	no macro.
+Unit <memvaddr_gen> synthesized.
+
+Synthesizing Unit <fixres_gen>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v".
+    Summary:
+	no macro.
+Unit <fixres_gen> synthesized.
+
+Synthesizing Unit <axi_slave_mux>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v".
+    Found 1-bit register for signal <wr_resp_prog>.
+    Found 3-bit register for signal <wr_resp_sel_reg>.
+    Found 3-bit register for signal <wr_resp_pre_sel>.
+INFO:Xst:1799 - State 010 is never reached in FSM <wr_resp_pre_sel>.
+    Found finite state machine <FSM_2> for signal <wr_resp_pre_sel>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 57                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 2                                              |
+    | Clock              | axi_s_aclk (rising_edge)                       |
+    | Reset              | rst_n_INV_329_o (positive)                     |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <fsmfake2>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 66                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 7                                              |
+    | Clock              | axi_s_aclk (rising_edge)                       |
+    | Clock enable       | axi_s_bvalid_axi_s_bready_AND_1086_o (positive)       |
+    | Reset              | axi_s_aresetn (negative)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit 8-to-1 multiplexer for signal <wr_sel_group_1> created at line 1592.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+	inferred  67 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <axi_slave_mux> synthesized.
+
+Synthesizing Unit <nb_sync_fifo_mux>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v".
+        FIFO_WIDTH = 3
+    Found 2-bit register for signal <rd_ptr>.
+    Found 6-bit register for signal <n0027[5:0]>.
+    Found 2-bit register for signal <wr_ptr>.
+    Found 2-bit adder for signal <wr_ptr[1]_GND_18_o_add_1_OUT> created at line 1960.
+    Found 2-bit adder for signal <rd_ptr[1]_GND_18_o_add_6_OUT> created at line 1967.
+    Found 2-bit comparator equal for signal <full> created at line 1970
+    Found 2-bit comparator equal for signal <empty> created at line 1971
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <nb_sync_fifo_mux> synthesized.
+
+Synthesizing Unit <confreg>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CONFREG/confreg.v".
+WARNING:Xst:647 - Input <s_awlen> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_awsize> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_awburst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_awlock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_awcache> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_awprot> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_wid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_wstrb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_arlen> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_arsize> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_arburst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_arlock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_arcache> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_arprot> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <R_or_W>.
+    Found 8-bit register for signal <buf_id>.
+    Found 32-bit register for signal <buf_addr>.
+    Found 1-bit register for signal <write>.
+    Found 1-bit register for signal <s_wready>.
+    Found 32-bit register for signal <cr00>.
+    Found 32-bit register for signal <cr01>.
+    Found 32-bit register for signal <cr02>.
+    Found 32-bit register for signal <cr03>.
+    Found 32-bit register for signal <cr04>.
+    Found 32-bit register for signal <cr05>.
+    Found 32-bit register for signal <cr06>.
+    Found 32-bit register for signal <cr07>.
+    Found 32-bit register for signal <s_rdata>.
+    Found 1-bit register for signal <s_rvalid>.
+    Found 1-bit register for signal <s_rlast>.
+    Found 1-bit register for signal <s_bvalid>.
+    Found 1-bit register for signal <busy>.
+    Found 32-bit 8-to-1 multiplexer for signal <rdata_d> created at line 195.
+    Summary:
+	inferred 335 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <confreg> synthesized.
+
+Synthesizing Unit <spi_flash_ctrl>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v".
+        S_IDLE = 10'b0000000001
+        S_IOREAD = 10'b0000000010
+        S_CSTURN = 10'b0000000100
+        S_ADDR = 10'b0000001000
+        S_DATA = 10'b0000010000
+        S_WAITBUS = 10'b0000100000
+        S_PDENTER = 10'b0001000000
+        S_PDEXIT = 10'b0010000000
+        S_STARTUP = 10'b0100000000
+        S_PWRDOWN = 10'b1000000000
+WARNING:Xst:647 - Input <s_awcache> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_awprot> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_awburst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_awlock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_wid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_wstrb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_arcache> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_arprot> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s_arlock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" line 524: Output port <ack_o> of the instance <simple_spi> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <buf_write>.
+    Found 8-bit register for signal <tot_bytes>.
+    Found 32-bit register for signal <buf_addr>.
+    Found 3-bit register for signal <buf_size>.
+    Found 4-bit register for signal <buf_len>.
+    Found 8-bit register for signal <buf_id>.
+    Found 1-bit register for signal <buf_wrap>.
+    Found 1-bit register for signal <buf_busy_d>.
+    Found 1-bit register for signal <second_write>.
+    Found 1-bit register for signal <bvalid>.
+    Found 1-bit register for signal <rvalid>.
+    Found 32-bit register for signal <s_rdata>.
+    Found 32-bit register for signal <shift_reg>.
+    Found 2-bit register for signal <sample>.
+    Found 12-bit register for signal <clkcnt>.
+    Found 4-bit register for signal <cswcnt>.
+    Found 1-bit register for signal <spi_run>.
+    Found 6-bit register for signal <adbit_cnt>.
+    Found 1-bit register for signal <sck>.
+    Found 3-bit register for signal <bit_cnt>.
+    Found 24-bit register for signal <nxt_addr>.
+    Found 16-bit register for signal <cs_timer>.
+    Found 1-bit register for signal <cs>.
+    Found 1-bit register for signal <sr_shift_inst_r>.
+    Found 1-bit register for signal <sr_shift_two_r>.
+    Found 1-bit register for signal <dual_in_r>.
+    Found 10-bit register for signal <rd_state>.
+    Found 1-bit register for signal <buf_busy>.
+INFO:Xst:1799 - State 0001000000 is never reached in FSM <rd_state>.
+    Found finite state machine <FSM_4> for signal <rd_state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 45                                             |
+    | Inputs             | 22                                             |
+    | Outputs            | 24                                             |
+    | Clock              | aclk (rising_edge)                             |
+    | Reset              | areset (positive)                              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 1000000000                                     |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit subtractor for signal <GND_22_o_GND_22_o_sub_16_OUT> created at line 268.
+    Found 4-bit subtractor for signal <buf_len[3]_GND_22_o_sub_19_OUT> created at line 273.
+    Found 8-bit subtractor for signal <tot_bytes[7]_GND_22_o_sub_21_OUT> created at line 277.
+    Found 12-bit subtractor for signal <clkcnt[11]_GND_22_o_sub_87_OUT> created at line 364.
+    Found 25-bit subtractor for signal <GND_22_o_GND_22_o_sub_118_OUT> created at line 419.
+    Found 4-bit adder for signal <cswcnt[3]_GND_22_o_add_93_OUT> created at line 385.
+    Found 6-bit adder for signal <adbit_cnt[5]_GND_22_o_add_100_OUT> created at line 397.
+    Found 3-bit adder for signal <bit_cnt[2]_GND_22_o_add_105_OUT> created at line 405.
+    Found 25-bit adder for signal <n0594[24:0]> created at line 420.
+    Found 16-bit adder for signal <cs_timer[15]_GND_22_o_add_123_OUT> created at line 423.
+    Found 8-bit shifter logical left for signal <GND_22_o_s_arsize[2]_shift_left_13_OUT> created at line 267
+    Found 8-bit shifter logical left for signal <GND_22_o_s_arsize[2]_shift_left_14_OUT> created at line 268
+    Found 4-bit shifter logical left for signal <PWR_21_o_param_tCSH[1]_shift_left_97_OUT> created at line 387
+    Found 16x12-bit Read Only RAM for signal <espr[3]_GND_22_o_wide_mux_87_OUT>
+    Found 8-bit 4-to-1 multiplexer for signal <s_wdata[31]_s_wdata[7]_mux_189_OUT> created at line 548.
+    Found 24-bit comparator equal for signal <buf_addr_t[23]_nxt_addr[23]_equal_4_o> created at line 243
+    Found 6-bit comparator greater for signal <adbit_cnt[5]_GND_22_o_LessThan_136_o> created at line 446
+    Found 6-bit comparator lessequal for signal <n0315> created at line 459
+    Found 6-bit comparator greater for signal <adbit_cnt[5]_GND_22_o_LessThan_142_o> created at line 459
+    WARNING:Xst:2404 -  FFs/Latches <pdreq_r<0:0>> (without init value) have a constant value of 0 in block <spi_flash_ctrl>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred 199 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  46 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+	inferred   1 Finite State Machine(s).
+Unit <spi_flash_ctrl> synthesized.
+
+Synthesizing Unit <simple_spi_top>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v".
+    Found 8-bit register for signal <sper>.
+    Found 8-bit register for signal <param>.
+    Found 8-bit register for signal <param2>.
+    Found 8-bit register for signal <softcs>.
+    Found 1-bit register for signal <spif>.
+    Found 1-bit register for signal <wcol>.
+    Found 1-bit register for signal <inta_o>.
+    Found 12-bit register for signal <clkcnt>.
+    Found 2-bit register for signal <state>.
+    Found 3-bit register for signal <bcnt>.
+    Found 8-bit register for signal <treg>.
+    Found 1-bit register for signal <wfre>.
+    Found 1-bit register for signal <rfwe>.
+    Found 1-bit register for signal <sck_o>.
+    Found 1-bit register for signal <sample>.
+    Found 2-bit register for signal <tcnt>.
+    Found 1-bit register for signal <busy>.
+    Found 8-bit register for signal <spcr>.
+    Found finite state machine <FSM_5> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk_i (rising_edge)                            |
+    | Reset              | spe_INV_468_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 12-bit subtractor for signal <clkcnt[11]_GND_23_o_sub_52_OUT> created at line 850.
+    Found 3-bit subtractor for signal <bcnt[2]_GND_23_o_sub_82_OUT> created at line 968.
+    Found 2-bit subtractor for signal <tcnt[1]_GND_23_o_sub_105_OUT> created at line 996.
+    Found 1-bit 4-to-1 multiplexer for signal <state[1]_sck_o_Mux_76_o> created at line 887.
+    Found 8-bit 8-to-1 multiplexer for signal <_n0259> created at line 670.
+    WARNING:Xst:2404 -  FFs/Latches <ack_o<0:0>> (without init value) have a constant value of 1 in block <simple_spi_top>.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  73 D-type flip-flop(s).
+	inferred  30 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <simple_spi_top> synthesized.
+
+Synthesizing Unit <spi_fifo4>.
+    Related source file is "/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v".
+        dw = 8
+    Found 4x8-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 2-bit register for signal <rp>.
+    Found 1-bit register for signal <gb>.
+    Found 2-bit register for signal <wp>.
+    Found 2-bit adder for signal <wp_p1> created at line 1104.
+    Found 2-bit adder for signal <rp_p1> created at line 1114.
+    Found 2-bit comparator equal for signal <wp[1]_rp[1]_equal_18_o> created at line 1125
+    Found 2-bit comparator equal for signal <wp_p1[1]_rp[1]_equal_20_o> created at line 1133
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <spi_fifo4> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x12-bit single-port Read Only RAM                   : 1
+ 4x8-bit dual-port RAM                                 : 2
+# Adders/Subtractors                                   : 32
+ 12-bit subtractor                                     : 2
+ 16-bit adder                                          : 1
+ 2-bit adder                                           : 8
+ 2-bit subtractor                                      : 1
+ 25-bit adder                                          : 1
+ 25-bit subtractor                                     : 1
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 5
+ 33-bit adder                                          : 5
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+ 6-bit adder                                           : 2
+ 8-bit subtractor                                      : 2
+# Registers                                            : 273
+ 1-bit register                                        : 173
+ 12-bit register                                       : 2
+ 16-bit register                                       : 1
+ 2-bit register                                        : 12
+ 24-bit register                                       : 1
+ 3-bit register                                        : 5
+ 32-bit register                                       : 59
+ 4-bit register                                        : 2
+ 5-bit register                                        : 1
+ 6-bit register                                        : 6
+ 8-bit register                                        : 11
+# Comparators                                          : 16
+ 2-bit comparator equal                                : 8
+ 24-bit comparator equal                               : 1
+ 32-bit comparator equal                               : 2
+ 5-bit comparator equal                                : 2
+ 6-bit comparator greater                              : 2
+ 6-bit comparator lessequal                            : 1
+# Multiplexers                                         : 456
+ 1-bit 2-to-1 multiplexer                              : 235
+ 1-bit 4-to-1 multiplexer                              : 1
+ 12-bit 2-to-1 multiplexer                             : 7
+ 16-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 21
+ 3-bit 2-to-1 multiplexer                              : 25
+ 3-bit 8-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 77
+ 32-bit 8-to-1 multiplexer                             : 1
+ 33-bit 2-to-1 multiplexer                             : 24
+ 4-bit 2-to-1 multiplexer                              : 9
+ 5-bit 2-to-1 multiplexer                              : 6
+ 6-bit 2-to-1 multiplexer                              : 9
+ 64-bit 2-to-1 multiplexer                             : 3
+ 7-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 31
+ 8-bit 4-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+# Logic shifters                                       : 4
+ 32-bit shifter logical left                           : 1
+ 4-bit shifter logical left                            : 1
+ 8-bit shifter logical left                            : 2
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+# FSMs                                                 : 6
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../../rtl_led/ram_16k.ngc>.
+Loading core <ram_16k> for timing and area information for instance <inst_ram>.
+Loading core <ram_16k> for timing and area information for instance <data_ram>.
+WARNING:Xst:1710 - FF/Latch <cr_cause_IP2> (without init value) has a constant value of 0 in block <u_execute>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tbuf_r_96> (without init value) has a constant value of 0 in block <u_execute>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rs_op_r_6> (without init value) has a constant value of 0 in block <u_execute>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <buf_wrap> (without init value) has a constant value of 0 in block <AA_SPI0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <rs_dest_r_7> of sequential type is unconnected in block <u_execute>.
+WARNING:Xst:2677 - Node <buf_addr_0> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_1> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_5> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_6> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_7> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_8> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_9> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_10> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_11> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_12> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_13> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_14> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_15> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_16> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_17> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_18> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_19> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_20> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_21> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_22> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_23> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_24> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_25> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_26> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_27> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_28> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_29> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_30> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2677 - Node <buf_addr_31> of sequential type is unconnected in block <i_confreg>.
+WARNING:Xst:2404 -  FFs/Latches <rs_dest_r<7:7>> (without init value) have a constant value of 0 in block <ls132r_execute_stage>.
+
+Synthesizing (advanced) Unit <ls132r_execute_stage>.
+The following registers are absorbed into counter <cr_count>: 1 register on signal <cr_count>.
+The following registers are absorbed into counter <mul_div_cnt_r>: 1 register on signal <mul_div_cnt_r>.
+Unit <ls132r_execute_stage> synthesized (advanced).
+
+Synthesizing (advanced) Unit <nb_sync_fifo_mux>.
+The following registers are absorbed into counter <rd_ptr>: 1 register on signal <rd_ptr>.
+The following registers are absorbed into counter <wr_ptr>: 1 register on signal <wr_ptr>.
+Unit <nb_sync_fifo_mux> synthesized (advanced).
+
+Synthesizing (advanced) Unit <simple_spi_top>.
+The following registers are absorbed into counter <clkcnt>: 1 register on signal <clkcnt>.
+The following registers are absorbed into counter <bcnt>: 1 register on signal <bcnt>.
+Unit <simple_spi_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <spi_fifo4>.
+The following registers are absorbed into counter <rp>: 1 register on signal <rp>.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <wp> prevents it from being combined with the RAM <Mram_mem> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <wp>            |          |
+    |     diA            | connected to signal <din>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     addrB          | connected to signal <rp>            |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <spi_fifo4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <spi_flash_ctrl>.
+The following registers are absorbed into counter <buf_len>: 1 register on signal <buf_len>.
+The following registers are absorbed into counter <clkcnt>: 1 register on signal <clkcnt>.
+The following registers are absorbed into counter <tot_bytes>: 1 register on signal <tot_bytes>.
+The following registers are absorbed into counter <cswcnt>: 1 register on signal <cswcnt>.
+The following registers are absorbed into counter <adbit_cnt>: 1 register on signal <adbit_cnt>.
+The following registers are absorbed into counter <bit_cnt>: 1 register on signal <bit_cnt>.
+The following registers are absorbed into counter <cs_timer>: 1 register on signal <cs_timer>.
+INFO:Xst:3231 - The small RAM <Mram_espr[3]_GND_22_o_wide_mux_87_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 12-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <param<7:4>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <spi_flash_ctrl> synthesized (advanced).
+WARNING:Xst:2677 - Node <buf_addr_0> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_1> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_5> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_6> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_7> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_8> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_9> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_10> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_11> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_12> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_13> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_14> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_15> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_16> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_17> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_18> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_19> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_20> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_21> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_22> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_23> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_24> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_25> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_26> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_27> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_28> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_29> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_30> of sequential type is unconnected in block <confreg>.
+WARNING:Xst:2677 - Node <buf_addr_31> of sequential type is unconnected in block <confreg>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x12-bit single-port distributed Read Only RAM       : 1
+ 4x8-bit dual-port distributed RAM                     : 2
+# Adders/Subtractors                                   : 13
+ 2-bit adder                                           : 2
+ 2-bit subtractor                                      : 1
+ 25-bit adder                                          : 1
+ 25-bit subtractor                                     : 1
+ 32-bit adder                                          : 4
+ 33-bit adder                                          : 1
+ 33-bit adder carry in                                 : 2
+ 8-bit subtractor                                      : 1
+# Counters                                             : 17
+ 12-bit down counter                                   : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 6
+ 3-bit down counter                                    : 1
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+ 4-bit down counter                                    : 1
+ 4-bit up counter                                      : 1
+ 6-bit up counter                                      : 2
+ 8-bit down counter                                    : 1
+# Registers                                            : 2153
+ Flip-Flops                                            : 2153
+# Comparators                                          : 16
+ 2-bit comparator equal                                : 8
+ 24-bit comparator equal                               : 1
+ 32-bit comparator equal                               : 2
+ 5-bit comparator equal                                : 2
+ 6-bit comparator greater                              : 2
+ 6-bit comparator lessequal                            : 1
+# Multiplexers                                         : 565
+ 1-bit 2-to-1 multiplexer                              : 324
+ 1-bit 4-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 40
+ 12-bit 2-to-1 multiplexer                             : 5
+ 2-bit 2-to-1 multiplexer                              : 19
+ 3-bit 2-to-1 multiplexer                              : 18
+ 3-bit 8-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 75
+ 33-bit 2-to-1 multiplexer                             : 23
+ 4-bit 2-to-1 multiplexer                              : 8
+ 5-bit 2-to-1 multiplexer                              : 6
+ 6-bit 2-to-1 multiplexer                              : 8
+ 64-bit 2-to-1 multiplexer                             : 3
+ 7-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 30
+ 8-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 4
+ 32-bit shifter logical left                           : 1
+ 4-bit shifter logical left                            : 1
+ 8-bit shifter logical left                            : 2
+# FSMs                                                 : 6
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <tbuf_r_96> (without init value) has a constant value of 0 in block <ls132r_execute_stage>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ls132r/u_interface/FSM_0> on signal <axi_wtrans_r[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 010   | 010
+ 001   | 001
+ 011   | 011
+ 100   | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ls132r/u_fetch/FSM_1> on signal <inst_fsm_r[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 011   | 001
+ 001   | 011
+ 100   | 010
+ 010   | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <AA_axi_slave_mux/FSM_2> on signal <wr_resp_pre_sel[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 010   | unreached
+ 111   | 001
+ 011   | 010
+ 100   | 011
+ 101   | 100
+ 001   | 101
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <AA_axi_slave_mux/FSM_3> on signal <fsmfake2[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 111   | 001
+ 011   | 011
+ 100   | 010
+ 101   | 110
+ 001   | 111
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <AA_SPI0/FSM_4> on signal <rd_state[1:4]> with gray encoding.
+------------------------
+ State      | Encoding
+------------------------
+ 1000000000 | 0000
+ 0000000001 | 0001
+ 0000000010 | 0011
+ 0000000100 | 0010
+ 0000001000 | 0110
+ 0000010000 | 0111
+ 0000100000 | 0101
+ 0010000000 | 0100
+ 0001000000 | unreached
+ 0100000000 | 1100
+------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <AA_SPI0/simple_spi/FSM_5> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 11    | 11
+ 10    | 10
+-------------------
+WARNING:Xst:2677 - Node <fsmfake3_0> of sequential type is unconnected in block <axi_slave_mux>.
+WARNING:Xst:2677 - Node <fsmfake3_1> of sequential type is unconnected in block <axi_slave_mux>.
+WARNING:Xst:2677 - Node <fsmfake3_2> of sequential type is unconnected in block <axi_slave_mux>.
+WARNING:Xst:1710 - FF/Latch <spcr_4> (without init value) has a constant value of 1 in block <simple_spi_top>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <archlab_sopc_top> ...
+
+Optimizing unit <ls132r_interface> ...
+
+Optimizing unit <ls132r_execute_stage> ...
+
+Optimizing unit <ls132r_fetch_stage> ...
+
+Optimizing unit <ls132r_decode_stage> ...
+
+Optimizing unit <gr_heap_2r1w_32x32> ...
+
+Optimizing unit <axi_slave_mux> ...
+
+Optimizing unit <nb_sync_fifo_mux> ...
+
+Optimizing unit <confreg> ...
+
+Optimizing unit <spi_flash_ctrl> ...
+
+Optimizing unit <simple_spi_top> ...
+
+Optimizing unit <spi_fifo4> ...
+WARNING:Xst:1710 - FF/Latch <ls132r/u_execute/wb_excode_r_4> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ls132r/u_execute/rs_excode_r_5> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ls132r/u_execute/rs_excode_r_4> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ls132r/u_execute/rs_op_r_6> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ls132r/u_execute/cr_cause_IP2> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_confreg/buf_id_3> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_confreg/buf_id_2> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_confreg/buf_id_1> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AA_SPI0/buf_id_3> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AA_SPI0/buf_id_2> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AA_SPI0/buf_id_1> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AA_SPI0/buf_size_2> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AA_SPI0/buf_wrap> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ls132r/u_interface/ifc_rd_flag_r_1> of sequential type is unconnected in block <archlab_sopc_top>.
+WARNING:Xst:2677 - Node <ls132r/u_interface/ifc_rd_flag_r_0> of sequential type is unconnected in block <archlab_sopc_top>.
+WARNING:Xst:2677 - Node <i_confreg/buf_id_7> of sequential type is unconnected in block <archlab_sopc_top>.
+WARNING:Xst:2677 - Node <i_confreg/buf_id_6> of sequential type is unconnected in block <archlab_sopc_top>.
+WARNING:Xst:2677 - Node <i_confreg/buf_id_5> of sequential type is unconnected in block <archlab_sopc_top>.
+WARNING:Xst:2677 - Node <i_confreg/buf_id_4> of sequential type is unconnected in block <archlab_sopc_top>.
+WARNING:Xst:2677 - Node <AA_SPI0/buf_id_7> of sequential type is unconnected in block <archlab_sopc_top>.
+WARNING:Xst:2677 - Node <AA_SPI0/buf_id_6> of sequential type is unconnected in block <archlab_sopc_top>.
+WARNING:Xst:2677 - Node <AA_SPI0/buf_id_5> of sequential type is unconnected in block <archlab_sopc_top>.
+WARNING:Xst:2677 - Node <AA_SPI0/buf_id_4> of sequential type is unconnected in block <archlab_sopc_top>.
+WARNING:Xst:2677 - Node <AA_SPI0/simple_spi/inta_o> of sequential type is unconnected in block <archlab_sopc_top>.
+WARNING:Xst:1710 - FF/Latch <ls132r/u_execute/wb_excode_r_5> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AA_axi_slave_mux/wr_resp_sel_reg_2> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AA_axi_slave_mux/wr_resp_prog> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AA_SPI0/clkcnt_11> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AA_SPI0/buf_addr_31> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AA_SPI0/buf_addr_30> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AA_SPI0/buf_addr_29> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AA_SPI0/buf_addr_20> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AA_SPI0/simple_spi/clkcnt_11> (without init value) has a constant value of 0 in block <archlab_sopc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <AA_axi_slave_mux/wr_resp_sel_reg_1> is unconnected in block <archlab_sopc_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <AA_axi_slave_mux/wr_resp_sel_reg_0> is unconnected in block <archlab_sopc_top>.
+INFO:Xst:2261 - The FF/Latch <ls132r/u_execute/cr_cause_IP3> in Unit <archlab_sopc_top> is equivalent to the following 4 FFs/Latches, which will be removed : <ls132r/u_execute/cr_cause_IP4> <ls132r/u_execute/cr_cause_IP5> <ls132r/u_execute/cr_cause_IP6> <ls132r/u_execute/cr_cause_IP7> 
+INFO:Xst:2261 - The FF/Latch <ls132r/u_execute/rs_dest_r_6> in Unit <archlab_sopc_top> is equivalent to the following FF/Latch, which will be removed : <ls132r/u_execute/rs_dest_r_5> 
+INFO:Xst:2261 - The FF/Latch <AA_SPI0/buf_addr_28> in Unit <archlab_sopc_top> is equivalent to the following 6 FFs/Latches, which will be removed : <AA_SPI0/buf_addr_27> <AA_SPI0/buf_addr_26> <AA_SPI0/buf_addr_25> <AA_SPI0/buf_addr_24> <AA_SPI0/buf_addr_23> <AA_SPI0/buf_addr_22> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block archlab_sopc_top, actual ratio is 6.
+FlipFlop ls132r/u_execute/mul_div_cnt_r_5 has been replicated 1 time(s)
+FlipFlop ls132r/u_execute/rs_op_r_0 has been replicated 2 time(s)
+FlipFlop ls132r/u_execute/rs_op_r_1 has been replicated 7 time(s)
+FlipFlop ls132r/u_execute/rs_op_r_2 has been replicated 5 time(s)
+FlipFlop ls132r/u_execute/rs_op_r_3 has been replicated 9 time(s)
+FlipFlop ls132r/u_execute/rs_op_r_4 has been replicated 8 time(s)
+FlipFlop ls132r/u_execute/rs_op_r_5 has been replicated 9 time(s)
+FlipFlop ls132r/u_execute/rs_op_r_7 has been replicated 4 time(s)
+FlipFlop ls132r/u_execute/rs_v1_r_31 has been replicated 1 time(s)
+FlipFlop ls132r/u_execute/rs_v2_r_31 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2282
+ Flip-Flops                                            : 2282
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : archlab_sopc_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 7359
+#      GND                         : 3
+#      INV                         : 103
+#      LUT1                        : 59
+#      LUT2                        : 117
+#      LUT3                        : 858
+#      LUT4                        : 1024
+#      LUT5                        : 1112
+#      LUT6                        : 3238
+#      MUXCY                       : 346
+#      MUXF7                       : 169
+#      VCC                         : 3
+#      XORCY                       : 327
+# FlipFlops/Latches                : 2288
+#      FD                          : 60
+#      FDE                         : 1640
+#      FDR                         : 58
+#      FDRE                        : 523
+#      FDSE                        : 7
+# RAMS                             : 70
+#      RAM16X1D                    : 4
+#      RAM32M                      : 2
+#      RAMB16BWER                  : 64
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 37
+#      IBUF                        : 1
+#      IOBUF                       : 2
+#      OBUF                        : 34
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx150fgg676-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            2288  out of  184304     1%  
+ Number of Slice LUTs:                 6527  out of  92152     7%  
+    Number used as Logic:              6511  out of  92152     7%  
+    Number used as Memory:               16  out of  21680     0%  
+       Number used as RAM:               16
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   6836
+   Number with an unused Flip Flop:    4548  out of   6836    66%  
+   Number with an unused LUT:           309  out of   6836     4%  
+   Number of fully used LUT-FF pairs:  1979  out of   6836    28%  
+   Number of unique control sets:        78
+
+IO Utilization: 
+ Number of IOs:                          38
+ Number of bonded IOBs:                  38  out of    498     7%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               64  out of    268    23%  
+    Number using Block RAM only:         64
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                | Load  |
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | BUFGP                                                                                                                                | 2358  |
+data_ram/N1                        | NONE(data_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram)| 32    |
+inst_ram/N1                        | NONE(inst_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram)| 32    |
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 14.711ns (Maximum Frequency: 67.974MHz)
+   Minimum input arrival time before clock: 4.390ns
+   Maximum output required time after clock: 7.745ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 14.711ns (frequency: 67.974MHz)
+  Total number of paths / destination ports: 4709385138 / 6612
+-------------------------------------------------------------------------
+Delay:               14.711ns (Levels of Logic = 16)
+  Source:            ls132r/u_execute/rs_op_r_1_1 (FF)
+  Destination:       i_confreg/R_or_W (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: ls132r/u_execute/rs_op_r_1_1 to i_confreg/R_or_W
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.447   1.028  ls132r/u_execute/rs_op_r_1_1 (ls132r/u_execute/rs_op_r_1_1)
+     LUT5:I0->O           10   0.203   0.857  ls132r/u_execute/op_lwl<7>21 (ls132r/u_execute/op_lwl<7>2)
+     LUT3:I2->O            4   0.205   0.684  ls132r/u_execute/op_lwl<7>1_1 (ls132r/u_execute/op_lwl<7>1)
+     LUT6:I5->O           19   0.205   1.072  ls132r/u_execute/load_op_1 (ls132r/u_execute/load_op1)
+     LUT6:I5->O            1   0.205   0.580  ls132r/u_execute/Mmux_adder0_a110 (ls132r/u_execute/adder0_a<0>)
+     LUT6:I5->O            1   0.205   0.000  ls132r/u_execute/Madd_n1470_Madd_lut<0> (ls132r/u_execute/Madd_n1470_Madd_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  ls132r/u_execute/Madd_n1470_Madd_cy<0> (ls132r/u_execute/Madd_n1470_Madd_cy<0>)
+     XORCY:CI->O          77   0.180   1.726  ls132r/u_execute/Madd_n1470_Madd_xor<1> (ls132r/data_ifc_bus<11>)
+     LUT6:I5->O            2   0.205   0.617  ls132r/u_execute/ades_SW0 (N44)
+     LUT6:I5->O            1   0.205   0.580  ls132r/u_execute/ades_SW2 (N1583)
+     LUT6:I5->O            7   0.205   0.774  ls132r/u_execute/exe_complete4_SW0 (N1140)
+     LUT5:I4->O            1   0.205   0.000  ls132r/u_execute/exe_complete5_SW0_F (N1926)
+     MUXF7:I0->O           1   0.131   0.580  ls132r/u_execute/exe_complete5_SW0 (N1585)
+     LUT6:I5->O           14   0.205   0.958  ls132r/u_fetch/_n0350_inv21 (ls132r/u_fetch/_n0350_inv2)
+     LUT6:I5->O           15   0.205   0.982  ls132r/u_interface/arvalid1 (m0_arvalid)
+     LUT6:I5->O            1   0.205   0.580  i_confreg/Reset_OR_DriverANDClockEnable1 (i_confreg/Reset_OR_DriverANDClockEnable)
+     LUT4:I3->O            1   0.205   0.000  i_confreg/R_or_W_rstpot (i_confreg/R_or_W_rstpot)
+     FD:D                      0.102          i_confreg/R_or_W
+    ----------------------------------------
+    Total                     14.711ns (3.695ns logic, 11.016ns route)
+                                       (25.1% logic, 74.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 20 / 15
+-------------------------------------------------------------------------
+Offset:              4.390ns (Levels of Logic = 4)
+  Source:            SPI_MISO (PAD)
+  Destination:       AA_SPI0/rdata_0_24 (FF)
+  Destination Clock: clk rising
+
+  Data Path: SPI_MISO to AA_SPI0/rdata_0_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           5   1.222   0.962  SPI_MISO_IOBUF (N481)
+     LUT6:I2->O            4   0.203   0.912  AA_SPI0/Mmux_rdata[3][7]_rdata[3][7]_mux_60_OUT3131 (AA_SPI0/Mmux_rdata[3][7]_rdata[3][7]_mux_60_OUT3131)
+     LUT6:I3->O            1   0.205   0.580  AA_SPI0/Mmux_rdata[3][7]_rdata[3][7]_mux_60_OUT17_SW1 (N2002)
+     LUT6:I5->O            1   0.205   0.000  AA_SPI0/Mmux_rdata[3][7]_rdata[3][7]_mux_60_OUT17 (AA_SPI0/rdata[3][7]_rdata[3][7]_mux_60_OUT<24>)
+     FDE:D                     0.102          AA_SPI0/rdata_0_24
+    ----------------------------------------
+    Total                      4.390ns (1.937ns logic, 2.453ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 89 / 36
+-------------------------------------------------------------------------
+Offset:              7.745ns (Levels of Logic = 4)
+  Source:            AA_SPI0/rd_state_FSM_FFd4 (FF)
+  Destination:       SPI_MOSI (PAD)
+  Source Clock:      clk rising
+
+  Data Path: AA_SPI0/rd_state_FSM_FFd4 to SPI_MOSI
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             58   0.447   1.829  AA_SPI0/rd_state_FSM_FFd4 (AA_SPI0/rd_state_FSM_FFd4)
+     LUT3:I0->O           11   0.205   0.987  AA_SPI0/cyc_end_s_data_OR_1503_o11 (AA_SPI0/cyc_end_s_data_OR_1503_o1)
+     LUT6:I4->O            2   0.203   0.721  AA_SPI0/GND_22_o_dual_in_r_OR_1506_o1 (AA_SPI0/GND_22_o_dual_in_r_OR_1506_o)
+     LUT4:I2->O            1   0.203   0.579  AA_SPI0/Mmux_sdo_en11 (spi_sdo_en)
+     IOBUF:T->IO               2.571          SPI_MOSI_IOBUF (SPI_MOSI)
+    ----------------------------------------
+    Total                      7.745ns (3.629ns logic, 4.116ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   14.711|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 125.00 secs
+Total CPU time to Xst completion: 102.51 secs
+ 
+--> 
+
+
+Total memory usage is 447304 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  234 (   0 filtered)
+Number of infos    :   91 (   0 filtered)
+

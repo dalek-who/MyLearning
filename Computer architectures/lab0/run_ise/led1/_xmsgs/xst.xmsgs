@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_fetch_stage.v" Line 264: Assignment to <arg fmt="%s" index="1">pc_kseg2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_fetch_stage.v" Line 280: Assignment to <arg fmt="%s" index="1">br_req</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_fetch_stage.v" Line 386: Assignment to <arg fmt="%s" index="1">ir_brlky_cancel</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" Line 1525: Assignment to <arg fmt="%s" index="1">decdest_ce</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" Line 223: Net &lt;<arg fmt="%s" index="1">fr_rvalue0[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" Line 226: Net &lt;<arg fmt="%s" index="1">fr_rvalue1[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" Line 229: Net &lt;<arg fmt="%s" index="1">fr_wvalue0[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" Line 230: Net &lt;<arg fmt="%s" index="1">fr_fwd0</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_decode_stage.v" Line 231: Net &lt;<arg fmt="%s" index="1">fr_fwd1</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 303: Assignment to <arg fmt="%s" index="1">compare_value</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 753: Assignment to <arg fmt="%s" index="1">rs_ex_ejtag</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1194: Assignment to <arg fmt="%s" index="1">cmp0_b_eqz</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1418: Assignment to <arg fmt="%s" index="1">div_a</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1534: Assignment to <arg fmt="%s" index="1">d_kseg2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1619: Assignment to <arg fmt="%s" index="1">ld_v_h_align</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1621: Assignment to <arg fmt="%s" index="1">ld_v_l_align_f</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1623: Assignment to <arg fmt="%s" index="1">ld_v_h_align_f</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1685: Assignment to <arg fmt="%s" index="1">count_cmp_eq</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1697: Assignment to <arg fmt="%s" index="1">cp0_ren</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 1994: Assignment to <arg fmt="%s" index="1">float_res_h</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CPU/ls132r_execute_stage.v" Line 710: Net &lt;<arg fmt="%s" index="1">sel_cc</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 207: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">int_n_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">6</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v" Line 1610: Assignment to <arg fmt="%s" index="1">rd_valid_group_0</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v" Line 1611: Assignment to <arg fmt="%s" index="1">rd_valid_group_1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v" Line 1723: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v" Line 1838: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/AMBA/axi_mux.v" Line 1867: Assignment to <arg fmt="%s" index="1">rd_data_pre_sel</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 321: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_awready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 327: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_wready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 328: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_bid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 329: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_bresp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 330: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_bvalid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 341: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_arready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 342: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_rid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 344: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_rresp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 345: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_rlast</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 346: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s0_rvalid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 395: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_awready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 401: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_wready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 402: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_bid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 403: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_bresp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 404: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_bvalid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 415: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_arready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 416: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_rid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 418: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_rresp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 419: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_rlast</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 420: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s2_rvalid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 469: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_awready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 475: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_wready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 476: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_bid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 477: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_bresp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 478: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_bvalid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 489: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_arready</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 490: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_rid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 492: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_rresp</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 493: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_rlast</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 494: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s4_rvalid</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/CONFREG/confreg.v" Line 134: Assignment to <arg fmt="%s" index="1">buf_len</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 549: Assignment to <arg fmt="%s" index="1">cr03</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 550: Assignment to <arg fmt="%s" index="1">cr04</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 551: Assignment to <arg fmt="%s" index="1">cr05</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 552: Assignment to <arg fmt="%s" index="1">cr06</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 553: Assignment to <arg fmt="%s" index="1">cr07</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 417: Result of <arg fmt="%d" index="1">64</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">24</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 442: Assignment to <arg fmt="%s" index="1">sr_shift_inst</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 443: Assignment to <arg fmt="%s" index="1">sr_shift_two</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 453: Assignment to <arg fmt="%s" index="1">sr_shift_one</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 476: Assignment to <arg fmt="%s" index="1">power_down_ack</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 1105: Assignment to <arg fmt="%s" index="1">wp_p2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v" Line 533: Assignment to <arg fmt="%s" index="1">reg_ack</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/ram_16k.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">ram_16k</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 70: Net &lt;<arg fmt="%s" index="1">m0_awid[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 80: Net &lt;<arg fmt="%s" index="1">m0_wid[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v" Line 90: Net &lt;<arg fmt="%s" index="1">m0_arid[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">206</arg>: Output port &lt;<arg fmt="%s" index="3">sleeping_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ls132r</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_awid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_awaddr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_awlen</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_awsize</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_awburst</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_awlock</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_awcache</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_awprot</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wdata</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wstrb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_arid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_araddr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_arlen</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_arsize</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_arburst</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_arlock</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_arcache</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_arprot</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_awid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_awaddr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_awlen</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_awsize</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_awburst</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_awlock</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_awcache</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_awprot</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_wid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_wdata</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_wstrb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_arid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_araddr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_arlen</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_arsize</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_arburst</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_arlock</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_arcache</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_arprot</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_awid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_awaddr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_awlen</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_awsize</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_awburst</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_awlock</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_awcache</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_awprot</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_wid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_wdata</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_wstrb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_arid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_araddr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_arlen</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_arsize</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_arburst</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_arlock</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_arcache</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_arprot</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_awvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wlast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_wvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_bready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_arvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s0_rready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_awvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_wlast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_wvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_bready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_arvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s2_rready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_awvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_wlast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_wvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_bready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_arvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">272</arg>: Output port &lt;<arg fmt="%s" index="3">s4_rready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_axi_slave_mux</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">506</arg>: Output port &lt;<arg fmt="%s" index="3">cr03</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i_confreg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">506</arg>: Output port &lt;<arg fmt="%s" index="3">cr04</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i_confreg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">506</arg>: Output port &lt;<arg fmt="%s" index="3">cr05</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i_confreg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">506</arg>: Output port &lt;<arg fmt="%s" index="3">cr06</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i_confreg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">506</arg>: Output port &lt;<arg fmt="%s" index="3">cr07</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i_confreg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/TOP/archlab_sopc_top.v</arg>&quot; line <arg fmt="%s" index="2">573</arg>: Output port &lt;<arg fmt="%s" index="3">inta_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AA_SPI0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">m0_awid&lt;7:4&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">m0_wid&lt;7:4&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">m0_arid&lt;7:4&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rresp</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">bresp</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">inst_ifc_i&lt;73:42&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">test_mode</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">ifc_inst_o&lt;34&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">cpu_status_i&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">cpu_status_i&lt;17:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">exbus_i&lt;45:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">brbus_i&lt;2:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">exe_status_i&lt;3:2&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">dec_status_i&lt;36:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ifc_inst_i&lt;34:34&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">cpu_status_i&lt;5:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">cpu_status_i&lt;12:9&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">cpu_status_i&lt;25:14&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">exbus_i&lt;45:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">brbus_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">wbbus_i&lt;108:38&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">fr_rvalue0</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">fr_rvalue1</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">fr_wvalue0</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">fr_fwd0</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">fr_fwd1</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">issuebus_i&lt;54:49&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">issuebus_i&lt;259:161&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">dec_status_i&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">dec_status_i&lt;36:36&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">sel_cc</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">010</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">wr_resp_pre_sel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_awlen</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_awsize</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_awburst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_awlock</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_awcache</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_awprot</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_wid</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_wstrb</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_arlen</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_arsize</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_arburst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_arlock</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_arcache</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_arprot</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_awcache</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_awprot</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_awburst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_awlock</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_wid</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_wstrb</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_arcache</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_arprot</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">s_arlock</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ucas/cpu_lab/lab_0_20161010/rtl_led/SPI/godson_sbridge_spi.v</arg>&quot; line <arg fmt="%s" index="2">524</arg>: Output port &lt;<arg fmt="%s" index="3">ack_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">simple_spi</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0001000000</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">rd_state</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">pdreq_r</arg>&lt;<arg fmt="%d" index="2">0</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">spi_flash_ctrl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">ack_o</arg>&lt;<arg fmt="%d" index="2">0</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">1</arg> in block &lt;<arg fmt="%s" index="5">simple_spi_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">cr_cause_IP2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">u_execute</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tbuf_r_96</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">u_execute</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">rs_op_r_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">u_execute</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">buf_wrap</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">AA_SPI0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rs_dest_r_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_execute</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">rs_dest_r</arg>&lt;<arg fmt="%d" index="2">7</arg>:<arg fmt="%d" index="3">7</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">ls132r_execute_stage</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3212" delta="old" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">wp</arg>&gt; prevents it from being combined with the RAM &lt;<arg fmt="%s" index="2">Mram_mem</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_espr[3]_GND_22_o_wide_mux_87_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buf_addr_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">confreg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tbuf_r_96</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ls132r_execute_stage</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fsmfake3_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">axi_slave_mux</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fsmfake3_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">axi_slave_mux</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fsmfake3_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">axi_slave_mux</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">spcr_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">simple_spi_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ls132r/u_execute/wb_excode_r_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ls132r/u_execute/rs_excode_r_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ls132r/u_execute/rs_excode_r_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ls132r/u_execute/rs_op_r_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ls132r/u_execute/cr_cause_IP2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">i_confreg/buf_id_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">i_confreg/buf_id_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">i_confreg/buf_id_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AA_SPI0/buf_id_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AA_SPI0/buf_id_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AA_SPI0/buf_id_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AA_SPI0/buf_size_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AA_SPI0/buf_wrap</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ls132r/u_interface/ifc_rd_flag_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ls132r/u_interface/ifc_rd_flag_r_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_confreg/buf_id_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_confreg/buf_id_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_confreg/buf_id_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_confreg/buf_id_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">AA_SPI0/buf_id_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">AA_SPI0/buf_id_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">AA_SPI0/buf_id_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">AA_SPI0/buf_id_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">AA_SPI0/simple_spi/inta_o</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ls132r/u_execute/wb_excode_r_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">AA_axi_slave_mux/wr_resp_sel_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AA_axi_slave_mux/wr_resp_prog</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AA_SPI0/clkcnt_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AA_SPI0/buf_addr_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AA_SPI0/buf_addr_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AA_SPI0/buf_addr_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AA_SPI0/buf_addr_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AA_SPI0/simple_spi/clkcnt_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">archlab_sopc_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">AA_axi_slave_mux/wr_resp_sel_reg_1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">AA_axi_slave_mux/wr_resp_sel_reg_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">ls132r/u_execute/cr_cause_IP3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ls132r/u_execute/cr_cause_IP4&gt; &lt;ls132r/u_execute/cr_cause_IP5&gt; &lt;ls132r/u_execute/cr_cause_IP6&gt; &lt;ls132r/u_execute/cr_cause_IP7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">ls132r/u_execute/rs_dest_r_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ls132r/u_execute/rs_dest_r_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">AA_SPI0/buf_addr_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">archlab_sopc_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;AA_SPI0/buf_addr_27&gt; &lt;AA_SPI0/buf_addr_26&gt; &lt;AA_SPI0/buf_addr_25&gt; &lt;AA_SPI0/buf_addr_24&gt; &lt;AA_SPI0/buf_addr_23&gt; &lt;AA_SPI0/buf_addr_22&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+
