@@ -16,7 +16,7 @@
 			考虑从小到大排列的数，不妨设a<b<c,若b能整除c，a能整除b，那么由于传递性，a也能整除c。在整除关系传递性的基础上，考虑最长整除序列，就可以类比算法研讨课上最长递增序列一样。所以我们第一步排序；第二步考虑$S_i$，在前面已经有了i-1个数，对每一个满足j<i的$Opt(j)$，若$s_i\%s_j=0$满足，则可以将其增加在$s_j$所在整除序列上，因此：
 			\\
 			\[O{\rm{pt}}(i) = \max \{ f(1),f(2),f(3),.....f(i - 1){\rm{\} }}\] 
-			\\其中\[f(i) = \left\{ {\begin{array}{*{20}{l}}{1,\quad 0 \le j < i\quad {s_i}\% {s_j} \ne 0}\\{Opt(i) + 1,\quad 0 \le j < i\quad {s_i}\% {s_j} = 0}\end{array}} \right.\]
+			\\其中\[f(i) = \left\{ {\begin{array}{*{20}{l}}{1,\quad 0 \le j < i\quad {s_i}\% {s_j} \ne 0}\\{Opt(j) + 1,\quad 0 \le j < i\quad {s_i}\% {s_j} = 0}\end{array}} \right.\]
 			
 		\paragraph{b}\
 		
@@ -196,9 +196,9 @@
 		考虑字符S[i]，判断其与之前字符是否能成为回文，有至多i种情况，对每种情况进行遍历，选最小值，即是这i个字符的最小切分，遍历到n，即可得到最终结果。
 		\paragraph{d}\
 		
-		子问题有O(n)， 遍历是O(n)。
+		子问题有O(n)，判断回文O(n)，遍历是O(n)。
 		
-		综上算法复杂度是O(${n^2}$).
+		综上算法复杂度是O(${n^3}$).
 		
 	\newpage
 	\section{Decoding}

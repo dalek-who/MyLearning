@@ -1,0 +1,199 @@
+\documentclass{article} 
+	\usepackage{fontspec,booktabs, xunicode, xltxtra,amsmath,amssymb,caption,colortbl,float,caption,algorithm,algpseudocode}
+	\usepackage{graphicx}
+	\usepackage{pgfplots}
+	\usepackage{xeCJK}
+	\setCJKmainfont{MSYH.ttc}
+	\author{孔静-2014K8009929022}
+	\title{Algorithm-homework2\\Greedy Algorithm}
+
+	\definecolor{mypurple}{RGB}{112, 48, 160}
+	\definecolor{myblue}{RGB}{12, 119, 195}
+	\definecolor{myorange}{RGB}{197, 90, 17}
+	\definecolor{myred}{RGB}{200, 31, 31}
+	\definecolor{mygreen}{RGB}{84, 130, 53}
+\begin{document}
+	\maketitle 
+	\tableofcontents
+	\color{mypurple} \section{Greedy Algorithm}\color{black}
+		\paragraph{a}\
+		
+			先经过一次最简单的判断，即$\sum\limits_{i = 1}^n {{d_i}}$是否是偶数。
+			
+			若是偶数:
+			\[Opt(D,n) = \left\{ \begin{array}{l}
+			1,{\rm{ }}n = 0\\
+			0,{\rm{ }}{d_{\max }} \ge n\\
+			Opt(D',n - 1),otherwise
+			\end{array} \right.\]
+			
+			其中D是已经排序好的${d_1},{d_2}...{d_n}$递增序列。
+			
+			\[{d_i}' = \left\{ {\begin{array}{*{20}{l}}
+				{0,i = n}\\
+				{{d_i} - 1,n - {d_n} \le i < n}\\
+				{{d_i},i < n - {d_n}}
+				\end{array}} \right.\]
+		
+		\paragraph{b}\
+		
+			先判断是否已经能判断了，如果最大的度大于等于结点数，那么必然不能成图。然后，将度序列排序成递增序列，将度最大的节点${d_{\max }}$即${d_n}$删去，同时对剩余度最大的${d_n}$个减1。相当于从图上删去某节点以及与它相连的线。然后重复这个过程。
+			\begin{algorithm}
+				\caption{Problem1}
+				\begin{algorithmic}
+				\Procedure {Problem}{D,n}
+				\If {$add(D) / 2 != 0$}
+				\State Opt[n+1] = 0 
+				\Else Opt[n+1] = 1 
+				\EndIf
+				\For {i = n to 1}
+				\State quicksort(D,n)  \Comment 对前n个数，快速排序
+				\If	{d(n) >= n || d(1) < 0 || Opt[i+1] == 0}
+				\State Opt[i] = 0
+				\Else
+				\State Opt[i] = 1
+				\EndIf
+				\For {i = n - d(n) to n - 1}
+				\State d(i) = d(i) - 1
+				\EndFor
+				\State n = n - 1
+				\EndFor
+				\State \textbf{return} $Opt[1]$\Comment 如果能构成图，应该输出1
+				\EndProcedure
+				\end{algorithmic}
+			\end{algorithm}
+		
+		\paragraph{c}\
+			
+			下面证明为何删去最大度的节点，不影响是否成图。
+			
+			考虑度最大的节点n，如果它与剩下度最大的${d_n}$个点，有两种情况，一他们相连，那么删去正好。二他们不相连，n节点还与前$n-{d_n}$中有相连，下考虑情况2。A点属于剩下度最大的${d_n}$个点中，B属于前前$n-{d_n}$个点。
+			
+			\begin{tikzpicture}[
+				rednode/.style={circle, draw=red, very thick, minimum size=5mm},
+				orangenode/.style={circle, draw=orange, very thick, minimum size=5mm},
+				greennode/.style={circle, draw=green, very thick, minimum size=5mm},
+				]
+				%Nodes
+				\node[rednode] (main1) at (0,0) {${d_n}$};
+				\node[rednode] (p0) at (-1,1) {A};
+				\node[rednode] (p1) at (1,1) {B};
+				%Lines
+				\draw (main1)--(p1);
+				%Nodes
+				\node[orangenode] (main2) at (5,0) {${d_n}$};
+				\node[orangenode] (p2) at (4,1) {A};
+				\node[orangenode] (p3) at (6,1) {B};
+				%Lines
+				\draw (main2)--(p3);
+				\draw (p2)--(p3);
+			\end{tikzpicture}
+			
+			情况2根据B和A相连不相连又有两种情况：
+			
+			一（红色），从递增序列来看，A的度大于等于B，图中B已经少了一个度，所以在剩余n-3个点中，必然有一个结点C与A相连，不与B相连。将AC连线，B${d_n}$连线删去，改为A${d_n}$，BC，不影响度数。
+			
+			二（橙色），将${d_n}$与A相连，${d_n}$和A均与B不连，将B插入任意两个和B不相连的节点的连线中即可。首先${d_n}$已经与A不相连，B的度比${d_n}$小，那么至少存在一个与B不相连的结点，如果不存在第二个与B不相连的结点，说明B的度与${d_n}$相同，那么也与A同，将B和A结点位置互换即可。
+			
+			综上这种删去最大度的节点，并删去它所连的线的方法，对是否成图不影响。所以能利用该方法减少结点数，判断是否成图。
+			
+		\paragraph{d}\
+		
+			快排O(nlogn)，删除节点O(n)，遍历O(n)。
+			
+			综上算法复杂度是O(${n^2}logn$)。
+
+	\color{myblue} \section{Greedy Algorithm} \color{black}
+		\paragraph{a}\
+		
+			先根据${f_i}$从大到小排序。
+			
+			\[Opt(i,1) = \max \{ Opt(i - 1,0) + {s_i} + {f_i},Opt(i - 1,1)\} \]
+		\paragraph{b}\
+			\begin{algorithm}
+				\caption{Greedy Algorithm}
+				\begin{algorithmic}
+					\Procedure {Greedy Algorithm}{S,F,n}
+					\State quicksort(S,F)  \Comment 根据${f_i}$从大到小排序
+					\For {i = 1 to n}
+					\State Opt[i][1] = max(Opt[i-1][0] + s[i] + f[i], Opt[i-1][1])
+					\State Opt[i][0] = Opt[i-1][0] + s[i]
+					\EndFor
+					\State \textbf{return} $Opt[n]$
+					\EndProcedure
+				\end{algorithmic}
+			\end{algorithm}
+	
+		\paragraph{c}\
+		
+			\begin{tikzpicture}
+				\draw[red] (0,0)--(4,0);
+				\draw[orange] (4,0)--(10,0);
+				\draw[red] (0,-1)--(3,-1);
+				\draw[orange] (3,-1)--(5,-1);
+			\end{tikzpicture}
+		
+			如图（红色是supercomputer运行时间，橙色是PC运行时间，显然应该是PC运行时间长的第一条线先运行）
+			
+			因为不考虑切换任务以及交替任务的时间，所以超级计算机运行的总时间是固定的，即$\sum\limits_{i = 1}^n {{s_i}}$，所以总共需要的时间，取决于普通计算机的运行结束时间，那当然是需要运行普通计算机最长时间的任务最先开始了。
+			
+		\paragraph{d}\
+		
+			快排O(nlogn)，遍历O(n)。
+		
+			综上算法复杂度是O(nlogn)。
+	\color{mygreen} \section{Greedy Algorithm} \color{black}
+		\paragraph{a}\
+		
+		先根据岛屿的x轴坐标从小到大排序，并计算以每个岛屿i为圆心以d为半径的圆与x轴的交点，记为${left_i}$,和${right_i}$。
+		
+		\[Opt(i) = \left\{ \begin{array}{l}
+		Opt(i - 1) + 1,lef{t_i} > {l_{Opt(i - 1)}}\\
+		Opt(i - 1),lef{t_i} \le {l_{Opt(i - 1)}}
+		\end{array} \right.\]
+		
+		其中${l_i}$记录的是雷达坐标，${l_1}$是${right_1}$，之后是Opt(i)雷达数量增加1，令${l_{Opt(i)}}$
+	
+		\paragraph{b}\
+			\begin{algorithm}
+				\caption{Greedy Algorithm}
+				\begin{algorithmic}
+					\Procedure {Greedy Algorithm}{X,Y,n}
+					\State quicksort(X,Y,n)  \Comment 根据x坐标从小到大快速排序
+					\State l[1] = right[1]
+					\State Opt[1] = 1
+					\For {i = 2 to n}
+					\If {left[i] > l[Opt[i-1]]}
+					\State Opt[i] = Opt[i-1] + 1
+					\State l[Opt[i]] = right[i]
+					\ElsIf {right[i] < l[Opt[i-1]]}
+					\State Opt[i] = Opt[i-1]
+					\State l[Opt[i]] = right[i]
+					\Else
+					\State Opt[i] = Opt[i-1]
+					\EndIf
+					\EndFor
+					\State \textbf{return} $Opt[n]$
+					\EndProcedure
+				\end{algorithmic}
+			\end{algorithm}
+		\paragraph{c}\
+			
+			从x坐标最小的岛屿开始考虑，雷达必覆盖这个岛屿，并且尽可能多的去覆盖其他岛屿，所以雷达建立在这个岛屿对应的${right_1}$，之后一样，${left_i}$在这个雷达右边的，就表示该雷达覆盖不了，必须新建雷达；如果${left_i}$在雷达左边，分两种情况，一是${right_i}$在雷达右边，即该雷达能覆盖这个岛屿，二是${right_i}$在雷达左变，因为我们排序是按照岛屿横坐标排序的，此情况下，把该雷达移动到${right_i}$上即可以覆盖之前的岛屿也能覆盖该岛屿了。
+		
+		\paragraph{d}\
+			
+			快速排序O(nlogn)， 遍历是O(n)。
+			
+			综上算法复杂度是O(nlogn)。
+		
+	\color{myorange} \section{Greedy Algorithm} \color{black}
+		\paragraph{a}对A，B排序即可。
+		
+		\paragraph{b}排序就好，还要算法吗。。。ORZ。。。
+	
+		\paragraph{c}取对数，$\sum\limits_{i = 1}^n {{b_i} \times \ln ({a_i})}$，显然当${a_i}$和${b_i}$同为第k大的数时，该式最大。
+		
+		\paragraph{d}排序O(nlogn)，所以算法复杂度是O(nlogn)。
+			
+\end{document}
