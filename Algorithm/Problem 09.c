@@ -30,7 +30,7 @@ int main(void){
 	num = sum / n;
 	for(i = 1; i < n; i++){
 		step = step + sub(p[i],num);
-		p[i+1]=p[i]+p[i+1]-num;
+		p[i + 1] = p[i] + p[i + 1] - num;
 	}
 	printf("%d",step);
 	return 0;
