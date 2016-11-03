@@ -1,4 +1,4 @@
-\*
+/*
 ÃèÊö
 Given a directed graph G =< V;E >. Each edge e =< i; j > has a distance d(i,j).We want to calculate the length of the shortest path from a single source node s to a destination node t.
 
@@ -8,7 +8,7 @@ After the first line, there are m lines which indicate m edges in the graph. In 
 
 Êä³ö
 The length of the shortest path from s to t. If there is no path from s to t, output -1.
-*\
+*/
 #include <stdio.h>
 int d[501][501] = {0};
 int n,m,s,t;

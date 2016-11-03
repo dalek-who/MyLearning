@@ -1,4 +1,4 @@
-\*
+/*
 ÃèÊö
 There are n piles of cards on the table (1<=n<=10000). The total number of cards is the multiples of n. Now, you can move cards from one pile to another pile step by step. In each step, you will choose one pile, and are allowed to move the cards in this pile to its neighboring piles, that is, cards in pile i can be moved to pile i-1 or pile i+1. You want every pile have the same number of cards. Find the minimum number of steps you need.
 
@@ -10,7 +10,7 @@ The second line contains n positive integers which represent the numbers of card
 
 Êä³ö
 Output exactly one integer which is the minimum number of steps you need.
-*\
+*/
 #include <stdio.h>
 int p[10001];
 int n;
