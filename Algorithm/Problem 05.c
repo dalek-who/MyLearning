@@ -1,8 +1,8 @@
 /*
-ÃèÊö
+æè¿°
 Bob is attracted in Bioinformatics recently. He reads papers day and night and devotes all his mind in studying. Today he is going to review the basic problem in Bioinformatics: DNA sequence alignment. His purpose is to find a simple and effective algorithm that performs global alignment with two highly similar DNA sequences. 
 
-A DNA sequence is presented as a sequence of characters, which may be 'A', 'G','C' or 'T'. To align two DNA sequences, some gaps may be inserted to sequences so that two sequences have the same length. And then it is counted up for every pair of matched characters by a score matrix. Bob uses a minimal-score matrix hence the total score of alignment should be minimized. Following is the score matrix he uses: Í¼Æ¬ 1.png
+A DNA sequence is presented as a sequence of characters, which may be 'A', 'G','C' or 'T'. To align two DNA sequences, some gaps may be inserted to sequences so that two sequences have the same length. And then it is counted up for every pair of matched characters by a score matrix. Bob uses a minimal-score matrix hence the total score of alignment should be minimized. Following is the score matrix he uses: å›¾ç‰‡ 1.png
 
   A G C T -
 A 0 5 5 5 3
@@ -15,10 +15,10 @@ AAGA-  C- G
 CAGAGCTC 
 The total score is 5+0+0+0+3+0+3+4=15. 
 
-ÊäÈë
+è¾“å…¥
 Input contains two lines, which are the two DNA sequences to align. DNA sequences contain only characters 'A', 'G', 'C' and 'T'. The length of each sequence is not greater than 1000.
 
-Êä³ö
+è¾“å‡º
 Output contains one integer which is the minimal total score of alignment.
 */
 #include <stdio.h>

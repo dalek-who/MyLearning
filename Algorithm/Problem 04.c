@@ -1,16 +1,16 @@
 /*
-描述
-Recall the problem of finding the number of inversions. As in the course, we are given a sequence of n numbers a1; · · · ; an, which we assume are all distinct, and we define an inversion to be a pair i < j such that ai > aj.
+鎻忚堪
+Recall the problem of finding the number of inversions. As in the course, we are given a sequence of n numbers a1; 路 路 路 ; an, which we assume are all distinct, and we define an inversion to be a pair i < j such that ai > aj.
 
-We motivated the problem of counting inversions as a good measure of how different two orderings are. However, one might feel that this measure is too sensitive. Let’s call a pair a significant inversion if i < j and ai> 3aj. Given an O(n log n) algorithm to count the number of significant inversions between two orderings.
+We motivated the problem of counting inversions as a good measure of how different two orderings are. However, one might feel that this measure is too sensitive. Let鈥檚 call a pair a significant inversion if i < j and ai> 3aj. Given an O(n log n) algorithm to count the number of significant inversions between two orderings.
 
 The array contains N elements(1<=N<=100,000). All elements are range from 1 to 1,000,000,000.
 
-输入
+杈撳叆
 Line1 : The first line contains an integer N, which represents the number of elements.
 Line 2: given the unsorted array and elements are split by space.
 
-输出
+杈撳嚭
 Output a single integer which is the number of pairs of significant inversions.
 */
 #include <stdio.h>

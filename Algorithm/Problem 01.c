@@ -1,13 +1,13 @@
 /*
-ÃèÊö
-Find the k-th largest element in an unsorted array A . Note that it is the k-th largest element in the sorted order, not the k-th distinct element. The range of length of A is N (1¡ÜN¡Ü1,000,000) and the elements (integer) in A are no larger than 10,000,000. 
+æè¿°
+Find the k-th largest element in an unsorted array A . Note that it is the k-th largest element in the sorted order, not the k-th distinct element. The range of length of A is N (1â‰¤Nâ‰¤1,000,000) and the elements (integer) in A are no larger than 10,000,000. 
 
 Hint: You can use sorting algorithm with O(n log n) time complexity, but a better algorithm for this problem needs only O(n) time. 
 
-ÊäÈë
+è¾“å…¥
 The first line contains two integers N and k where N is the length of the unsorted array A, and k is the index. The second line gives the unsorted array A.
 
-Êä³ö
+è¾“å‡º
 Output a single line with a single integer which is the k-th largest element in the array.
 */
 #include<stdio.h>

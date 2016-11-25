@@ -1,11 +1,11 @@
 /*
-ÃèÊö
+æè¿°
 Suppose we have n integers. We want to combine them in a row so as to obtain a largest number. For example, consider three integers 13, 312, 343. We can combine them to get 13312343, 13343312, etc. The largest number we can obtain is 34331213.
 
-ÊäÈë
+è¾“å…¥
 The input contains two lines. The first line contains one integer n (1<=n<=1000). The second line contains n integers and each integer is in the range [1,500].
 
-Êä³ö
+è¾“å‡º
 The output contains one line which is the largest number we can obtain.
 */
 #include <stdio.h>

@@ -1,12 +1,12 @@
 /*
-ÃèÊö
+æè¿°
 Given a directed graph G =< V;E >. Each edge e =< i; j > has a distance d(i,j).We want to calculate the length of the shortest path from a single source node s to a destination node t.
 
-ÊäÈë
+è¾“å…¥
 The first line of the input contains four integers: number of nodes n (1<=n<=500), number of edges m, source node s, destination node t. 
 After the first line, there are m lines which indicate m edges in the graph. In each line, there are three integers i,j, dij. It means there is an edge from node I to node j with distance dij. 1<=i,j<=n, 1<=dij<=500.
 
-Êä³ö
+è¾“å‡º
 The length of the shortest path from s to t. If there is no path from s to t, output -1.
 */
 #include <stdio.h>
