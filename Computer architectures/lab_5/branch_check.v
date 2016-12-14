@@ -20,18 +20,18 @@ module branch_check(
 	assign jr_taken = branch_type[0];
 	assign j_taken = branch_type[1];
 	assign rev = branch_type[2];
-	assign bne = branch_type[5];
+	assign beq = branch_type[5];
 	assign blt = branch_type[4];
 	assign ble = branch_type[3];
 
 //	reg br_taken;
 	always @(*)begin
-		if(branch_type[0])
+		if(beq)
 			br_taken=(opa==opb);
-		else if(branch_type[1])
+		else if(blt)
 			br_taken=opa[31];
-		else if(branch_type[2])
-			br_taken=(opa[31])|~(&opa[30:0]);
+		else if(ble)
+			br_taken=(opa[31])|~(|opa[30:0]);
 		else
 			br_taken=0;
 		if(rev)

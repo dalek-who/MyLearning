@@ -27,8 +27,8 @@ module PIPE1(
 	input [31:0] pipe1_data_info_in,
 	output [81:0] pipe1_ctrl_info_out, 
 	output [79:0] pipe1_data_info_out,
-	input pipe1_allow_out, //PIPE1指令允许进入下一流水�	
-	output pipe1_allow_in //PIPE 1 允许下一条指令进入本流水�
+	input pipe1_allow_out, //PIPE1	
+	output pipe1_allow_in //PIPE 1 
 );
 //pipe1_valid
 	wire pipe1_valid;
@@ -249,16 +249,16 @@ rev: 0      1
 	assign cp0_write = inst_mtc0;
 	assign lo_we = inst_mtlo;
 	assign hi_we = inst_mthi;
-	assign load_op = inst_lb | inst_lbu | inst_lh | inst_lhu | inst_lw;
+	assign load_op = inst_lb | inst_lbu | inst_lh | inst_lhu | inst_lw | inst_lwl | inst_lwr;
 	assign load_type[0] = inst_lb | inst_lbu;
-	assign load_type[1] = inst_lh|inst_lhu;
+	assign load_type[1] = inst_lh | inst_lhu;
 	assign load_type[2] = inst_lw;
-	assign load_type[3] = inst_lbu|inst_lhu;
+	assign load_type[3] = inst_lbu | inst_lhu;
 
-	assign alu_res_sel[0] = inst_and | inst_andi | inst_lui | inst_nor|inst_or|inst_slt|inst_slti|inst_sltiu|inst_sltu|inst_xor|inst_xori |inst_mtc0|inst_mfc0;
-	assign alu_res_sel[1] = inst_and|inst_andi|inst_lui|inst_nor|inst_or|inst_sll|inst_sllv|inst_sra|inst_srav|inst_srl|inst_srlv|inst_xor|inst_xori |inst_mtc0|inst_mfc0;
+	assign alu_res_sel[0] = inst_and | inst_andi | inst_lui | inst_mfc0 | inst_mtc0 | inst_mthi | inst_mtlo | inst_nor | inst_or | inst_ori | inst_slt | inst_slti | inst_sltiu | inst_sltu | inst_xor | inst_xori;
+	assign alu_res_sel[1] = inst_and | inst_andi | inst_lui | inst_mfc0 | inst_mtc0 | inst_mthi | inst_mtlo | inst_nor | inst_or | inst_ori | inst_sll | inst_sllv | inst_sra | inst_srav | inst_srl | inst_srlv | inst_xor | inst_xori;
 
-	assign store_op = inst_sb|inst_sh|inst_sw;
+	assign store_op = inst_sb | inst_sh | inst_sw;
 	assign store_type[0] = inst_sb;
 	assign store_type[1] = inst_sh;
 	assign store_type[2] = inst_sw;
@@ -269,28 +269,28 @@ rev: 0      1
 	assign branch_type[2] = inst_bgez | inst_bgezal | inst_bgtz | inst_bne;
 	assign branch_type[1] = inst_j | inst_jal;
 	assign branch_type[0] = inst_jalr | inst_jr;
-	assign rs_need = inst_add | inst_addi | inst_addiu | inst_addu | inst_and | inst_addi | inst_beq | inst_bgez | inst_bgezal | inst_bgtz| inst_blez | inst_bltz | inst_bltzal | inst_bne | inst_jalr | inst_jr | inst_lb | inst_lbu | inst_lh | inst_lhu | inst_lw | inst_nor | inst_or | inst_ori | inst_sb | inst_sh | inst_sllv | inst_slt | inst_slti | inst_sltiu | inst_sltu | inst_srav | inst_srlv | inst_sw | inst_xor | inst_xori;
-	assign rt_need = inst_add | inst_addu | inst_and | inst_beq | inst_bne | inst_mtc0 | inst_mthi | inst_mtlo | inst_nor | inst_or | inst_sll | inst_sllv | inst_slt | inst_sltu | inst_sra | inst_srav | inst_srl | inst_srlv | inst_xor;
-	assign rt_write = inst_addi | inst_addiu | inst_andi | inst_lb | inst_lbu | inst_lh | inst_lhu | inst_lui | inst_lw | inst_mfc0 | inst_mfhi | inst_mflo | inst_ori | inst_sb | inst_sh | inst_slti | inst_sltiu | inst_sw | inst_xori;
-	assign rd_write = inst_add | inst_addu | inst_and | inst_jalr | inst_nor | inst_or | inst_sll | inst_sllv | inst_slt | inst_sltu | inst_sra | inst_srav | inst_srl | inst_srlv | inst_xor;
-	assign bypass_op = inst_mtc0|inst_mfc0;
+	assign rs_need = inst_add | inst_addi | inst_addiu | inst_addu | inst_and | inst_addi | inst_beq | inst_bgez | inst_bgezal | inst_bgtz| inst_blez | inst_bltz | inst_bltzal | inst_bne | inst_jalr | inst_jr | inst_lb | inst_lbu | inst_lh | inst_lhu | inst_lw | inst_mthi | inst_mtlo | inst_nor | inst_or | inst_ori | inst_sb | inst_sh | inst_sllv | inst_slt | inst_slti | inst_sltiu | inst_sltu | inst_srav | inst_srlv | inst_sub | inst_subu | inst_sw | inst_xor | inst_xori;
+	assign rt_need = inst_add | inst_addu | inst_and | inst_beq | inst_bne | inst_mtc0 | inst_nor | inst_or | inst_sb | inst_sh | inst_sll | inst_sllv | inst_slt | inst_sltu | inst_sra | inst_srav | inst_srl | inst_srlv | inst_sub | inst_subu | inst_sw | inst_xor;
+	assign rt_write = inst_addi | inst_addiu | inst_andi | inst_lb | inst_lbu | inst_lh | inst_lhu | inst_lui | inst_lw | inst_mfc0 | inst_ori | inst_slti | inst_sltiu | inst_xori;
+	assign rd_write = inst_add | inst_addu | inst_and | inst_jalr | inst_mfhi | inst_mflo | inst_nor | inst_or | inst_sll | inst_sllv | inst_slt | inst_sltu | inst_sra | inst_srav | inst_srl | inst_srlv | inst_sub | inst_subu | inst_xor;
+	assign bypass_op = inst_mtc0 | inst_mfc0;
 	assign logic_type[4] = inst_and | inst_andi;
-	assign logic_type[3] = inst_or | inst_ori;
+	assign logic_type[3] = inst_mthi | inst_mtlo | inst_or | inst_ori;
 	assign logic_type[2] = inst_xor | inst_xori;
 	assign logic_type[1] = inst_nor;
 	assign logic_type[0] = inst_lui;
 	assign shift_type[2] = inst_sll | inst_sllv;
 	assign shift_type[1] = inst_srl | inst_srlv;
 	assign shift_type[0] = inst_sra | inst_srav;
-	assign imm_op = inst_addi | inst_addiu | inst_andi | inst_lb | inst_lbu | inst_lh | inst_lhu | inst_lui | inst_lw |inst_ori | inst_sb | inst_sh | inst_sll | inst_slti | inst_sltiu | inst_sra | inst_srl | inst_sw | inst_xori;
+	assign imm_op = inst_addi | inst_addiu | inst_andi | inst_bgezal | inst_bltzal | inst_jal | inst_jalr | inst_lb | inst_lbu | inst_lh | inst_lhu | inst_lui | inst_lw | inst_ori | inst_sb | inst_sh | inst_sll | inst_slti | inst_sltiu | inst_sra | inst_srl | inst_sw | inst_xori;
 	assign unsigned_op = ~(inst_add | inst_addi | inst_slt | inst_slti | inst_sub);
-	assign sub_op = inst_slt | inst_slti | inst_sltiu | inst_sltu;
+	assign sub_op = inst_slt | inst_slti | inst_sltiu | inst_sltu | inst_sub | inst_subu;
 	assign link_op = inst_bgezal | inst_bltzal | inst_jal | inst_jalr;
 
-	wire pipe1_rdy_go; //PIPE 1 准备�	
-	assign pipe1_rdy_go = hazard_free; //由本级控制信号产�	
+	wire pipe1_rdy_go; //PIPE 1 	
+	assign pipe1_rdy_go = hazard_free; //	
 	assign pipe1_valid_out = pipe1_valid && pipe1_rdy_go; 
-	assign pipe1_ctrl_info_out = {inst_eret,inta,inst_syscall,inst_break,id_ri_ex,pipe1_ctrl_info_in,dest,(|branch_type),bypass_op,logic_type,shift_type,imm_op,unsigned_op,sub_op,link_op,store_type,store_op,alu_res_sel,load_type,load_op,hi_we,lo_we,cp0_write,rd,func[2:0],wb_mux,reg_we};//由本级控制信号产�
-	assign pipe1_data_info_out = {vsrc1,vsrc2,imm};//由本级控制信号和数据产生
+	assign pipe1_ctrl_info_out = {inst_eret,inta,inst_syscall,inst_break,id_ri_ex,pipe1_ctrl_info_in,dest,(|branch_type),bypass_op,logic_type,shift_type,imm_op,unsigned_op,sub_op,link_op,store_type,store_op,alu_res_sel,load_type,load_op,hi_we,lo_we,cp0_write,rd,func[2:0],wb_mux,reg_we};//
+	assign pipe1_data_info_out = {vsrc1,vsrc2,imm};//
 	assign pipe1_allow_in = (~|pipe1_ctrl_info_out[81:76])&(!pipe1_valid || pipe1_valid_out && pipe1_allow_out);
 endmodule

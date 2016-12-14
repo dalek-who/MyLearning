@@ -22,7 +22,7 @@ module add(less,overflow,sum,unsigned_op,a,b,cin);
   wire 		addof;
 
   c16 C1(.C({c[31],c[27],c[23],c[19]}),.D(D[7:4]),.T(T[7:4]),.c(c[15]));
-  c16 C2(.C({c[15],c[11],c[7],c[3]}),.D(D[3:0]),.T(T[3:0]),.c(ci));
+  c16 C2(.C({c[15],c[11],c[7],c[3]}),.D(D[3:0]),.T(T[3:0]),.c(cin));
   c4 c1(.D(D[7]),.T(T[7]),.C(c[30:28]),.a(a[31:28]),.b(b[31:28]),.c(c[27]));
   c4 c2(.D(D[6]),.T(T[6]),.C(c[26:24]),.a(a[27:24]),.b(b[27:24]),.c(c[23]));
   c4 c3(.D(D[5]),.T(T[5]),.C(c[22:20]),.a(a[23:20]),.b(b[23:20]),.c(c[19]));
@@ -30,15 +30,15 @@ module add(less,overflow,sum,unsigned_op,a,b,cin);
   c4 c5(.D(D[3]),.T(T[3]),.C(c[14:12]),.a(a[15:12]),.b(b[15:12]),.c(c[11]));
   c4 c6(.D(D[2]),.T(T[2]),.C(c[10:8]),.a(a[11:8]),.b(b[11:8]),.c(c[7]));
   c4 c7(.D(D[1]),.T(T[1]),.C(c[6:4]),.a(a[7:4]),.b(b[7:4]),.c(c[3]));
-  c4 c8(.D(D[0]),.T(T[0]),.C(c[2:0]),.a(a[3:0]),.b(b[3:0]),.c(ci));
+  c4 c8(.D(D[0]),.T(T[0]),.C(c[2:0]),.a(a[3:0]),.b(b[3:0]),.c(cin));
 
   assign 	sum=a^b^{c[30:0],cin};
 
   assign 	addof= c[31]^c[30];
 
-  assign 	overflow = unsigned_op & addof;
+  assign 	overflow = ~unsigned_op & addof;
 
-  assign    less = addof^sum[31];
+  assign    less = (unsigned_op)? ~c[31]:addof^sum[31];
 
 endmodule
 
@@ -190,7 +190,7 @@ module shifter(y,x,shamt0,shamt1,imm_op,shift_type);
 
 	output	[31:0]y;
 
-	wire	shamt;
+	wire	[4:0]shamt;
 	wire	[31:0]y1;
 	wire	[31:0]y2;
 	wire	[31:0]y3;
@@ -199,8 +199,12 @@ module shifter(y,x,shamt0,shamt1,imm_op,shift_type);
 
 	assign 	y1 = x << shamt;
 	assign 	y2 = x >> shamt;
-	assign 	y3 = x >>> shamt;
-
+	//assign 	y3 = x >>> shamt;
+	wire [31:0]shift_temp1 = {32{shamt[0]}} ? {x[31],x[31:1]}	:{x[31:0]};
+	wire [31:0]shift_temp2 = {32{shamt[1]}} ? {{2{shift_temp1[31]}},shift_temp1[31:2]}:{shift_temp1[31:0]};
+	wire [31:0]shift_temp3 = {32{shamt[2]}} ? {{4{shift_temp2[31]}},shift_temp2[31:4]}:{shift_temp2[31:0]};
+	wire [31:0]shift_temp4 = {32{shamt[3]}} ? {{8{shift_temp3[31]}},shift_temp3[31:8]}:{shift_temp3[31:0]};
+	assign y3 = {32{shamt[4]}} ? {{16{shift_temp4[31]}},shift_temp4[31:16]}:{shift_temp4[31:0]};
 	assign  y = shift_type[2] ? y1 :
 				shift_type[1] ? y2 : y3;
 

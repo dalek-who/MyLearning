@@ -15,7 +15,6 @@ module PIPE4(
 	output rst,
 	input pipe4_valid_in,
 	input [60:0] pipe4_ctrl_info_in,
-	//exop（含eret�0-52，pc51-20，dest19-15，btype14，hiwe13，lowe12，cp0we11,cp0cs10-6,cp0sel5-3，wbmux2-1，regwe0  
 	input [31:0] pipe4_data_info_in,
 	// output [XXX:0] pipe4_ctrl_info_out, 
 	// output [YYY:0] pipe4_data_info_out,
@@ -25,8 +24,8 @@ module PIPE4(
 	output [4:0]e_cause,
 	output is_exl,
 	output [31:0]e_pc,
-	// input pipe4_allow_out, //PIPE4指令允许进入下一流水�
-	output pipe4_allow_in, //PIPE 4 允许下一条指令进入本流水�
+	output eret,
+	output pipe4_allow_in,
 
 	output pipe4_valid_out,
 	output [31:0]wb_pc
@@ -69,14 +68,13 @@ module PIPE4(
 	assign sel = pipe4_ctrl_info_in[5:3];
 	wire [4:0]cscd;
 	assign cscd = pipe4_ctrl_info_in[10:6];
-	wire eret;
 	assign eret = pipe4_ctrl_info_in[57];
 	wire [7:0]cp0_e_op;
-	assign cp0_e_op = {pipe4_ctrl_info_in[60:58],pipe4_	ctrl_info_in[56:52]};
+	assign cp0_e_op = {pipe4_ctrl_info_in[60:58],pipe4_ctrl_info_in[56:52]};
 	wire cp0_write;
 	assign cp0_write = pipe4_ctrl_info_in[11];
 	wire [31:0]data_in;
-	assign data_in = (~is_exl) ? PC_out : pipe4_data_info_in;
+	assign data_in = (is_exl) ? PC_out : pipe4_data_info_in;
 	wire [37:0]cp0_e_out;
 	wire [31:0]data_out;
 	cp0_reg aaa(
@@ -97,26 +95,23 @@ module PIPE4(
 	wire [1:0]wb_mux;
 	assign wb_mux = pipe4_ctrl_info_in[2:1];
 	assign wdata =  {32{wb_mux == 2'b00}} & pipe4_data_info_in 	|
-					{32{wb_mux == 2'b01}} & cp0_e_out[31:0]		|
+					{32{wb_mux == 2'b01}} & data_out			|
 					{32{wb_mux == 2'b10}} & LO					|
 					{32{wb_mux == 2'b11}} & HI					;
 
-	assign we = pipe4_ctrl_info_in[0] & pipe4_valid &(~is_exl);//修改使得包含例外
+	assign we = pipe4_ctrl_info_in[0] & pipe4_valid &(~is_exl);
 	assign waddr = pipe4_ctrl_info_in[19:15];
-//为外面的例外控制逻辑�
-	assign is_exl = |pipe4_ctrl_info_in[60:52];//修改定义
+
+	assign is_exl = |pipe4_ctrl_info_in[60:52];
 	
 	assign e_cause = cp0_e_out[36:32];
 	assign e_pc = cp0_e_out[31:0];
 
 
-	//流水线控制信�
-	wire pipe4_rdy_go; //PIPE 4 准备�
-	assign pipe4_rdy_go = 1; //由本级控制信号产�
+	wire pipe4_rdy_go;
+	assign pipe4_rdy_go = 1; 
 	assign pipe4_valid_out = pipe4_valid && pipe4_rdy_go; 
-	//assign pipe4_ctrl_out = ... //由本级控制信号产�
-	//assign pipe4_data_out = ... //由本级控制信号和数据产生
-	assign pipe4_allow_in = !pipe4_valid || pipe4_valid_out; //&& pipe4_allow_out;
+	assign pipe4_allow_in = !pipe4_valid || pipe4_valid_out;
 	assign wb_pc = PC_in;
 
 endmodule
@@ -153,9 +148,12 @@ module cp0_reg(clk,rst,data_out,data_in,cscd,sel,write,e_op,e_in,e_out,is_bd_in,
 			count 			<= 1'b0;
 		end
 		else begin
-			{cp0_9_count,count} <= {cp0_9_count,count} + 1;
+			if(write && cscd == 5'b01001)
+				{cp0_9_count,count} <= {data_in,1'b0};
+			else
+				{cp0_9_count,count} <= {cp0_9_count,count} + 1;
 			if((|e_op) | eret) begin
-				cp0_13_cause[31]	<= (|e_op) ? is_bd_out : (eret) ? 1'b0 : cp0_13_cause[31];
+				cp0_13_cause[31]	<= (|e_op) ? is_bd_out : cp0_13_cause[31];
 				cp0_14_epc 			<= (|e_op) ? e_in : cp0_14_epc;
 				cp0_12_status[1]	<= (|e_op) ? 1'b1 : (eret) ? 1'b0 :cp0_12_status[1];
 				cp0_13_cause[6:2]	<= (|e_op) ?
@@ -166,16 +164,14 @@ module cp0_reg(clk,rst,data_out,data_in,cscd,sel,write,e_op,e_in,e_out,is_bd_in,
 									({5{e_op[4]}} & 5'b00000) |//0
 									({5{e_op[5]}} & 5'b01100) |//12
 									({5{e_op[6]}} & 5'b00100) |//4
-									({5{e_op[7]}} & 5'b00101) 	://5
-									(eret) ? 5'b10000 : cp0_13_cause[6:2];
+									({5{e_op[7]}} & 5'b00101) : cp0_13_cause[6:2];
 			end
 			else if(write) begin
 				case(cscd)
-					5'b01000:cp0_8_badvaddr <= data_in;
-					5'b01001:cp0_9_count 	<= data_in;
-					5'b01100:cp0_12_status 	<= data_in;
-					5'b01101:cp0_13_cause	<= data_in;
-					5'b01110:cp0_14_epc		<= data_in;
+					5'b01000:cp0_8_badvaddr 	<= data_in;
+					5'b01100:cp0_12_status[1] 	<= data_in[1];
+					//5'b01101:{cp0_13_cause[30:7],cp0_13_cause[1:0]}	<= {data_in[30:7],data_in[1:0]};
+					5'b01110:cp0_14_epc			<= data_in;
 				endcase
 			end
 		end
@@ -193,7 +189,7 @@ module cp0_reg(clk,rst,data_out,data_in,cscd,sel,write,e_op,e_in,e_out,is_bd_in,
 	assign data_out = {32{sel == 3'b000}} & {
 					{{32{cscd == 5'b01000}} & cp0_8_badvaddr 	} |
 					{{32{cscd == 5'b01001}} & cp0_9_count		} |
-					{{32{cscd == 5'b01100}} & cp0_12_status	} |
+					{{32{cscd == 5'b01100}} & cp0_12_status		} |
 					{{32{cscd == 5'b01101}} & cp0_13_cause		} |
 					{{32{cscd == 5'b01110}} & cp0_14_epc		} };
 	assign e_out = {cp0_12_status[1],cp0_13_cause[6:2],cp0_14_epc};

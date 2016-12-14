@@ -46,7 +46,7 @@ module my_cpu(input clk,input resetn,
 	wire [32:0] pipe1_ctrl_info_in;
 	wire [31:0] pipe1_data_info_in;
 	wire pipe0_allow_out; 
-	wire pipe1_allow_in;//ï¼
+	wire pipe1_allow_in;
 	wire reg_we;
 	wire [4:0]waddr;
 	wire [31:0]wdata;
@@ -58,7 +58,7 @@ module my_cpu(input clk,input resetn,
 	wire pipe1_valid_out; 
 	wire [81:0] pipe1_ctrl_info_out; 
 	wire [79:0] pipe1_data_info_out;
-	wire pipe2_valid_in; //PIPE1æœ‰æœ‰æ•ˆæŒ‡ä»¤ä¸”å‡†å¤‡å�	
+	wire pipe2_valid_in;
 	wire [81:0] pipe2_ctrl_info_in;
 	wire [79:0] pipe2_data_info_in;
 	wire pipe1_allow_out; 
@@ -67,7 +67,7 @@ module my_cpu(input clk,input resetn,
 	wire pipe2_valid_out; 
 	wire [65:0] pipe2_ctrl_info_out; 
 	wire [33:0] pipe2_data_info_out;
-	wire pipe3_valid_in; //PIPE2æœ‰æœ‰æ•ˆæŒ‡ä»¤ä¸”å‡†å¤‡å�	
+	wire pipe3_valid_in;
 	wire [65:0] pipe3_ctrl_info_in;
 	wire [33:0] pipe3_data_info_in;
 	wire pipe2_allow_out; 
@@ -76,7 +76,7 @@ module my_cpu(input clk,input resetn,
 	wire pipe3_valid_out; 
 	wire [60:0] pipe3_ctrl_info_out; 
 	wire [31:0] pipe3_data_info_out;
-	wire pipe4_valid_in; //PIPE3æœ‰æœ‰æ•ˆæŒ‡ä»¤ä¸”å‡†å¤‡å�	
+	wire pipe4_valid_in;
 	wire [60:0] pipe4_ctrl_info_in;
 	wire [31:0] pipe4_data_info_in;
 	wire pipe3_allow_out; 
@@ -93,7 +93,7 @@ module my_cpu(input clk,input resetn,
 	wire [31:0]inst_ram_data_out;
 	assign inst_ram_addr = inst_addr[31:2];
 
-	inst_ram #(.INST_INIT_FILE(INST_INIT_FILE)) MY_INST(.clka(clk),.wea(4'd0),.addra(inst_ram_addr[15:2]),.dina(0),.douta(inst_ram_data_out));
+	inst_ram #(.INST_INIT_FILE(INST_INIT_FILE)) MY_INST(.clka(clk),.wea(4'd0),.addra(inst_ram_addr[13:0]),.dina(0),.douta(inst_ram_data_out));
 
 	wire [31:0]data_addr;
 	wire [31:0]data_ram_addr;
@@ -102,7 +102,7 @@ module my_cpu(input clk,input resetn,
 	wire [3:0]data_ram_we;
 	assign data_ram_addr = data_addr[31:2];
 
-	data_ram MY_DATA(.clka(clk),.wea(data_ram_we),.addra(data_ram_addr[15:2]),.dina(data_ram_data_in),.douta(data_ram_data_out));
+	data_ram MY_DATA(.clka(clk),.wea(data_ram_we),.addra(data_ram_addr[13:0]),.dina(data_ram_data_in),.douta(data_ram_data_out));
 
 	wire [31:0]alu_result;
 
@@ -117,6 +117,7 @@ module my_cpu(input clk,input resetn,
 
 	wire [4:0]e_cause;
 	wire is_exl;
+	wire eret;
 	wire [31:0]e_pc;
 
 	PIPE0 IF(
@@ -136,11 +137,10 @@ module my_cpu(input clk,input resetn,
 		.ex_taken(ex_taken),
 		.ex_addr(ex_addr),
 		// .[YYY:0] pipe0_data_info_in(),
-		.pipe0_valid_out(pipe0_valid_out), //PIPE0æœ‰æœ‰æ•ˆæŒ‡ä»¤ä¸”å‡†å¤‡å�		
+		.pipe0_valid_out(pipe0_valid_out), 	
 		.pipe0_ctrl_info_out(pipe0_ctrl_info_out),
 		.pipe0_data_info_out(pipe0_data_info_out),
-		.pipe0_allow_out(pipe0_allow_out) //PIPE0æŒ‡ä»¤å…è®¸è¿›å…¥ä¸‹ä¸€æµæ°´çº		
-		// .pipe0_allow_in //PIPE 0 å…è®¸ä¸‹ä¸€æ¡æŒ‡ä»¤è¿›å…¥æœ¬æµæ°´ç�	
+		.pipe0_allow_out(pipe0_allow_out)
 	);
 
 	Reg_0_1 IF_ID_REG(.clk(clk),
@@ -171,11 +171,11 @@ module my_cpu(input clk,input resetn,
 		.br_taken(br_taken),
 		.j_taken(j_taken),
 		.jr_taken(jr_taken),
-		.wb_dest(pipe4_ctrl_info_in[19:15]),
-		.wb_dest_rdy(1'd1),//ç›®å‰çœ‹æ¥å¯ä»¥å¦‚æ­�		
-		.mem_dest(pipe3_ctrl_info_in[24:20]),
+		.wb_dest(pipe4_ctrl_info_in[19:15]&{5{wb_valid}}),
+		.wb_dest_rdy(1'd1),	
+		.mem_dest(pipe3_ctrl_info_in[24:20]&{5{pipe3_valid_out}}),
 		.mem_dest_rdy(mem_dest_rdy),
-		.ex_dest(pipe2_ctrl_info_in[43:39]),
+		.ex_dest(pipe2_ctrl_info_in[43:39]&{5{pipe2_valid_out}}),
 		.ex_dest_rdy(ex_dest_rdy),
 
 		.wb_res(wdata),
@@ -190,8 +190,8 @@ module my_cpu(input clk,input resetn,
 		.pipe1_valid_out(pipe1_valid_out), 
 		.pipe1_ctrl_info_out(pipe1_ctrl_info_out), 
 		.pipe1_data_info_out(pipe1_data_info_out),
-		.pipe1_allow_out(pipe1_allow_out), //PIPE1æŒ‡ä»¤å…è®¸è¿›å…¥ä¸‹ä¸€æµæ°´çº		
-		.pipe1_allow_in(pipe1_allow_in) //PIPE 1 å…è®¸ä¸‹ä¸€æ¡æŒ‡ä»¤è¿›å…¥æœ¬æµæ°´ç�
+		.pipe1_allow_out(pipe1_allow_out), 
+		.pipe1_allow_in(pipe1_allow_in)
 		);
 
 	Reg_1_2 ID_EX_REG(.clk(clk),
@@ -199,7 +199,7 @@ module my_cpu(input clk,input resetn,
 		.pipe1_valid_out(pipe1_valid_out), 
 		.pipe1_ctrl_info_out(pipe1_ctrl_info_out), 
 		.pipe1_data_info_out(pipe1_data_info_out),
-		.pipe2_valid_in(pipe2_valid_in), //PIPE1æœ‰æœ‰æ•ˆæŒ‡ä»¤ä¸”å‡†å¤‡å�		
+		.pipe2_valid_in(pipe2_valid_in),	
 		.pipe2_ctrl_info_in(pipe2_ctrl_info_in),
 		.pipe2_data_info_in(pipe2_data_info_in),
 		.pipe1_allow_out(pipe1_allow_out), 
@@ -217,26 +217,25 @@ module my_cpu(input clk,input resetn,
 		.pipe2_data_info_in(pipe2_data_info_in),
 		// vsrc1 79:48 vsrc2 47:16 imm 15:0
 		.pipe2_valid_out(pipe2_valid_out), 
-		.pipe2_ctrl_info_out(pipe2_ctrl_info_out), 
-		// ç¼ºï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼/ä¸ç¼ºäº		
+		.pipe2_ctrl_info_out(pipe2_ctrl_info_out), 	
 		.pipe2_data_info_out(pipe2_data_info_out),
 		// memvalue 33:2  offset 1:0
-		.pipe2_allow_out(pipe2_allow_out), //PIPE2æŒ‡ä»¤å…è®¸è¿›å…¥ä¸‹ä¸€æµæ°´çº		
-		.pipe2_allow_in(pipe2_allow_in),//PIPE 2 å…è®¸ä¸‹ä¸€æ¡æŒ‡ä»¤è¿›å…¥æœ¬æµæ°´ç�		
+		.pipe2_allow_out(pipe2_allow_out), 
+		.pipe2_allow_in(pipe2_allow_in),	
 		.addr_out(data_addr),
 		.we_out(data_ram_we),
 		.din_out(data_ram_data_in),
 
 		.alu_result(alu_result),
-		.ex_dest_rdy(ex_dest_rdy) //å‰é€’æ·»å�
+		.ex_dest_rdy(ex_dest_rdy)
 		);
 
 	Reg_2_3 EX_MEM_REG(.clk(clk),
-		.reset(other_reset), //é«˜ç”µå¹³æœ‰æ�
+		.reset(other_reset), 
 		.pipe2_valid_out(pipe2_valid_out), 
 		.pipe2_ctrl_info_out(pipe2_ctrl_info_out), 
 		.pipe2_data_info_out(pipe2_data_info_out),
-		.pipe3_valid_in(pipe3_valid_in), //PIPE2æœ‰æœ‰æ•ˆæŒ‡ä»¤ä¸”å‡†å¤‡å�		
+		.pipe3_valid_in(pipe3_valid_in),
 		.pipe3_ctrl_info_in(pipe3_ctrl_info_in),
 		.pipe3_data_info_in(pipe3_data_info_in),
 		.pipe2_allow_out(pipe2_allow_out), 
@@ -251,19 +250,19 @@ module my_cpu(input clk,input resetn,
 		.pipe3_valid_out(pipe3_valid_out),
 		.pipe3_data_info_in(pipe3_data_info_in),
 		.pipe3_ctrl_info_out(pipe3_ctrl_info_out), 
-		//exopï¼ˆå«eretï¼0-52ï¼Œpc51-20ï¼Œdest19-15ï¼Œbtype14ï¼Œhiwe13ï¼Œlowe12ï¼Œcp0we11(),cp0cs10-6(),cp0sel5-3ï¼Œwbmux2-1ï¼Œregwe0  
+	
 		.pipe3_data_info_out(pipe3_data_info_out),
-		.pipe3_allow_out(pipe3_allow_out), //PIPE3æŒ‡ä»¤å…è®¸è¿›å…¥ä¸‹ä¸€æµæ°´çº		
-		.pipe3_allow_in(pipe3_allow_in), //PIPE 3 å…è®¸ä¸‹ä¸€æ¡æŒ‡ä»¤è¿›å…¥æœ¬æµæ°´ç�		
-		.mem_dest_rdy(mem_dest_rdy)//å‰é€’ä½¿ç�
+		.pipe3_allow_out(pipe3_allow_out), 
+		.pipe3_allow_in(pipe3_allow_in),	
+		.mem_dest_rdy(mem_dest_rdy)
 		);
 
 	Reg_3_4 MEM_WB_REG(.clk(clk),
-		.reset(other_reset), //é«˜ç”µå¹³æœ‰æ�	
+		.reset(other_reset),	
 		.pipe3_valid_out(pipe3_valid_out), 
 		.pipe3_ctrl_info_out(pipe3_ctrl_info_out), 
 		.pipe3_data_info_out(pipe3_data_info_out),
-		.pipe4_valid_in(pipe4_valid_in), //PIPE3æœ‰æœ‰æ•ˆæŒ‡ä»¤ä¸”å‡†å¤‡å�		
+		.pipe4_valid_in(pipe4_valid_in),	
 		.pipe4_ctrl_info_in(pipe4_ctrl_info_in),
 		.pipe4_data_info_in(pipe4_data_info_in),
 		.pipe3_allow_out(pipe3_allow_out), 
@@ -276,7 +275,7 @@ module my_cpu(input clk,input resetn,
 		.rst(wb_reset),
 		.pipe4_valid_in(pipe4_valid_in),
 		.pipe4_ctrl_info_in(pipe4_ctrl_info_in),
-		//exopï¼ˆå«eretï¼0-52ï¼Œpc51-20ï¼Œdest19-15ï¼Œbtype14ï¼Œhiwe13ï¼Œlowe12ï¼Œcp0we11(),cp0cs10-6(),cp0sel5-3ï¼Œwbmux2-1ï¼Œregwe0  
+		
 		.pipe4_data_info_in(pipe4_data_info_in),
 		// .[XXX:0] pipe4_ctrl_info_out(), 
 		// .[YYY:0] pipe4_data_info_out(),
@@ -285,9 +284,10 @@ module my_cpu(input clk,input resetn,
 		.waddr(waddr),
 		.e_cause(e_cause),
 		.is_exl(is_exl),
+		.eret(eret),
 		.e_pc(e_pc),
-		// .pipe4_allow_out(pipe4_allow_out), //PIPE4æŒ‡ä»¤å…è®¸è¿›å…¥ä¸‹ä¸€æµæ°´çº		
-		.pipe4_allow_in(pipe4_allow_in), //PIPE 4 å…è®¸ä¸‹ä¸€æ¡æŒ‡ä»¤è¿›å…¥æœ¬æµæ°´ç�
+		// .pipe4_allow_out(pipe4_allow_out),	
+		.pipe4_allow_in(pipe4_allow_in), 
 		.pipe4_valid_out(wb_valid),
 		.wb_pc(wb_pc)
 
@@ -297,6 +297,7 @@ module my_cpu(input clk,input resetn,
 		.cause_type(e_cause),
 		.wb_reset(wb_reset),
 		.cp0_epc(e_pc),
+		.eret(eret),
 		.ex_addr(ex_addr),
 		.ex_taken(ex_taken),
 		.other_reset(other_reset)
