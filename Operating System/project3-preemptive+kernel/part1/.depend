@@ -1,0 +1,21 @@
+barrier_test.o: barrier_test.c
+interrupt.o: interrupt.c common.h kernel.h scheduler.h queue.h util.h \
+ interrupt.h
+kernel.o: kernel.c common.h interrupt.h kernel.h queue.h scheduler.h \
+ util.h printf.h tasks.c th.h
+philosophers.o: philosophers.c
+printf.o: printf.c printf.h
+process1.o: process1.c syslib.h common.h printf.h util.h
+process2.o: process2.c util.h common.h printf.h syslib.h
+queue.o: queue.c common.h queue.h
+scheduler.o: scheduler.c common.h interrupt.h queue.h printf.h \
+ scheduler.h util.h syslib.h
+sync.o: sync.c common.h interrupt.h queue.h scheduler.h sync.h util.h \
+ printf.h
+syslib.o: syslib.c common.h syslib.h util.h
+tasks.o: tasks.c scheduler.h common.h queue.h th.h
+th1.o: th1.c scheduler.h common.h queue.h
+th2.o: th2.c
+util.o: util.c util.h common.h
+entry.o: entry.S
+helper.o: helper.S

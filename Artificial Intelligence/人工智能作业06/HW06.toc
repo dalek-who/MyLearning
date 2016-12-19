@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}概\ 述}{1}
+\contentsline {paragraph}{问题：}{1}
+\contentsline {paragraph}{要求：}{1}
+\contentsline {section}{\numberline {2}分\ 析}{1}
+\contentsline {paragraph}{idea：}{1}
+\contentsline {section}{\numberline {3}方\ 法}{2}
+\contentsline {paragraph}{step. 1}{2}
+\contentsline {paragraph}{step. 2}{2}
+\contentsline {paragraph}{step. 3}{2}
+\contentsline {section}{\numberline {4}实\ 例}{2}
+\contentsline {paragraph}{数据}{2}
+\contentsline {paragraph}{划分}{3}
+\contentsline {paragraph}{折线图}{3}
+\contentsline {paragraph}{结果}{3}
