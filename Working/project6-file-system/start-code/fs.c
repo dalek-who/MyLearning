@@ -58,7 +58,7 @@ static inode_t *inode_read(short index, char *inode_buf)
     j = index % INODE_COUNT;
     block_read(super_block->inode_start + i, inode_buf);
     inodes = (inode_t *)inode_buf;
-	return &inodes[j];
+    return &inodes[j];
 }
 static void inode_write(short index, char *inode_buf)
 {
@@ -88,7 +88,7 @@ static short space_alloc(int type)
 {
     char bitmap_buf[BLOCK_SIZE];
     int i, j, index, start, end;
-	char flag;
+    char flag;
     if(type == INODE_TYPE)
     {
         start = 0;
@@ -120,7 +120,7 @@ static void space_free(short index, int type, int number)
 {
     char bitmap_buf[BLOCK_SIZE];
     int i, j;
-	char flag;
+    char flag;
     if((index < 0 || index >= super_block->inode_number) && type == INODE_TYPE)
         return;
     if((index < 0 || index >= super_block->data_blocks) && type != INODE_TYPE)
@@ -139,7 +139,7 @@ static void space_free(short index, int type, int number)
         block_write(super_block->bitmap_start + index / BLOCK_BIT, bitmap_buf);
     }
     else return;
-	
+    
     if(type == FILE_TYPE)
         return;
     else if(type == INODE_TYPE)
@@ -192,8 +192,8 @@ static int dir_delete_swap(char *name, int dir_inode)
     file = (file_entry_t *)dir_buf;
     int i;
     short block = -1;
-	if(dir_inode == ROOT_DIRECTORY && (same_string(name, cname) || same_string(name, fname)))
-		return -1;
+    if(dir_inode == ROOT_DIRECTORY && (same_string(name, cname) || same_string(name, fname)))
+        return -1;
     for(i = 0; i < inode->number && i < DIRECT_BLOCK_NUM * DIR_ENTRY_COUNT; i++)
     {
         if(i % DIR_ENTRY_COUNT == 0)
@@ -257,16 +257,16 @@ static int dir_insert(char *name, short dir_inode, short entry_inode)
     char inode_buf[BLOCK_SIZE];
     inode_t *inode;
     inode = inode_read(dir_inode, inode_buf);
-	
-	if(inode->type != DIRECTORY)
-		return -1;
+    
+    if(inode->type != DIRECTORY)
+        return -1;
     char dir_buf[BLOCK_SIZE];
     file_entry_t *file;
     file = (file_entry_t *)dir_buf;
-	char indirect_buf[BLOCK_SIZE];
-	short *indirect_block;
-	indirect_block = (short *)indirect_buf;
-	
+    char indirect_buf[BLOCK_SIZE];
+    short *indirect_block;
+    indirect_block = (short *)indirect_buf;
+    
     short block;
     int index;
     index = inode->number % DIR_ENTRY_COUNT;
@@ -278,13 +278,13 @@ static int dir_insert(char *name, short dir_inode, short entry_inode)
             return -1;
     }
     else if(inode->used_blocks <= DIRECT_BLOCK_NUM)
-		block = inode->blocks[inode->used_blocks - 1];
-	else
-	{
-		data_read(inode->indirect_block, indirect_buf);
-		block = indirect_block[inode->used_blocks - DIRECT_BLOCK_NUM - 1];
-	}
-	data_read(block, dir_buf);
+        block = inode->blocks[inode->used_blocks - 1];
+    else
+    {
+        data_read(inode->indirect_block, indirect_buf);
+        block = indirect_block[inode->used_blocks - DIRECT_BLOCK_NUM - 1];
+    }
+    data_read(block, dir_buf);
     file[index].inode = entry_inode;
     bcopy((unsigned char *)name, (unsigned char *)file[index].name, MAX_FILE_NAME + 1);
     data_write(block, dir_buf);
@@ -363,8 +363,8 @@ static short add_block(inode_t *inode)
 }
 static short path_lookup(char *name)
 {
-	if(name == NULL)
-		return -1;
+    if(name == NULL)
+        return -1;
     int i, count;
     char pname[MAX_FILE_NAME + 1] = {'\0'};
     short dir;
@@ -447,17 +447,17 @@ void fs_init(void)
 {
     block_init();
     /* More code HERE */
-	//比对super和备份
+    //比对super和备份
 
     block_read(SUPER_BLOCK, super_block_buf);
-	super_block = (super_block_t *)super_block_buf;
+    super_block = (super_block_t *)super_block_buf;
     if(super_block->magic_num != MAGIC_NUMBER)
         block_read(SUPER_BLOCK_BACKUP, super_block_buf);
 
     //是否需要格式化
     if(super_block->magic_num != MAGIC_NUMBER)
         fs_mkfs();
-	//根目录，初始化文件描述符
+    //根目录，初始化文件描述符
     current_dir = ROOT_DIRECTORY;
     bzero((char *)file_table, sizeof(file_table));
 }
@@ -491,7 +491,7 @@ int fs_mkfs(void) {
     inode_init(current_dir, DIRECTORY);
     dir_insert(cname, current_dir, current_dir);
     dir_insert(fname, current_dir, current_dir);
-	bzero((char *)file_table, sizeof(file_table));
+    bzero((char *)file_table, sizeof(file_table));
     return 0;
     // return -1;
 }
@@ -521,13 +521,13 @@ int fs_open(char *fileName, int flags)
                 i++;
             }
         }
-		if(count == 0)
-			dir = current_dir;
-		else 
-		{
-			bcopy((unsigned char *)fileName, (unsigned char *)dir_name, count);
-			dir = path_lookup(dir_name);
-		}
+        if(count == 0)
+            dir = current_dir;
+        else 
+        {
+            bcopy((unsigned char *)fileName, (unsigned char *)dir_name, count);
+            dir = path_lookup(dir_name);
+        }
         index = space_alloc(INODE_TYPE);
         if(index == -1)
             return -1;
@@ -576,8 +576,8 @@ int fs_read(int fd, char *buf, int count)
         int min;
         while(read_bytes < count)
         {
-			current_block = file_table[fd].cursor / BLOCK_SIZE;
-			current_bytes = file_table[fd].cursor % BLOCK_SIZE;
+            current_block = file_table[fd].cursor / BLOCK_SIZE;
+            current_bytes = file_table[fd].cursor % BLOCK_SIZE;
             if(current_block >= DIRECT_BLOCK_NUM && current_block < MAX_FILE_BLOCK)
                 data_read(indirect_block[current_block - DIRECT_BLOCK_NUM], data_buf);
             else data_read(inode->blocks[current_block], data_buf);
@@ -618,8 +618,8 @@ int fs_write(int fd, char *buf, int count)
             short block[MAX_FILE_BLOCK];
             int block_num = (file_table[fd].cursor - 1) / BLOCK_SIZE + 1;
             int i;
-			if(block_num > MAX_FILE_BLOCK)
-				return -1;
+            if(block_num > MAX_FILE_BLOCK)
+                return -1;
             if(block_num == inode->used_blocks)
             {
                 for (i = inode->size % BLOCK_SIZE; i < file_table[fd].cursor; i++)
@@ -631,12 +631,12 @@ int fs_write(int fd, char *buf, int count)
                 for (i = inode->size % BLOCK_SIZE; i < BLOCK_SIZE; i++)
                     data_buf[i] = 0;
                 data_write(data_block, data_buf);
-				bzero_block(data_buf);
+                bzero_block(data_buf);
                 for(i = 0; i < block_num - inode->used_blocks; i++)
-				{
+                {
                     block[i] = add_block(inode);
-					data_write(block[i], data_buf);
-				}
+                    data_write(block[i], data_buf);
+                }
                 if(block[i] == -1)
                 {
                     for(; i >= 0; i--)
@@ -654,7 +654,7 @@ int fs_write(int fd, char *buf, int count)
                 }
             }
         }
-		
+        
         int current_block, current_bytes, write_bytes = 0;
 
         char indirect_buf[BLOCK_SIZE];
@@ -665,17 +665,17 @@ int fs_write(int fd, char *buf, int count)
         int min;
         while(write_bytes < count)
         {
-			current_block = file_table[fd].cursor / BLOCK_SIZE;
-			current_bytes = file_table[fd].cursor % BLOCK_SIZE;
-			if(current_block >= MAX_FILE_BLOCK || current_block < 0)
-				break;
+            current_block = file_table[fd].cursor / BLOCK_SIZE;
+            current_bytes = file_table[fd].cursor % BLOCK_SIZE;
+            if(current_block >= MAX_FILE_BLOCK || current_block < 0)
+                break;
             if(current_block >= inode->used_blocks)
-			{
+            {
                 if(add_block(inode) == -1)
                     break;
-				if(current_block == DIRECT_BLOCK_NUM)
-					data_read(inode->indirect_block, indirect_buf);
-			}
+                if(current_block == DIRECT_BLOCK_NUM)
+                    data_read(inode->indirect_block, indirect_buf);
+            }
             if(current_block >= DIRECT_BLOCK_NUM)
                 data_read(indirect_block[current_block - DIRECT_BLOCK_NUM], data_buf);
             else data_read(inode->blocks[current_block], data_buf);
@@ -689,8 +689,8 @@ int fs_write(int fd, char *buf, int count)
             write_bytes += min;
             file_table[fd].cursor += min;
         }
-		if(file_table[fd].cursor > inode->size)
-			inode->size = file_table[fd].cursor;
+        if(file_table[fd].cursor > inode->size)
+            inode->size = file_table[fd].cursor;
         inode_write(file_table[fd].inode, inode_buf);
         return write_bytes;
     }
@@ -699,145 +699,145 @@ int fs_write(int fd, char *buf, int count)
 
 int fs_lseek(int fd, int offset) {
     if(fd < 0 || fd >= MAX_FD_TABLE)
-		return -1;
-	if(offset < 0 || !file_table[fd].is_open)
-		return -1;
-	file_table[fd].cursor = offset;
-	return offset;
+        return -1;
+    if(offset < 0 || !file_table[fd].is_open)
+        return -1;
+    file_table[fd].cursor = offset;
+    return offset;
 }
 
 int fs_mkdir(char *fileName)
 {
-	short dir;
-	dir = path_lookup(fileName);
-	if(dir >= 0)
-		return -1;
-	dir = space_alloc(INODE_TYPE);
-	if(dir == -1)
-		return -1;
-	inode_init(dir, DIRECTORY);
-	if(dir_insert(cname, dir, dir) == -1)
-	{
-		space_free(dir, INODE_TYPE, 0);
-		return -1;
-	}
-	if(dir_insert(fileName, current_dir, dir) == -1)
-	{
-		space_free(dir, INODE_TYPE, 0);
-		return -1;
-	}
-	dir_insert(fname, dir, current_dir);
-	
+    short dir;
+    dir = path_lookup(fileName);
+    if(dir >= 0)
+        return -1;
+    dir = space_alloc(INODE_TYPE);
+    if(dir == -1)
+        return -1;
+    inode_init(dir, DIRECTORY);
+    if(dir_insert(cname, dir, dir) == -1)
+    {
+        space_free(dir, INODE_TYPE, 0);
+        return -1;
+    }
+    if(dir_insert(fileName, current_dir, dir) == -1)
+    {
+        space_free(dir, INODE_TYPE, 0);
+        return -1;
+    }
+    dir_insert(fname, dir, current_dir);
+    
     return 0;
 }
 
 int fs_rmdir(char *fileName)
 {
     short file;
-	file = path_lookup(fileName);
-	if(file < 0)
-		return -1;
-	
-	char inode_buf[BLOCK_SIZE];
-	inode_t *inode;
-	inode = inode_read(file, inode_buf);
-	if(inode->type != DIRECTORY)
-		return -1;
-	
-	char dir_name[MAX_PATH_NAME + 1];
-	char pname[MAX_FILE_NAME + 1];
-	short dir;
-	int length = strlen(fileName);
-	int i, count;
-	if(fileName[length - 1] == '/')
-		length--;
-	for(i = 0; i < MAX_PATH_NAME && i < length; i++)
-	{
-		count = i;
-		pname[0] = '\0';
-		while(fileName[i] != '/' && i < length)
-		{
-			if(i - count < MAX_FILE_NAME)
-				pname[i - count] = fileName[i];
-			i++;
-		}
-	}
-	bcopy((unsigned char *)fileName, (unsigned char *)dir_name, count);
-	dir = path_lookup(dir_name);
-	
-	dir_delete_swap(fileName, dir);
-	space_free(dir, INODE_TYPE, 0);
-	return 0;
+    file = path_lookup(fileName);
+    if(file < 0)
+        return -1;
+    
+    char inode_buf[BLOCK_SIZE];
+    inode_t *inode;
+    inode = inode_read(file, inode_buf);
+    if(inode->type != DIRECTORY)
+        return -1;
+    
+    char dir_name[MAX_PATH_NAME + 1];
+    char pname[MAX_FILE_NAME + 1];
+    short dir;
+    int length = strlen(fileName);
+    int i, count;
+    if(fileName[length - 1] == '/')
+        length--;
+    for(i = 0; i < MAX_PATH_NAME && i < length; i++)
+    {
+        count = i;
+        pname[0] = '\0';
+        while(fileName[i] != '/' && i < length)
+        {
+            if(i - count < MAX_FILE_NAME)
+                pname[i - count] = fileName[i];
+            i++;
+        }
+    }
+    bcopy((unsigned char *)fileName, (unsigned char *)dir_name, count);
+    dir = path_lookup(dir_name);
+    
+    dir_delete_swap(fileName, dir);
+    space_free(dir, INODE_TYPE, 0);
+    return 0;
 }
 
 int fs_cd(char *dirName)
 {
-	if(same_string(dirName, cname))
-		return 0;
-	short dir;
-	dir = path_lookup(dirName);
-	if(dir < 0)
-		return -1;
-	
-	char inode_buf[BLOCK_SIZE];
-	inode_t *inode;
-	inode = inode_read(dir, inode_buf);
-	if(inode->type != DIRECTORY)
-		return -1;
-	current_dir = dir;
+    if(same_string(dirName, cname))
+        return 0;
+    short dir;
+    dir = path_lookup(dirName);
+    if(dir < 0)
+        return -1;
+    
+    char inode_buf[BLOCK_SIZE];
+    inode_t *inode;
+    inode = inode_read(dir, inode_buf);
+    if(inode->type != DIRECTORY)
+        return -1;
+    current_dir = dir;
     return 0;
 }
 
 int fs_link(char *old_fileName, char *new_fileName)
 {
-	short file;
-	if(new_fileName == NULL)
-		return -1;
-	
-	file = path_lookup(old_fileName);
-	
-	if(file < 0)
-		return -1;
-	
-	if(path_lookup(new_fileName) >= 0)
-		return -1;
-	
-	if(dir_insert(new_fileName, current_dir, file) == -1)
-		return -1;
+    short file;
+    if(new_fileName == NULL)
+        return -1;
+    
+    file = path_lookup(old_fileName);
+    
+    if(file < 0)
+        return -1;
+    
+    if(path_lookup(new_fileName) >= 0)
+        return -1;
+    
+    if(dir_insert(new_fileName, current_dir, file) == -1)
+        return -1;
     return 0;
 }
 
 int fs_unlink(char *fileName)
 {
-	short file;
-	file = path_lookup(fileName);
-	if(file < 0)
-		return -1;
-	
-	char dir_name[MAX_PATH_NAME + 1];
-	char pname[MAX_FILE_NAME + 1];
-	short dir;
-	int length = strlen(fileName);
-	int i, count;
-	if(fileName[length - 1] == '/')
-		length--;
-	for(i = 0; i < MAX_PATH_NAME && i < length; i++)
-	{
-		count = i;
-		pname[0] = '\0';
-		while(fileName[i] != '/' && i < length)
-		{
-			if(i - count < MAX_FILE_NAME)
-				pname[i - count] = fileName[i];
-			i++;
-		}
-	}
-	bcopy((unsigned char *)fileName, (unsigned char *)dir_name, count);
-	dir = path_lookup(dir_name);
-	if(dir < 0)
-		dir = current_dir;
-	
-	dir_delete_swap(fileName, dir);	
+    short file;
+    file = path_lookup(fileName);
+    if(file < 0)
+        return -1;
+    
+    char dir_name[MAX_PATH_NAME + 1];
+    char pname[MAX_FILE_NAME + 1];
+    short dir;
+    int length = strlen(fileName);
+    int i, count;
+    if(fileName[length - 1] == '/')
+        length--;
+    for(i = 0; i < MAX_PATH_NAME && i < length; i++)
+    {
+        count = i;
+        pname[0] = '\0';
+        while(fileName[i] != '/' && i < length)
+        {
+            if(i - count < MAX_FILE_NAME)
+                pname[i - count] = fileName[i];
+            i++;
+        }
+    }
+    bcopy((unsigned char *)fileName, (unsigned char *)dir_name, count);
+    dir = path_lookup(dir_name);
+    if(dir < 0)
+        dir = current_dir;
+    
+    dir_delete_swap(fileName, dir); 
     return 0;
 }
 
