@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Implementation of a Unix-like file system.
 */
 #include "util.h"
@@ -87,7 +87,8 @@ static void inode_init(short index, int type)
 static short space_alloc(int type)
 {
     char bitmap_buf[BLOCK_SIZE];
-    int i, j, index, flag, start, end;
+    int i, j, index, start, end;
+	char flag;
     if(type == INODE_TYPE)
     {
         start = 0;
@@ -103,12 +104,12 @@ static short space_alloc(int type)
     {
         if(index % BLOCK_BIT == 0)
             block_read(super_block->bitmap_start + index / BLOCK_BIT, bitmap_buf);
-        i = index / sizeof(char);
-        j = index % sizeof(char);
+        i = index / 8;
+        j = index % 8;
         flag = bitmap_buf[i] << j;
         if(flag >= 0)
         {
-            bitmap_buf[i] += 1 << (sizeof(char) - 1 - j);
+            bitmap_buf[i] += 1 << (8 - 1 - j);
             block_write(super_block->bitmap_start + index / BLOCK_BIT, bitmap_buf);
             return index - start;
         }
@@ -118,7 +119,8 @@ static short space_alloc(int type)
 static void space_free(short index, int type, int number)
 {
     char bitmap_buf[BLOCK_SIZE];
-    int i, j, flag;
+    int i, j;
+	char flag;
     if((index < 0 || index >= super_block->inode_number) && type == INODE_TYPE)
         return;
     if((index < 0 || index >= super_block->data_blocks) && type != INODE_TYPE)
@@ -128,12 +130,12 @@ static void space_free(short index, int type, int number)
     if(type != INODE_TYPE)
         index += super_block->inode_number;
     block_read(super_block->bitmap_start + index / BLOCK_BIT, bitmap_buf);
-    i = index / sizeof(char);
-    j = index % sizeof(char);
+    i = index / 8;
+    j = index % 8;
     flag = bitmap_buf[i] << j;
     if(flag < 0)
     {
-        bitmap_buf[i] += 1 << (sizeof(char) - 1 - j);
+        bitmap_buf[i] += 1 << (8 - 1 - j);
         block_write(super_block->bitmap_start + index / BLOCK_BIT, bitmap_buf);
     }
     else return;
@@ -327,7 +329,7 @@ static short add_block(inode_t *inode)
 {
     char data_buf[BLOCK_SIZE];
     short block;
-    if(inode->used_blocks == MAX_FILE_BLOCK)
+    if(inode->used_blocks == MAX_FILE_BLOCK || inode->used_blocks < 0)
         return -1;
     block = space_alloc(FILE_TYPE);
     if(block == -1)
@@ -550,8 +552,7 @@ int fs_read(int fd, char *buf, int count)
             return 0;
         count = (count > inode->size - file_table[fd].cursor) ? inode->size - file_table[fd].cursor : count;
         int current_block, current_bytes, read_bytes = 0;
-        current_block = file_table[fd].cursor / BLOCK_SIZE;
-        current_bytes = file_table[fd].cursor % BLOCK_SIZE;
+        
         char indirect_buf[BLOCK_SIZE];
         short *indirect_block;
         indirect_block = (short *)indirect_buf;
@@ -561,15 +562,16 @@ int fs_read(int fd, char *buf, int count)
         int min;
         while(read_bytes < count)
         {
-            if(current_block > DIRECT_BLOCK_NUM)
+			current_block = file_table[fd].cursor / BLOCK_SIZE;
+			current_bytes = file_table[fd].cursor % BLOCK_SIZE;
+            if(current_block >= DIRECT_BLOCK_NUM && current_block < MAX_FILE_BLOCK)
                 data_read(indirect_block[current_block - DIRECT_BLOCK_NUM], data_buf);
             else data_read(inode->blocks[current_block], data_buf);
             min = (BLOCK_SIZE - current_bytes > count - read_bytes) ? count - read_bytes : BLOCK_SIZE - current_bytes;
             bcopy((unsigned char *)(data_buf + current_bytes), (unsigned char *)(buf + read_bytes), min);
             read_bytes += min;
-            current_block++;
+            file_table[fd].cursor += min;
         }
-        file_table[fd].cursor += read_bytes;
         return read_bytes;
     }
     return -1;
@@ -602,6 +604,8 @@ int fs_write(int fd, char *buf, int count)
             short block[MAX_FILE_BLOCK];
             int block_num = (file_table[fd].cursor - 1) / BLOCK_SIZE + 1;
             int i;
+			if(block_num > MAX_FILE_BLOCK)
+				return -1;
             if(block_num == inode->used_blocks)
             {
                 for (i = inode->size % BLOCK_SIZE; i < file_table[fd].cursor; i++)
@@ -613,8 +617,12 @@ int fs_write(int fd, char *buf, int count)
                 for (i = inode->size % BLOCK_SIZE; i < BLOCK_SIZE; i++)
                     data_buf[i] = 0;
                 data_write(data_block, data_buf);
+				bzero_block(data_buf);
                 for(i = 0; i < block_num - inode->used_blocks; i++)
+				{
                     block[i] = add_block(inode);
+					data_write(block[i], data_buf);
+				}
                 if(block[i] == -1)
                 {
                     for(; i >= 0; i--)
@@ -630,13 +638,11 @@ int fs_write(int fd, char *buf, int count)
                             space_free(inode->indirect_block, FILE_TYPE, 0);
                     return -1;
                 }
-                inode->size = file_table[fd].cursor;
             }
         }
-        count = (count > inode->size - file_table[fd].cursor) ? inode->size - file_table[fd].cursor : count;
+		
         int current_block, current_bytes, write_bytes = 0;
-        current_block = file_table[fd].cursor / BLOCK_SIZE;
-        current_bytes = file_table[fd].cursor % BLOCK_SIZE;
+
         char indirect_buf[BLOCK_SIZE];
         short *indirect_block;
         indirect_block = (short *)indirect_buf;
@@ -645,23 +651,32 @@ int fs_write(int fd, char *buf, int count)
         int min;
         while(write_bytes < count)
         {
-            if(current_block > inode->used_blocks)
+			current_block = file_table[fd].cursor / BLOCK_SIZE;
+			current_bytes = file_table[fd].cursor % BLOCK_SIZE;
+			if(current_block >= MAX_FILE_BLOCK || current_block < 0)
+				break;
+            if(current_block >= inode->used_blocks)
+			{
                 if(add_block(inode) == -1)
                     break;
-            if(current_block > DIRECT_BLOCK_NUM)
+				if(current_block == DIRECT_BLOCK_NUM)
+					data_read(inode->indirect_block, indirect_buf);
+			}
+            if(current_block >= DIRECT_BLOCK_NUM)
                 data_read(indirect_block[current_block - DIRECT_BLOCK_NUM], data_buf);
             else data_read(inode->blocks[current_block], data_buf);
 
             min = (BLOCK_SIZE - current_bytes > count - write_bytes) ? count - write_bytes : BLOCK_SIZE - current_bytes;
             bcopy((unsigned char *)(buf + write_bytes), (unsigned char *)(data_buf + current_bytes), min);
 
-            if(current_block > DIRECT_BLOCK_NUM)
+            if(current_block >= DIRECT_BLOCK_NUM)
                 data_write(indirect_block[current_block - DIRECT_BLOCK_NUM], data_buf);
             else data_write(inode->blocks[current_block], data_buf);
             write_bytes += min;
-            current_block++;
+            file_table[fd].cursor += min;
         }
-        file_table[fd].cursor += write_bytes;
+		if(file_table[fd].cursor > inode->size)
+			inode->size = file_table[fd].cursor;
         inode_write(file_table[fd].inode, inode_buf);
         return write_bytes;
     }
