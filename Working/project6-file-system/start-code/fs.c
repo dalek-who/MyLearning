@@ -668,7 +668,7 @@ int fs_write(int fd, char *buf, int count)
 
             min = (BLOCK_SIZE - current_bytes > count - write_bytes) ? count - write_bytes : BLOCK_SIZE - current_bytes;
             bcopy((unsigned char *)(buf + write_bytes), (unsigned char *)(data_buf + current_bytes), min);
-
+		
             if(current_block >= DIRECT_BLOCK_NUM)
                 data_write(indirect_block[current_block - DIRECT_BLOCK_NUM], data_buf);
             else data_write(inode->blocks[current_block], data_buf);
