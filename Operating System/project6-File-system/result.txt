@@ -1,0 +1,4447 @@
+......Starting my tests
+
+
+ShellShock Version 0.000003
+
+# #     Inode No         : 0
+    Type             : DIRECTORY
+    Link Count       : 2
+    Size             : 128
+    Blocks allocated : 1
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+#     Inode No         : 0
+    Type             : DIRECTORY
+    Link Count       : 258
+    Size             : 16512
+    Blocks allocated : 5
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+# OK
+#     Inode No         : 0
+    Type             : DIRECTORY
+    Link Count       : 2
+    Size             : 128
+    Blocks allocated : 1
+# INODE|FILE_NAME
+0|.
+0|..
+# Goodbye
+ShellShock Version 0.000003
+
+# # #     Inode No         : 1
+    Type             : FILE
+    Link Count       : 1
+    Size             : 4136960
+    Blocks allocated : 1010
+# # Goodbye
+ShellShock Version 0.000003
+
+# # OK
+# OK
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # INODE|FILE_NAME
+1|.
+0|..
+2|f0
+3|f1
+4|f2
+5|f3
+6|f4
+7|f5
+8|f6
+9|f7
+10|f8
+11|f9
+12|f10
+13|f11
+14|f12
+15|f13
+16|f14
+17|f15
+18|f16
+19|f17
+20|f18
+21|f19
+22|f20
+23|f21
+24|f22
+25|f23
+26|f24
+27|f25
+28|f26
+29|f27
+30|f28
+31|f29
+32|f30
+33|f31
+34|f32
+35|f33
+36|f34
+37|f35
+38|f36
+39|f37
+40|f38
+41|f39
+42|f40
+43|f41
+44|f42
+45|f43
+46|f44
+47|f45
+48|f46
+49|f47
+50|f48
+51|f49
+52|f50
+53|f51
+54|f52
+55|f53
+56|f54
+57|f55
+58|f56
+59|f57
+60|f58
+61|f59
+62|f60
+63|f61
+64|f62
+65|f63
+66|f64
+67|f65
+68|f66
+69|f67
+70|f68
+71|f69
+72|f70
+73|f71
+74|f72
+75|f73
+76|f74
+77|f75
+78|f76
+79|f77
+80|f78
+81|f79
+82|f80
+83|f81
+84|f82
+85|f83
+86|f84
+87|f85
+88|f86
+89|f87
+90|f88
+91|f89
+92|f90
+93|f91
+94|f92
+95|f93
+96|f94
+97|f95
+98|f96
+99|f97
+100|f98
+101|f99
+102|f100
+103|f101
+104|f102
+105|f103
+106|f104
+107|f105
+108|f106
+109|f107
+110|f108
+111|f109
+112|f110
+113|f111
+114|f112
+115|f113
+116|f114
+117|f115
+118|f116
+119|f117
+120|f118
+121|f119
+122|f120
+123|f121
+124|f122
+125|f123
+126|f124
+127|f125
+128|f126
+129|f127
+130|f128
+131|f129
+132|f130
+133|f131
+134|f132
+135|f133
+136|f134
+137|f135
+138|f136
+139|f137
+140|f138
+141|f139
+142|f140
+143|f141
+144|f142
+145|f143
+146|f144
+147|f145
+148|f146
+149|f147
+150|f148
+151|f149
+152|f150
+153|f151
+154|f152
+155|f153
+156|f154
+157|f155
+158|f156
+159|f157
+160|f158
+161|f159
+162|f160
+163|f161
+164|f162
+165|f163
+166|f164
+167|f165
+168|f166
+169|f167
+170|f168
+171|f169
+172|f170
+173|f171
+174|f172
+175|f173
+176|f174
+177|f175
+178|f176
+179|f177
+180|f178
+181|f179
+182|f180
+183|f181
+184|f182
+185|f183
+186|f184
+187|f185
+188|f186
+189|f187
+190|f188
+191|f189
+192|f190
+193|f191
+194|f192
+195|f193
+196|f194
+197|f195
+198|f196
+199|f197
+200|f198
+201|f199
+202|f200
+203|f201
+204|f202
+205|f203
+206|f204
+207|f205
+208|f206
+209|f207
+210|f208
+211|f209
+212|f210
+213|f211
+214|f212
+215|f213
+216|f214
+217|f215
+218|f216
+219|f217
+220|f218
+221|f219
+222|f220
+223|f221
+224|f222
+225|f223
+226|f224
+227|f225
+228|f226
+229|f227
+230|f228
+231|f229
+232|f230
+233|f231
+234|f232
+235|f233
+236|f234
+237|f235
+238|f236
+239|f237
+240|f238
+241|f239
+242|f240
+243|f241
+244|f242
+245|f243
+246|f244
+247|f245
+248|f246
+249|f247
+250|f248
+251|f249
+252|f250
+253|f251
+254|f252
+255|f253
+256|f254
+257|f255
+258|f256
+259|f257
+260|f258
+261|f259
+262|f260
+263|f261
+264|f262
+265|f263
+266|f264
+267|f265
+268|f266
+269|f267
+270|f268
+271|f269
+272|f270
+273|f271
+274|f272
+275|f273
+276|f274
+277|f275
+278|f276
+279|f277
+280|f278
+281|f279
+282|f280
+283|f281
+284|f282
+285|f283
+286|f284
+287|f285
+288|f286
+289|f287
+290|f288
+291|f289
+292|f290
+293|f291
+294|f292
+295|f293
+296|f294
+297|f295
+298|f296
+299|f297
+300|f298
+301|f299
+302|f300
+303|f301
+304|f302
+305|f303
+306|f304
+307|f305
+308|f306
+309|f307
+310|f308
+311|f309
+312|f310
+313|f311
+314|f312
+315|f313
+316|f314
+317|f315
+318|f316
+319|f317
+320|f318
+321|f319
+322|f320
+323|f321
+324|f322
+325|f323
+326|f324
+327|f325
+328|f326
+329|f327
+330|f328
+331|f329
+332|f330
+333|f331
+334|f332
+335|f333
+336|f334
+337|f335
+338|f336
+339|f337
+340|f338
+341|f339
+342|f340
+343|f341
+344|f342
+345|f343
+346|f344
+347|f345
+348|f346
+349|f347
+350|f348
+351|f349
+352|f350
+353|f351
+354|f352
+355|f353
+356|f354
+357|f355
+358|f356
+359|f357
+360|f358
+361|f359
+362|f360
+363|f361
+364|f362
+365|f363
+366|f364
+367|f365
+368|f366
+369|f367
+370|f368
+371|f369
+372|f370
+373|f371
+374|f372
+375|f373
+376|f374
+377|f375
+378|f376
+379|f377
+380|f378
+381|f379
+382|f380
+383|f381
+384|f382
+385|f383
+386|f384
+387|f385
+388|f386
+389|f387
+390|f388
+391|f389
+392|f390
+393|f391
+394|f392
+395|f393
+396|f394
+397|f395
+398|f396
+399|f397
+400|f398
+401|f399
+402|f400
+403|f401
+404|f402
+405|f403
+406|f404
+407|f405
+408|f406
+409|f407
+410|f408
+411|f409
+412|f410
+413|f411
+414|f412
+415|f413
+416|f414
+417|f415
+418|f416
+419|f417
+420|f418
+421|f419
+422|f420
+423|f421
+424|f422
+425|f423
+426|f424
+427|f425
+428|f426
+429|f427
+430|f428
+431|f429
+432|f430
+433|f431
+434|f432
+435|f433
+436|f434
+437|f435
+438|f436
+439|f437
+440|f438
+441|f439
+442|f440
+443|f441
+444|f442
+445|f443
+446|f444
+447|f445
+448|f446
+449|f447
+450|f448
+451|f449
+452|f450
+453|f451
+454|f452
+455|f453
+456|f454
+457|f455
+458|f456
+459|f457
+460|f458
+461|f459
+462|f460
+463|f461
+464|f462
+465|f463
+466|f464
+467|f465
+468|f466
+469|f467
+470|f468
+471|f469
+472|f470
+473|f471
+474|f472
+475|f473
+476|f474
+477|f475
+478|f476
+479|f477
+480|f478
+481|f479
+482|f480
+483|f481
+484|f482
+485|f483
+486|f484
+487|f485
+488|f486
+489|f487
+490|f488
+491|f489
+492|f490
+493|f491
+494|f492
+495|f493
+496|f494
+497|f495
+498|f496
+499|f497
+500|f498
+501|f499
+502|f500
+503|f501
+504|f502
+505|f503
+506|f504
+507|f505
+508|f506
+509|f507
+510|f508
+511|f509
+512|f510
+513|f511
+514|f512
+515|f513
+516|f514
+517|f515
+518|f516
+519|f517
+520|f518
+521|f519
+522|f520
+523|f521
+524|f522
+525|f523
+526|f524
+527|f525
+528|f526
+529|f527
+530|f528
+531|f529
+532|f530
+533|f531
+534|f532
+535|f533
+536|f534
+537|f535
+538|f536
+539|f537
+540|f538
+541|f539
+542|f540
+543|f541
+544|f542
+545|f543
+546|f544
+547|f545
+548|f546
+549|f547
+550|f548
+551|f549
+552|f550
+553|f551
+554|f552
+555|f553
+556|f554
+557|f555
+558|f556
+559|f557
+560|f558
+561|f559
+562|f560
+563|f561
+564|f562
+565|f563
+566|f564
+567|f565
+568|f566
+569|f567
+570|f568
+571|f569
+572|f570
+573|f571
+574|f572
+575|f573
+576|f574
+577|f575
+578|f576
+579|f577
+580|f578
+581|f579
+582|f580
+583|f581
+584|f582
+585|f583
+586|f584
+587|f585
+588|f586
+589|f587
+590|f588
+591|f589
+592|f590
+593|f591
+594|f592
+595|f593
+596|f594
+597|f595
+598|f596
+599|f597
+600|f598
+601|f599
+602|f600
+603|f601
+604|f602
+605|f603
+606|f604
+607|f605
+608|f606
+609|f607
+610|f608
+611|f609
+612|f610
+613|f611
+614|f612
+615|f613
+616|f614
+617|f615
+618|f616
+619|f617
+620|f618
+621|f619
+622|f620
+623|f621
+624|f622
+625|f623
+626|f624
+627|f625
+628|f626
+629|f627
+630|f628
+631|f629
+632|f630
+633|f631
+634|f632
+635|f633
+636|f634
+637|f635
+638|f636
+639|f637
+640|f638
+641|f639
+# A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+# A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+# A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+# OK
+#     Inode No         : 1
+    Type             : DIRECTORY
+    Link Count       : 2
+    Size             : 41088
+    Blocks allocated : 11
+# Goodbye
+ShellShock Version 0.000003
+
+# # OK
+# OK
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #     Inode No         : 1
+    Type             : DIRECTORY
+    Link Count       : 2
+    Size             : 40960
+    Blocks allocated : 10
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #     Inode No         : 1
+    Type             : DIRECTORY
+    Link Count       : 2
+    Size             : 32768
+    Blocks allocated : 8
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # INODE|FILE_NAME
+1|.
+0|..
+639|f638
+638|f637
+637|f636
+636|f635
+635|f634
+634|f633
+633|f632
+632|f631
+631|f630
+630|f629
+629|f628
+628|f627
+627|f626
+626|f625
+625|f624
+624|f623
+623|f622
+622|f621
+621|f620
+620|f619
+619|f618
+618|f617
+617|f616
+616|f615
+615|f614
+614|f613
+613|f612
+612|f611
+611|f610
+610|f609
+609|f608
+608|f607
+607|f606
+606|f605
+605|f604
+604|f603
+603|f602
+602|f601
+601|f600
+600|f599
+599|f598
+598|f597
+597|f596
+596|f595
+595|f594
+594|f593
+593|f592
+592|f591
+591|f590
+590|f589
+589|f588
+588|f587
+587|f586
+586|f585
+585|f584
+584|f583
+583|f582
+582|f581
+581|f580
+580|f579
+579|f578
+578|f577
+577|f576
+576|f575
+575|f574
+574|f573
+573|f572
+572|f571
+571|f570
+570|f569
+569|f568
+568|f567
+567|f566
+566|f565
+565|f564
+564|f563
+563|f562
+562|f561
+561|f560
+560|f559
+559|f558
+558|f557
+557|f556
+556|f555
+555|f554
+554|f553
+553|f552
+552|f551
+551|f550
+550|f549
+549|f548
+548|f547
+547|f546
+546|f545
+545|f544
+544|f543
+543|f542
+542|f541
+541|f540
+540|f539
+539|f538
+538|f537
+537|f536
+536|f535
+535|f534
+534|f533
+533|f532
+532|f531
+531|f530
+530|f529
+529|f528
+528|f527
+527|f526
+526|f525
+525|f524
+524|f523
+523|f522
+522|f521
+521|f520
+520|f519
+519|f518
+518|f517
+517|f516
+516|f515
+515|f514
+514|f513
+513|f512
+512|f511
+130|f129
+131|f130
+132|f131
+133|f132
+134|f133
+135|f134
+136|f135
+137|f136
+138|f137
+139|f138
+140|f139
+141|f140
+142|f141
+143|f142
+144|f143
+145|f144
+146|f145
+147|f146
+148|f147
+149|f148
+150|f149
+151|f150
+152|f151
+153|f152
+154|f153
+155|f154
+156|f155
+157|f156
+158|f157
+159|f158
+160|f159
+161|f160
+162|f161
+163|f162
+164|f163
+165|f164
+166|f165
+167|f166
+168|f167
+169|f168
+170|f169
+171|f170
+172|f171
+173|f172
+174|f173
+175|f174
+176|f175
+177|f176
+178|f177
+179|f178
+180|f179
+181|f180
+182|f181
+183|f182
+184|f183
+185|f184
+186|f185
+187|f186
+188|f187
+189|f188
+190|f189
+191|f190
+192|f191
+193|f192
+194|f193
+195|f194
+196|f195
+197|f196
+198|f197
+199|f198
+200|f199
+201|f200
+202|f201
+203|f202
+204|f203
+205|f204
+206|f205
+207|f206
+208|f207
+209|f208
+210|f209
+211|f210
+212|f211
+213|f212
+214|f213
+215|f214
+216|f215
+217|f216
+218|f217
+219|f218
+220|f219
+221|f220
+222|f221
+223|f222
+224|f223
+225|f224
+226|f225
+227|f226
+228|f227
+229|f228
+230|f229
+231|f230
+232|f231
+233|f232
+234|f233
+235|f234
+236|f235
+237|f236
+238|f237
+239|f238
+240|f239
+241|f240
+242|f241
+243|f242
+244|f243
+245|f244
+246|f245
+247|f246
+248|f247
+249|f248
+250|f249
+251|f250
+252|f251
+253|f252
+254|f253
+255|f254
+256|f255
+257|f256
+258|f257
+259|f258
+260|f259
+261|f260
+262|f261
+263|f262
+264|f263
+265|f264
+266|f265
+267|f266
+268|f267
+269|f268
+270|f269
+271|f270
+272|f271
+273|f272
+274|f273
+275|f274
+276|f275
+277|f276
+278|f277
+279|f278
+280|f279
+281|f280
+282|f281
+283|f282
+284|f283
+285|f284
+286|f285
+287|f286
+288|f287
+289|f288
+290|f289
+291|f290
+292|f291
+293|f292
+294|f293
+295|f294
+296|f295
+297|f296
+298|f297
+299|f298
+300|f299
+301|f300
+302|f301
+303|f302
+304|f303
+305|f304
+306|f305
+307|f306
+308|f307
+309|f308
+310|f309
+311|f310
+312|f311
+313|f312
+314|f313
+315|f314
+316|f315
+317|f316
+318|f317
+319|f318
+320|f319
+321|f320
+322|f321
+323|f322
+324|f323
+325|f324
+326|f325
+327|f326
+328|f327
+329|f328
+330|f329
+331|f330
+332|f331
+333|f332
+334|f333
+335|f334
+336|f335
+337|f336
+338|f337
+339|f338
+340|f339
+341|f340
+342|f341
+343|f342
+344|f343
+345|f344
+346|f345
+347|f346
+348|f347
+349|f348
+350|f349
+351|f350
+352|f351
+353|f352
+354|f353
+355|f354
+356|f355
+357|f356
+358|f357
+359|f358
+360|f359
+361|f360
+362|f361
+363|f362
+364|f363
+365|f364
+366|f365
+367|f366
+368|f367
+369|f368
+370|f369
+371|f370
+372|f371
+373|f372
+374|f373
+375|f374
+376|f375
+377|f376
+378|f377
+379|f378
+380|f379
+381|f380
+382|f381
+383|f382
+384|f383
+385|f384
+386|f385
+387|f386
+388|f387
+389|f388
+390|f389
+391|f390
+392|f391
+393|f392
+394|f393
+395|f394
+396|f395
+397|f396
+398|f397
+399|f398
+400|f399
+401|f400
+402|f401
+403|f402
+404|f403
+405|f404
+406|f405
+407|f406
+408|f407
+409|f408
+410|f409
+411|f410
+412|f411
+413|f412
+414|f413
+415|f414
+416|f415
+417|f416
+418|f417
+419|f418
+420|f419
+421|f420
+422|f421
+423|f422
+424|f423
+425|f424
+426|f425
+427|f426
+428|f427
+429|f428
+430|f429
+431|f430
+432|f431
+433|f432
+434|f433
+435|f434
+436|f435
+437|f436
+438|f437
+439|f438
+440|f439
+441|f440
+442|f441
+443|f442
+444|f443
+445|f444
+446|f445
+447|f446
+448|f447
+449|f448
+450|f449
+451|f450
+452|f451
+453|f452
+454|f453
+455|f454
+456|f455
+457|f456
+458|f457
+459|f458
+460|f459
+461|f460
+462|f461
+463|f462
+464|f463
+465|f464
+466|f465
+467|f466
+468|f467
+469|f468
+470|f469
+471|f470
+472|f471
+473|f472
+474|f473
+475|f474
+476|f475
+477|f476
+478|f477
+479|f478
+480|f479
+481|f480
+482|f481
+483|f482
+484|f483
+485|f484
+486|f485
+487|f486
+488|f487
+489|f488
+490|f489
+491|f490
+492|f491
+493|f492
+494|f493
+495|f494
+496|f495
+497|f496
+498|f497
+499|f498
+500|f499
+501|f500
+502|f501
+503|f502
+504|f503
+505|f504
+506|f505
+507|f506
+508|f507
+509|f508
+510|f509
+511|f510
+2|f1
+3|f2
+4|f3
+5|f4
+6|f5
+7|f6
+8|f7
+9|f8
+10|f9
+11|f10
+12|f11
+13|f12
+14|f13
+15|f14
+16|f15
+17|f16
+18|f17
+19|f18
+20|f19
+21|f20
+22|f21
+23|f22
+24|f23
+25|f24
+26|f25
+27|f26
+28|f27
+29|f28
+30|f29
+31|f30
+32|f31
+33|f32
+34|f33
+35|f34
+36|f35
+37|f36
+38|f37
+39|f38
+40|f39
+41|f40
+42|f41
+43|f42
+44|f43
+45|f44
+46|f45
+47|f46
+48|f47
+49|f48
+50|f49
+51|f50
+52|f51
+53|f52
+54|f53
+55|f54
+56|f55
+57|f56
+58|f57
+59|f58
+60|f59
+61|f60
+62|f61
+63|f62
+64|f63
+65|f64
+66|f65
+67|f66
+68|f67
+69|f68
+70|f69
+71|f70
+72|f71
+73|f72
+74|f73
+75|f74
+76|f75
+77|f76
+78|f77
+79|f78
+80|f79
+81|f80
+82|f81
+83|f82
+84|f83
+85|f84
+86|f85
+87|f86
+88|f87
+89|f88
+90|f89
+91|f90
+92|f91
+93|f92
+94|f93
+95|f94
+96|f95
+97|f96
+98|f97
+99|f98
+100|f99
+101|f100
+102|f101
+103|f102
+104|f103
+105|f104
+106|f105
+107|f106
+108|f107
+109|f108
+110|f109
+111|f110
+112|f111
+113|f112
+114|f113
+115|f114
+116|f115
+117|f116
+118|f117
+119|f118
+120|f119
+121|f120
+122|f121
+123|f122
+124|f123
+125|f124
+126|f125
+127|f126
+128|f127
+129|f128
+# Goodbye
+ShellShock Version 0.000003
+
+# # File handle is : 0
+# File handle is : 1
+# File handle is : 2
+# Done
+# Data read in : hello
+# Done
+# Data read in : world
+# OK
+# Data read in : there
+# Goodbye
+ShellShock Version 0.000003
+
+# # File handle is : 0
+# File handle is : 1
+# File handle is : 2
+# File handle is : 3
+# File handle is : 4
+# File handle is : 5
+# File handle is : 6
+# File handle is : 7
+# File handle is : 8
+# File handle is : 9
+# File handle is : 10
+# File handle is : 11
+# File handle is : 12
+# File handle is : 13
+# File handle is : 14
+# File handle is : 15
+# File handle is : 16
+# File handle is : 17
+# File handle is : 18
+# File handle is : 19
+# File handle is : 20
+# File handle is : 21
+# File handle is : 22
+# File handle is : 23
+# File handle is : 24
+# File handle is : 25
+# File handle is : 26
+# File handle is : 27
+# File handle is : 28
+# File handle is : 29
+# File handle is : 30
+# File handle is : 31
+# File handle is : 32
+# File handle is : 33
+# File handle is : 34
+# File handle is : 35
+# File handle is : 36
+# File handle is : 37
+# File handle is : 38
+# File handle is : 39
+# File handle is : 40
+# File handle is : 41
+# File handle is : 42
+# File handle is : 43
+# File handle is : 44
+# File handle is : 45
+# File handle is : 46
+# File handle is : 47
+# File handle is : 48
+# File handle is : 49
+# File handle is : 50
+# File handle is : 51
+# File handle is : 52
+# File handle is : 53
+# File handle is : 54
+# File handle is : 55
+# File handle is : 56
+# File handle is : 57
+# File handle is : 58
+# File handle is : 59
+# File handle is : 60
+# File handle is : 61
+# File handle is : 62
+# File handle is : 63
+# File handle is : 64
+# File handle is : 65
+# File handle is : 66
+# File handle is : 67
+# File handle is : 68
+# File handle is : 69
+# File handle is : 70
+# File handle is : 71
+# File handle is : 72
+# File handle is : 73
+# File handle is : 74
+# File handle is : 75
+# File handle is : 76
+# File handle is : 77
+# File handle is : 78
+# File handle is : 79
+# File handle is : 80
+# File handle is : 81
+# File handle is : 82
+# File handle is : 83
+# File handle is : 84
+# File handle is : 85
+# File handle is : 86
+# File handle is : 87
+# File handle is : 88
+# File handle is : 89
+# File handle is : 90
+# File handle is : 91
+# File handle is : 92
+# File handle is : 93
+# File handle is : 94
+# File handle is : 95
+# File handle is : 96
+# File handle is : 97
+# File handle is : 98
+# File handle is : 99
+# File handle is : 100
+# File handle is : 101
+# File handle is : 102
+# File handle is : 103
+# File handle is : 104
+# File handle is : 105
+# File handle is : 106
+# File handle is : 107
+# File handle is : 108
+# File handle is : 109
+# File handle is : 110
+# File handle is : 111
+# File handle is : 112
+# File handle is : 113
+# File handle is : 114
+# File handle is : 115
+# File handle is : 116
+# File handle is : 117
+# File handle is : 118
+# File handle is : 119
+# File handle is : 120
+# File handle is : 121
+# File handle is : 122
+# File handle is : 123
+# File handle is : 124
+# File handle is : 125
+# File handle is : 126
+# File handle is : 127
+# File handle is : 128
+# File handle is : 129
+# File handle is : 130
+# File handle is : 131
+# File handle is : 132
+# File handle is : 133
+# File handle is : 134
+# File handle is : 135
+# File handle is : 136
+# File handle is : 137
+# File handle is : 138
+# File handle is : 139
+# File handle is : 140
+# File handle is : 141
+# File handle is : 142
+# File handle is : 143
+# File handle is : 144
+# File handle is : 145
+# File handle is : 146
+# File handle is : 147
+# File handle is : 148
+# File handle is : 149
+# File handle is : 150
+# File handle is : 151
+# File handle is : 152
+# File handle is : 153
+# File handle is : 154
+# File handle is : 155
+# File handle is : 156
+# File handle is : 157
+# File handle is : 158
+# File handle is : 159
+# File handle is : 160
+# File handle is : 161
+# File handle is : 162
+# File handle is : 163
+# File handle is : 164
+# File handle is : 165
+# File handle is : 166
+# File handle is : 167
+# File handle is : 168
+# File handle is : 169
+# File handle is : 170
+# File handle is : 171
+# File handle is : 172
+# File handle is : 173
+# File handle is : 174
+# File handle is : 175
+# File handle is : 176
+# File handle is : 177
+# File handle is : 178
+# File handle is : 179
+# File handle is : 180
+# File handle is : 181
+# File handle is : 182
+# File handle is : 183
+# File handle is : 184
+# File handle is : 185
+# File handle is : 186
+# File handle is : 187
+# File handle is : 188
+# File handle is : 189
+# File handle is : 190
+# File handle is : 191
+# File handle is : 192
+# File handle is : 193
+# File handle is : 194
+# File handle is : 195
+# File handle is : 196
+# File handle is : 197
+# File handle is : 198
+# File handle is : 199
+# File handle is : 200
+# File handle is : 201
+# File handle is : 202
+# File handle is : 203
+# File handle is : 204
+# File handle is : 205
+# File handle is : 206
+# File handle is : 207
+# File handle is : 208
+# File handle is : 209
+# File handle is : 210
+# File handle is : 211
+# File handle is : 212
+# File handle is : 213
+# File handle is : 214
+# File handle is : 215
+# File handle is : 216
+# File handle is : 217
+# File handle is : 218
+# File handle is : 219
+# File handle is : 220
+# File handle is : 221
+# File handle is : 222
+# File handle is : 223
+# File handle is : 224
+# File handle is : 225
+# File handle is : 226
+# File handle is : 227
+# File handle is : 228
+# File handle is : 229
+# File handle is : 230
+# File handle is : 231
+# File handle is : 232
+# File handle is : 233
+# File handle is : 234
+# File handle is : 235
+# File handle is : 236
+# File handle is : 237
+# File handle is : 238
+# File handle is : 239
+# File handle is : 240
+# File handle is : 241
+# File handle is : 242
+# File handle is : 243
+# File handle is : 244
+# File handle is : 245
+# File handle is : 246
+# File handle is : 247
+# File handle is : 248
+# File handle is : 249
+# File handle is : 250
+# File handle is : 251
+# File handle is : 252
+# File handle is : 253
+# File handle is : 254
+# File handle is : 255
+# File handle is : 256
+# File handle is : 257
+# File handle is : 258
+# File handle is : 259
+# File handle is : 260
+# File handle is : 261
+# File handle is : 262
+# File handle is : 263
+# File handle is : 264
+# File handle is : 265
+# File handle is : 266
+# File handle is : 267
+# File handle is : 268
+# File handle is : 269
+# File handle is : 270
+# File handle is : 271
+# File handle is : 272
+# File handle is : 273
+# File handle is : 274
+# File handle is : 275
+# File handle is : 276
+# File handle is : 277
+# File handle is : 278
+# File handle is : 279
+# File handle is : 280
+# File handle is : 281
+# File handle is : 282
+# File handle is : 283
+# File handle is : 284
+# File handle is : 285
+# File handle is : 286
+# File handle is : 287
+# File handle is : 288
+# File handle is : 289
+# File handle is : 290
+# File handle is : 291
+# File handle is : 292
+# File handle is : 293
+# File handle is : 294
+# File handle is : 295
+# File handle is : 296
+# File handle is : 297
+# File handle is : 298
+# File handle is : 299
+# File handle is : 300
+# File handle is : 301
+# File handle is : 302
+# File handle is : 303
+# File handle is : 304
+# File handle is : 305
+# File handle is : 306
+# File handle is : 307
+# File handle is : 308
+# File handle is : 309
+# File handle is : 310
+# File handle is : 311
+# File handle is : 312
+# File handle is : 313
+# File handle is : 314
+# File handle is : 315
+# File handle is : 316
+# File handle is : 317
+# File handle is : 318
+# File handle is : 319
+# File handle is : 320
+# File handle is : 321
+# File handle is : 322
+# File handle is : 323
+# File handle is : 324
+# File handle is : 325
+# File handle is : 326
+# File handle is : 327
+# File handle is : 328
+# File handle is : 329
+# File handle is : 330
+# File handle is : 331
+# File handle is : 332
+# File handle is : 333
+# File handle is : 334
+# File handle is : 335
+# File handle is : 336
+# File handle is : 337
+# File handle is : 338
+# File handle is : 339
+# File handle is : 340
+# File handle is : 341
+# File handle is : 342
+# File handle is : 343
+# File handle is : 344
+# File handle is : 345
+# File handle is : 346
+# File handle is : 347
+# File handle is : 348
+# File handle is : 349
+# File handle is : 350
+# File handle is : 351
+# File handle is : 352
+# File handle is : 353
+# File handle is : 354
+# File handle is : 355
+# File handle is : 356
+# File handle is : 357
+# File handle is : 358
+# File handle is : 359
+# File handle is : 360
+# File handle is : 361
+# File handle is : 362
+# File handle is : 363
+# File handle is : 364
+# File handle is : 365
+# File handle is : 366
+# File handle is : 367
+# File handle is : 368
+# File handle is : 369
+# File handle is : 370
+# File handle is : 371
+# File handle is : 372
+# File handle is : 373
+# File handle is : 374
+# File handle is : 375
+# File handle is : 376
+# File handle is : 377
+# File handle is : 378
+# File handle is : 379
+# File handle is : 380
+# File handle is : 381
+# File handle is : 382
+# File handle is : 383
+# File handle is : 384
+# File handle is : 385
+# File handle is : 386
+# File handle is : 387
+# File handle is : 388
+# File handle is : 389
+# File handle is : 390
+# File handle is : 391
+# File handle is : 392
+# File handle is : 393
+# File handle is : 394
+# File handle is : 395
+# File handle is : 396
+# File handle is : 397
+# File handle is : 398
+# File handle is : 399
+# File handle is : 400
+# File handle is : 401
+# File handle is : 402
+# File handle is : 403
+# File handle is : 404
+# File handle is : 405
+# File handle is : 406
+# File handle is : 407
+# File handle is : 408
+# File handle is : 409
+# File handle is : 410
+# File handle is : 411
+# File handle is : 412
+# File handle is : 413
+# File handle is : 414
+# File handle is : 415
+# File handle is : 416
+# File handle is : 417
+# File handle is : 418
+# File handle is : 419
+# File handle is : 420
+# File handle is : 421
+# File handle is : 422
+# File handle is : 423
+# File handle is : 424
+# File handle is : 425
+# File handle is : 426
+# File handle is : 427
+# File handle is : 428
+# File handle is : 429
+# File handle is : 430
+# File handle is : 431
+# File handle is : 432
+# File handle is : 433
+# File handle is : 434
+# File handle is : 435
+# File handle is : 436
+# File handle is : 437
+# File handle is : 438
+# File handle is : 439
+# File handle is : 440
+# File handle is : 441
+# File handle is : 442
+# File handle is : 443
+# File handle is : 444
+# File handle is : 445
+# File handle is : 446
+# File handle is : 447
+# File handle is : 448
+# File handle is : 449
+# File handle is : 450
+# File handle is : 451
+# File handle is : 452
+# File handle is : 453
+# File handle is : 454
+# File handle is : 455
+# File handle is : 456
+# File handle is : 457
+# File handle is : 458
+# File handle is : 459
+# File handle is : 460
+# File handle is : 461
+# File handle is : 462
+# File handle is : 463
+# File handle is : 464
+# File handle is : 465
+# File handle is : 466
+# File handle is : 467
+# File handle is : 468
+# File handle is : 469
+# File handle is : 470
+# File handle is : 471
+# File handle is : 472
+# File handle is : 473
+# File handle is : 474
+# File handle is : 475
+# File handle is : 476
+# File handle is : 477
+# File handle is : 478
+# File handle is : 479
+# File handle is : 480
+# File handle is : 481
+# File handle is : 482
+# File handle is : 483
+# File handle is : 484
+# File handle is : 485
+# File handle is : 486
+# File handle is : 487
+# File handle is : 488
+# File handle is : 489
+# File handle is : 490
+# File handle is : 491
+# File handle is : 492
+# File handle is : 493
+# File handle is : 494
+# File handle is : 495
+# File handle is : 496
+# File handle is : 497
+# File handle is : 498
+# File handle is : 499
+# File handle is : 500
+# File handle is : 501
+# File handle is : 502
+# File handle is : 503
+# File handle is : 504
+# File handle is : 505
+# File handle is : 506
+# File handle is : 507
+# File handle is : 508
+# File handle is : 509
+# File handle is : 510
+# File handle is : 511
+# Error while opening file
+# Error while opening file
+# Error while opening file
+# Error while opening file
+# Error while opening file
+# Error while opening file
+# Error while opening file
+# Error while opening file
+# Goodbye
+ShellShock Version 0.000003
+
+# # File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# File handle is : 0
+# OK
+# Error while opening file
+# Problem with closing file
+# Error while opening file
+# Problem with closing file
+# Error while opening file
+# Problem with closing file
+# Goodbye
