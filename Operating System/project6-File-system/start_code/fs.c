@@ -202,10 +202,9 @@ static void dir_delete(file_entry_t *file)
     inode_t *inode;
     inode = inode_read(file->inode, inode_buf);
     inode->links--;
-    if(inode->links == 0 && inode->number == 0)
+    if(inode->type == DIRECTORY || (inode->links == 0 && inode->number == 0))
         space_free(file->inode, INODE_TYPE, 0);
-    else if(inode->type != DIRECTORY || inode->links != 1)
-    	inode_write(file->inode, inode_buf);
+    else inode_write(file->inode, inode_buf);
 }
 static int dir_delete_swap(char *name, int dir_inode)
 {
@@ -326,6 +325,8 @@ static int dir_insert(char *name, short dir_inode, short entry_inode)
 }
 static short dir_find(char *name, short dir_inode)
 {
+	if(name[0] == '\0')
+		return -1;
     char inode_buf[EXTENT_BITE];
     inode_t *inode;
     inode = inode_read(dir_inode, inode_buf);
@@ -521,6 +522,8 @@ int fs_open(char *fileName, int flags)
 {
     short index = -2;
     index = path_lookup(fileName);
+	if(flags != READ_ONLY && flags != WRITE_ONLY && flags != READ_WRITE)
+		return -1;
     if(index == -1 || (index == -2 && flags == READ_ONLY))
         return -1;
     else if(index == -2)//文件不存在,且非只读模式,创建文件
@@ -561,7 +564,7 @@ int fs_open(char *fileName, int flags)
     char inode_buf[EXTENT_BITE];
     inode_t *inode;
     inode = inode_read(index, inode_buf);
-    if(inode->type == DIRECTORY)
+    if(inode->type == DIRECTORY && flags != READ_ONLY)
     	return -1;
     int fd;
     fd = fd_alloc(index, flags);
@@ -587,8 +590,10 @@ int fs_close(int fd)
 
 int fs_read(int fd, char *buf, int count)
 {
-    if(count == 0 || buf == NULL)
-        return 0;
+	if(count == 0)
+		return 0;
+    if(count < 0 || buf == NULL)
+        return -1;
     if(fd >= 0 && fd < MAX_FD_TABLE)
     {
         if(!file_table[fd].is_open)
@@ -599,7 +604,7 @@ int fs_read(int fd, char *buf, int count)
         inode_t *inode;
         inode = inode_read(file_table[fd].inode, inode_buf);
         if(file_table[fd].cursor >= inode->size)
-            return 0;
+            return -1;
         count = (count > inode->size - file_table[fd].cursor) ? inode->size - file_table[fd].cursor : count;
         int current_block, current_bytes, read_bytes = 0;
         
@@ -631,12 +636,14 @@ int fs_read(int fd, char *buf, int count)
     
 int fs_write(int fd, char *buf, int count)
 {
-    if(count == 0 || buf == NULL)
-        return 0;
+	if(count == 0)
+		return 0;
+    if(count < 0 || buf == NULL)
+        return -1;
     if(fd >= 0 && fd < MAX_FD_TABLE)
     {
         if(!file_table[fd].is_open)
-            return 0;
+            return -1;
         if(file_table[fd].mode == READ_ONLY)
         	return -1;
         char inode_buf[EXTENT_BITE];
@@ -662,7 +669,7 @@ int fs_write(int fd, char *buf, int count)
             int block_num = (file_table[fd].cursor - 1) / EXTENT_BITE + 1;
             int i;
             if(block_num > MAX_FILE_BLOCK)
-                return 0;
+                return -1;
             if(block_num == inode->used_blocks)
             {
                 for (i = inode->size % EXTENT_BITE; i < file_table[fd].cursor; i++)
@@ -736,7 +743,7 @@ int fs_write(int fd, char *buf, int count)
         inode_write(file_table[fd].inode, inode_buf);
         return write_bytes;
     }
-    return 0;
+    return -1;
 }
 
 int fs_lseek(int fd, int offset) 
@@ -755,14 +762,6 @@ int fs_mkdir(char *fileName)
     file = path_lookup(fileName);
     if(file >= 0)
         return -1;
-    file = inode_init(DIRECTORY);
-    if(file == -1)
-        return -1;
-    if(dir_insert(cname, file, file) == -1)
-    {
-        space_free(file, INODE_TYPE, 0);
-        return -1;
-    }
     char dir_name[MAX_PATH_NAME + 1];
     char pname[MAX_FILE_NAME + 1];
     short dir;
@@ -782,21 +781,32 @@ int fs_mkdir(char *fileName)
             i++;
         }
         pname[i - count] = '\0';
-    }
-    if(count == start)
-    	dir = current_dir;
-	else
-	{
-		bcopy((unsigned char *)fileName, (unsigned char *)dir_name, count);
-		dir = path_lookup(dir_name);
-	}
-    if(dir_insert(pname, dir, file) == -1)
-    {
-        space_free(file, INODE_TYPE, 0);
-        return -1;
-    }
-    dir_insert(fname, file, dir);
-    
+	    if(count == start)
+	    	dir = current_dir;
+		else
+		{
+			bcopy((unsigned char *)fileName, (unsigned char *)dir_name, count);
+			dir = path_lookup(dir_name);
+		}
+		file = dir_find(pname, dir);
+		if(file == -1)
+		{
+	        file = inode_init(DIRECTORY);
+		    if(file == -1)
+		        return -1;
+		    if(dir_insert(cname, file, file) == -1)
+		    {
+		        space_free(file, INODE_TYPE, 0);
+		        return -1;
+		    }
+	        if(dir_insert(pname, dir, file) == -1)
+		    {
+		        space_free(file, INODE_TYPE, 0);
+		        return -1;
+		    }
+		    dir_insert(fname, file, dir);
+		}
+    }    
     return 0;
 }
 
@@ -839,7 +849,8 @@ int fs_rmdir(char *fileName)
 		bcopy((unsigned char *)fileName, (unsigned char *)dir_name, count);
 		dir = path_lookup(dir_name);
 	}
-
+	if(same_string(pname, cname) || same_string(pname, fname))
+		return -1;
     dir_delete_swap(pname, dir);
     space_free(file, INODE_TYPE, 0);
     return 0;

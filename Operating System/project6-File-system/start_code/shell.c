@@ -163,19 +163,19 @@ static void shell_mkfs( void) {
 
 static void shell_create( void) {
     int fd, i;
-    char letter[512] = {0};
+    char letter[10];
     if ((fd = fs_open(argv[1], FS_O_RDWR)) == -1)
 	writeStr("Error creating file\n");
-    for(i=0; i < (atoi(argv[2]) - 1) / 512 + 1; i++) {
-	letter[0] = 'A' + (i % 37);
-	if(fs_write(fd, letter, 512) == 0)
+    for(i=0; i < atoi(argv[2]); i++) {
+		letter[0] = 'A' + (i % 37);
+	if(fs_write(fd, letter, 1) == 0)
 	  // error with fs_write
 	  break;
-	// if ((i+1) % 40 == 0) {
-	//     letter[0] = RETURN;
-	//     if (fs_write(fd, letter, 1) == 0)
-	// 	break;
-	// }
+	if ((i+1) % 40 == 0) {
+	    letter[0] = RETURN;
+	    if (fs_write(fd, letter, 1) == 0)
+		break;
+	}
     }
     fs_close(fd);
 }
