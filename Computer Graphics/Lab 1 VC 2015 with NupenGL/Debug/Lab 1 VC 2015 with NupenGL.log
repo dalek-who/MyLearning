@@ -1,0 +1,11 @@
+﻿  Source.cpp
+  main.cpp
+d:\user\onedrive\study\computer graphics\lab 1 vc 2015 with nupengl\main.cpp(74): warning C4305: “+=”: 从“double”到“float”截断
+d:\user\onedrive\study\computer graphics\lab 1 vc 2015 with nupengl\main.cpp(80): warning C4305: “-=”: 从“double”到“float”截断
+d:\user\onedrive\study\computer graphics\lab 1 vc 2015 with nupengl\main.cpp(85): warning C4305: “-=”: 从“double”到“float”截断
+d:\user\onedrive\study\computer graphics\lab 1 vc 2015 with nupengl\main.cpp(90): warning C4305: “+=”: 从“double”到“float”截断
+d:\user\onedrive\study\computer graphics\lab 1 vc 2015 with nupengl\main.cpp(95): warning C4305: “-=”: 从“double”到“float”截断
+d:\user\onedrive\study\computer graphics\lab 1 vc 2015 with nupengl\main.cpp(100): warning C4305: “+=”: 从“double”到“float”截断
+  正在生成代码...
+  Lab 1 VC 2015 with NupenGL.vcxproj -> D:\User\onedrive\study\COMPUTER GRAPHICS\Lab 1 VC 2015 with NupenGL\Debug\Lab 1 VC 2015 with NupenGL.exe
+  Lab 1 VC 2015 with NupenGL.vcxproj -> D:\User\onedrive\study\COMPUTER GRAPHICS\Lab 1 VC 2015 with NupenGL\Debug\Lab 1 VC 2015 with NupenGL.pdb (Partial PDB)
