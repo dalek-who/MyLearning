@@ -1,0 +1,7 @@
+openssl enc -aes-256-cbc in secrets.enc -out 1.txt -k evilpassword
+
+use python
+get m = 0x6373323130377b695f7233346c6c795f6c3076335f723561217dL
+then decode it
+
+cs2107{i_r34lly_l0v3_r5a!}

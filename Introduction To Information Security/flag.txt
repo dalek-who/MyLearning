@@ -1,0 +1,60 @@
+Assignment2
+Section A:
+1.
+flag{a44e19d9ff5dde98045cbf1529f5c93b}
+flag{677e7921e719a81a68e27b2f9f27de1c}
+flag{d25100ff30af7ad87f5da8a509c4b6a5}
+flag{71cc1635a1319e0030dd8a3c0219ce5f}
+
+2.
+cs2107.spro.ink
+flag{936547e73e77f80c9d078e9d9c47adce}
+flag{e5744ee8295768248e6f2bae3b39d6f2}
+flag{e1930b4927e6b6d92d120c7c1bba3421}
+flag{8f17a5364fd93cc24ee0b7fc68c479dd}
+272
+
+3.
+flag{46171bd9ebba3009fd58ca46d69b007a}
+flag{28ef6e8a5674887a6688a37d7485a533}
+flag{3c830b2b1dfdd8887a14b98ee3306dc2}
+flag{d952c19daba10cfc064543f76901589b}
+
+4.
+flag{329684ce90c7ac7bca88274bcd3796db}
+
+5.
+baseball
+
+Section B:
+1.
+cs2107{w3ll_d0n3_0n_y0ur_5cr1pt1ng}
+cs2107{d0nt_st3p_0n_m3_pl34s3_m4n}
+cs2107{winning_this_is_g00d}
+
+2.
+cs2107{th15_15_4_h1gh_r3s_fl4g}
+
+3.
+cs2107{3x1f_c4n_st0r3_m3ss4g3s_t00}
+cs2107{extr4ct_th3_fr4m35_t0_r3v34l_th3_gh0st}
+cs2107{m0unting_4nd_s34rch1ng}
+
+4.
+cs2107{user_ag3nt_h4ck1ng_s0_exp3rt}
+
+5.
+cs2107{i_r34lly_l0v3_r5a!}
+
+Assignment3
+1.(Web Developer插件，查看cookies有一个叫is_admin值改成1)
+Greetings my dear admin A0164576U!
+Your flag is flag{pLEAse_hElp_yOuRSeLf_wIth_somE_DeLiCious_COoKIES_MY_DEAr_AdMiN}.
+2.(http://cs2107.win:2082/home.php?file=much_secret_such_flag)
+Wow A0164576U! Your flag is flag{thiS_Php_suCh_SECret_MuCH_fLAg_SO_secuRe_WoW_WOw_wow_WoW_WoW}.
+3.(FireBug插件，F12查看代码)
+Congratualtions, A0164576U!
+Your flag is flag{never_trUsT_fROntEND_validATIoN_Or_EvEN_HaRdCoDE_sECrETs_iN_tHe_fRoNTEnD_PAGe}.
+4.(password=' or 1=1 or 1=')
+Congratulations, A0164576U!
+Your flag is flag{Do_yoU_kNoW_THAT_SQL_InjecTIoN_Is_ONE_OF_tHE_MOST_coMMoN_WEB_vulnErABIlIties}.
