@@ -1,5 +1,4 @@
-# MyLearning
-My Homework
+
 
 To Compile:
 - Bwapi 4.1.2 & BWTA (set environment viariables with names BWAPI_DIR & BWTA_DIR)
@@ -14,7 +13,7 @@ Tournament Setup:
 - Set bots: {"BotName": "cpac", "Race": "Zerg", "BotType": "dll", "BWAPIVersion": "BWAPI_412"}
 
 Directory Structure:
-- AI/
+- dll/
 	- cpac.dll
 	- cpac.json
 - src/
