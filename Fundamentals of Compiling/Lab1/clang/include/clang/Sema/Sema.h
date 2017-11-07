@@ -252,6 +252,7 @@ public:
   /*******TODO*******/
   /// AsCheckRule - Status for asCheck
   unsigned AsCheckRule;
+  bool AsCheckFlag;
   /*******TODO*******/
   /// PackContext - Manages the stack for \#pragma pack. An alignment
   /// of 0 indicates default alignment.

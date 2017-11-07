@@ -4219,10 +4219,16 @@ NamedDecl *Sema::HandleDeclarator(Scope *S, Declarator &D,
 
     New = ActOnTypedefDeclarator(S, D, DC, TInfo, Previous);
   } else if (R->isFunctionType()) {
+    /*******TODO*******/
+    AsCheckFlag = false;
+    /*******TODO*******/
     New = ActOnFunctionDeclarator(S, D, DC, TInfo, Previous,
                                   TemplateParamLists,
                                   AddToScope);
   } else {
+    /*******TODO*******/
+    AsCheckFlag = false;
+    /*******TODO*******/
     New = ActOnVariableDeclarator(S, D, DC, TInfo, Previous,
                                   TemplateParamLists);
   }
@@ -9480,6 +9486,7 @@ Decl *Sema::ActOnTag(Scope *S, unsigned TagSpec, TagUseKind TUK,
                      SourceLocation ScopedEnumKWLoc,
                      bool ScopedEnumUsesClassTag,
                      TypeResult UnderlyingType) {
+
   // If this is not a definition, it must have a name.
   IdentifierInfo *OrigName = Name;
   assert((Name != 0 || TUK == TUK_Definition) &&

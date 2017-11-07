@@ -114,6 +114,7 @@ void Sema::ActOnPragmaAsCheck(PragmaAsCheckKind Kind){
   default:
     AsCheckRule = 0; break;
   }
+  AsCheckFlag = false;
 }
 /*******TODO*******/
 
